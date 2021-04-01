@@ -73,7 +73,20 @@ if (majorSlider.length) {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: false,
-					dots: false
+					dots: false,
+					centerMode: true,
+					centerPadding: '50px'
+				}
+			},
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: false,
+					dots: false,
+					centerMode: true,
+					centerPadding: '70px'
 				}
 			},
 		]
