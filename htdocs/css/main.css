@@ -331,10 +331,11 @@ media style
 @media only screen and (max-width: 640px) {
   main {
     margin-bottom: 100px; }
-  main, .majorSlider {
+  main {
     min-width: 100%; }
   .majorSlider {
-    margin-left: -50px; }
+    margin-left: -50px;
+    min-width: calc(100% + 50px); }
   .majorSlider::after {
     top: 55%;
     left: 50px; }
@@ -363,8 +364,6 @@ media style
     top: calc(100% + 60px); } }
 
 @media only screen and (max-width: 540px) {
-  .majorSlider {
-    margin-left: -50px; }
   .majorSlider::after {
     left: 70px; }
   .majorSlider__item .content__picture img {
