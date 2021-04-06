@@ -385,5 +385,8 @@ a {
   width: 50%;
   line-height: 1.5; }
 
+#vueLink__container a {
+  color: #0081d7; }
+
 #vueLink__container a:hover {
   color: #d70029; }
