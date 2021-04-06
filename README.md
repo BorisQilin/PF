@@ -1,7 +1,7 @@
 ﻿# Borsch Sergey (порфолио)
 
 # Ссылка, для просмотра:
-#https://borisqilin.github.io/PF/toView
+## https://borisqilin.github.io/PF/toView
 
 # Описание:
 - Для самого порфолио используеться AJAX, sass;
