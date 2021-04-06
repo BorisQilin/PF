@@ -58,11 +58,11 @@
 		"img": "img/Screen5.png",
 		"description": "HTML, CSS(SCSS), JS, jQuery, Gulp",
 		"vueLink": [{
-				"title": "spring, ",
+				"title": "spring,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/index.html"
 			},
 			{
-				"title": "team, ",
+				"title": "team,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/team.html"
 			},
 			{
