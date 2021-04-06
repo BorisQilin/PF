@@ -58,19 +58,19 @@
 		"img": "img/Screen5.png",
 		"description": "HTML, CSS(SCSS), JS, jQuery, Gulp",
 		"vueLink": [{
-				"title": "spring",
+				"title": "spring, ",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/index.html"
 			},
 			{
-				"title": "team",
+				"title": "team, ",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/team.html"
 			},
 			{
-				"title": "advantages",
+				"title": "advant,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/advantages.html"
 			},
 			{
-				"title": "briefcases",
+				"title": "briefcases,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/briefcases.html"
 			},
 			{
@@ -78,19 +78,19 @@
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/base.html"
 			},
 			{
-				"title": "vacancies",
+				"title": "vacancy",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/vacancies.html"
 			},
 			{
-				"title": "contacts",
+				"title": "contact",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/contacts.html"
 			},
 			{
-				"title": "vacancies description",
+				"title": "vacancy desc.,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/vacancies_description.html"
 			},
 			{
-				"title": "base books article",
+				"title": "book art.,",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Spring/base_books_article.html"
 			},
 			{
