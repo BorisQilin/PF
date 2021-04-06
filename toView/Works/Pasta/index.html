@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=5.0">
+  <title>Barilla</title>
+
+
+  <base href="./assets/">
+
+  <!-- это для того чтобы шрифт не прыгал во время загрузки -->
+  <style>
+    @font-face {
+      font-family: 'Baloo Bhai';
+      src: url('./font/BalooBhai2-Regular.ttf') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Baloo Bhai Bold';
+      src: url('./font/BalooBhai2-ExtraBold.ttf') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      src: url('./font/Poppins-Regular.ttf') format('woff2');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Poppins Bold';
+      src: url('./font/Poppins-Bold.ttf') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <article class="main">
+    <div class="main_group">
+      <header class="present">
+        <h1 class="present_title">
+          Vinci una fornitura<br>
+          di pasta Barilla gratis per un anno!
+        </h1>
+
+        <figure class="present_img">
+          <img src="./img/img-barilla.png" alt="Barilla" class="img_picture">
+        </figure>
+      </header>
+
+      <section class="action">
+        <h2 class="action_header">Dove possiamo inviare il possibile premio?
+        </h2>
+
+        <form action="../index.html" id="action_form" method="get"
+          enctype="text/plain">
+          <div class="form_line">
+            <input class="form_radio" type="radio" name="gender"
+              id="gender_male" value="male">
+            <label class="form_radio_label radioLabel" for="gender_male"
+              id="label_gender_male">Uomo</label>
+
+            <input class="form_radio" type="radio" name="gender"
+              id="gender_female" value="female">
+            <label class="form_radio_label radioLabel" for="gender_female"
+              id="label_gender_female">Donna</label>
+          </div>
+
+          <div class="form_line">
+            <p class="line_cell line_cell-2">
+              <input type="text" name="firstname" id="firstname">
+              <label id="label_firstname" for="firstname">Nome</label>
+              <span class="status">
+                <span class="status_msg">completa correttamente il campo:
+                  nome</span>
+              </span>
+            </p>
+
+            <p class="line_cell line_cell-2">
+              <input type="text" name="lastname" id="lastname">
+              <label id="label_lastname" for="lastname">Cognome</label>
+              <span class="status">
+                <span class="status_msg">completa correttamente il campo:
+                  cognome</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="form_line form_line-mail">
+            <input type="text" name="email" id="email">
+            <label id="label_email" for="email">Email</label>
+            <span class="status">
+              <span class="status_msg">completa correttamente il campo:
+                email</span>
+            </span>
+          </div>
+
+          <div class="form_line">
+            <p class="form_line_data">Data di nascita</p>
+
+            <div class="cell_group">
+              <p class="line_cell line_cell-3">
+                <input type="text" name="day" id="day">
+                <label id="label_day" for="day">Giorno</label>
+              </p>
+
+              <p class="line_cell line_cell-3">
+                <input type="text" name="month" id="month">
+                <label id="label_day" for="month">Mese</label>
+              </p>
+
+              <p class="line_cell line_cell-3">
+                <input type="text" name="year" id="year">
+                <label id="label_day" for="year">Anno</label>
+              </p>
+            </div>
+
+            <span class="status status-data">
+              <span class="status_msg"> I minori di 18 anni non possono
+                participare! </span>
+            </span>
+          </div>
+
+          <p class="form_line">
+            <button class="btn" type="submit" formtarget="_self"
+              form="action_form">
+              <span class="btn_text">PARTECIPAZIONE 100% GRATUITA</span>
+            </button>
+          </p>
+        </form>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p class="footer_text">
+        Giorno Unico 2021 - Partecipazione gratuita. CONCORSO A PREMI con
+        periodo di partecipazione dal 27 novembre 2020 al 14 novembre 2021.
+        REALIZZATO IN CONFORMITÀ CON QUANTO PREVISTO DAL DPR 430/2001 -
+        L'estrazione è garantita da Naturvel PTE LTD. Solo gli utenti che
+        compilano interamente e correttamente il modulo partecipano
+        all'estrazione. Premio: un buono Idea Shopping del valore di 1000 euro
+        iva esclusa - montepremi complessivo del concorso è pari a 1000 Euro iva
+        esclusa. In alternativa al buono IdeaShopping, l’utente vincitore può
+        scegliere di ricevere un voucher di una compagnia aerea o ferroviaria
+        selezionata dal Promotore.
+      </p>
+
+      <p class="footer_page">
+        <a href="../index.html" class="page_links advertiseLink"
+          title="Advertise">Advertise</a>
+        |
+        <a href="#" class="page_links regolamentoLink"
+          title="Regolamento">Regolamento</a>
+        |
+        <a href="#" class="page_links privacyLink" title="Privacy">Privacy</a>
+        |
+        <a href="#" class="page_links contattoLink"
+          title="Contatto">Contatto</a>
+      </p>
+    </footer>
+  </article>
+
+  <article class="frame">
+    <div class="reglament">
+      <span class="frame_reg_close frame-close">x</span>
+      <iframe class="frame_reg" width="100%" height="100%"
+        src="./reglament.html" frameborder="0" allowfullscreen='true'></iframe>
+    </div>
+
+    <div class="privacy">
+      <span class="frame_priv_close frame-close">x</span>
+      <iframe class="frame_priv" width="100%" height="100%" src="./privacy.html"
+        frameborder="0" allowfullscreen='true'></iframe>
+    </div>
+
+    <div class="contact">
+      <span class="frame_cont_close frame-close">x</span>
+      <iframe class="frame_cont" width="100%" height="100%" src="./contact.html"
+        frameborder="0" allowfullscreen='true'></iframe>
+    </div>
+  </article>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
