@@ -1,0 +1,86 @@
+.header-container
+  min-height: 460px
+  background-image: url(../img/bg/bg_top.jpg)
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  box-shadow: 0 -5px 5px rgba(0,0,0,0.5) inset
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color=#000000)
+
+.wrapper
+  @include contentWrap()
+
+.header
+  display: inline-block
+  .first-header
+    font-size: 22px
+    font-weight: bold
+    color: #cfcdb4
+    @include headerShadow()
+
+  .second-header
+    font-size: 18px
+    font-style: italic
+    font-weight: bold
+    color: #af9671
+    @include headerShadow()
+
+.nav
+  position: absolute
+  top: 36px
+  right: 20px
+
+.nav-element
+  display: inline-block
+  padding-left: 36px
+  .nav-element__link
+    text-decoration: none
+    font-size: 14px
+    color: #ab926e
+
+.mobile-menu
+  background: #594522
+  width: 37px
+  height: 37px
+  padding: 5px
+  border-radius: 5px
+  cursor: pointer
+  position: absolute
+  top: 10px
+  right: 10px
+  display: none
+  .mobile-menu-icons
+    background-color: #ea9f3e
+    height: 3px
+    width: 24px
+    margin: 7px
+    border-radius: 5px
+
+.header-container__column
+  padding: 50px 0
+
+.column__first
+  padding-right: 2%
+
+.column__first,
+.column__second
+  display: inline-block
+  vertical-align: top
+  width: 48%
+
+.column__header
+  @include contentHeaders()
+
+.column__paragraph,
+.column__paragraph-mailto
+  @include contentParagraphs()
+  .column__mailto__link
+    @include mailto()
+  .column__paragraph__img
+    width: 45%
+    float: left
+    padding-right: 20px
+
+.horizontal-line
+  @include HLines()

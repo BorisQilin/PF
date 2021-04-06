@@ -1,0 +1,92 @@
+.drop-menu
+    position: absolute
+    z-index: 2
+    top: 30px
+    right: 60px
+    display: none
+
+.nav
+    position: relative
+    z-index: 2
+    width: 880px
+    height: 90px
+    margin: 0 auto -30px auto
+    padding-top: 100px
+
+.nav__list
+    height: 110px
+
+.nav__list__element
+  position: relative
+  display: inline-block
+  height: 110px
+  padding: 12.4531px
+  vertical-align: top
+
+
+.nav__list__element:hover::after
+  font-family: Arial, sans-serif
+  font-size: 11px
+  position: absolute
+  z-index: 1
+  bottom: 110px
+  left: -30px
+  width: 62px
+  height: 30px
+  padding: 5px 10px
+  content: attr(data-title)
+  text-align: left
+  color: #54747f
+  border: 0 solid #333
+  background: url(../img/menu/bg-tooltip.png) no-repeat
+
+.nav__list__element__link__img:hover
+  display: block
+  transition: linear .8s
+  transform: scale(1.1)
+  box-shadow: 0 0 10px 10px #fff, 0 0 40px 20px #fff inset
+
+.header-line
+  position: absolute
+  top: 270px
+  width: 99%
+  margin: 0
+  border: 1px solid #000
+
+.trap
+  position: relative
+  width: 87.4%
+  height: 120px
+  margin: 0 auto -60px auto
+  background: #d0d0d0
+
+
+.trap:after
+  position: absolute
+  top: 50%
+  right: 100%
+  width: 0
+  height: 0
+  margin-top: -60px
+  content: ' '
+  pointer-events: none
+  border: solid transparent
+  border-width: 60px
+  border-color: rgba(136, 183, 213, 0)
+  border-right-color: #d0d0d0
+  border-left: 0
+
+.trap:before
+  position: absolute
+  top: 50%
+  left: 100%
+  width: 0
+  height: 0
+  margin-top: -60px
+  content: ' '
+  pointer-events: none
+  border: solid transparent
+  border-width: 60px
+  border-color: rgba(136, 183, 213, 0)
+  border-right: 0
+  border-left-color: #d0d0d0

@@ -1,0 +1,97 @@
+@media only screen and (max-width: 986px)
+  .wrapper
+    overflow: hidden
+    width: auto
+
+  .header
+    width: auto
+
+  .site-name
+    margin-bottom: 50px
+
+  .drop-menu
+    display: block
+
+  .nav
+    position: absolute
+    z-index: 3
+    top: 145px
+    right: 60px
+    display: none
+    max-width: 320px
+    height: auto
+    padding-top: 80px
+    border-radius: 8px
+    background: linear-gradient(0deg, #d0d0d0 0, #5a5a5a 100%)
+
+  .nav:after
+    position: absolute
+    right: 60px
+    bottom: 100%
+    width: 0
+    height: 0
+    margin-right: 0
+    content: ' '
+    pointer-events: none
+    border: solid transparent
+    border-width: 10px
+    border-color: rgba(136, 183, 213, 0)
+    border-bottom-color: #5a5a5a
+
+  .form
+    position: absolute
+    top: 23px
+    right: 23px
+
+
+  .form__query
+    width: 217px
+
+  .nav__list
+    height: auto
+
+
+  .nav__list__element
+    position: relative
+    display: block
+    height: auto
+    padding: 0 25px
+    text-align: center
+    vertical-align: top
+
+  .nav__list__element__link:before
+    position: absolute
+    top: 35px
+    right: 150px
+    width: 0
+    height: 0
+    margin-top: -10px
+    content: ' '
+    pointer-events: none
+    border: solid transparent
+    border-width: 10px
+    border-color: rgba(136, 183, 213, 0)
+    border-right-color: #fff
+
+  .nav__list__element:hover::after
+    content: ''
+    background: transparent
+
+
+  .nav__list__element__link::after
+    font-size: 14px
+    position: absolute
+    z-index: 3
+    bottom: 50px
+    left: 170px
+    padding: 10px 25px
+    content: attr(data-title)
+    text-align: left
+    color: #54747f
+    border-radius: 8px
+    background: #fff
+
+
+  .header-line
+    top: 158px
+    width: 99%

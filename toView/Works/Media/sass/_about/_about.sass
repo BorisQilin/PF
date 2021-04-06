@@ -1,0 +1,169 @@
+.about
+  margin: 35px 0 60px
+  border-top: 1px solid #cccccc
+  border-bottom: 1px solid #cccccc
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.about__services,
+.about__news,
+.about__contact
+  padding: 25px 40px 50px
+  max-width: 420px
+  box-sizing: border-box
+  border-right: 1px solid #cccccc
+  position: relative
+  &::before
+    content: ''
+    background-image: url('../img/icon/spritesheet.png')
+    position: absolute
+    top: -21px
+    right: -9px
+    width: 30px
+    height: 40px
+    background-position: -5px -5px
+  &::after
+    content: ''
+    background-image: url('../img/icon/spritesheet.png')
+    position: absolute
+    bottom: -21px
+    right: -9px
+    width: 30px
+    height: 40px
+    background-position: -5px -5px
+    transform: rotateX(180deg)
+.about__contact
+  border: 0
+  &::before
+    display: none
+  &::after
+    display: none
+
+.services__title,
+.news__title,
+.contact__title,
+  font-size: 20px
+  text-transform: uppercase
+  color: #000
+  margin-bottom: 25px
+  font-family: 'Bebas'
+  text-align: left
+  span
+    color: #faa61a
+
+.services__list
+  .list__item
+    padding: 0 0 20px 35px
+    position: relative
+    color: #000
+    font-size: 18px
+    font-family: 'CicleFina'
+    .item__icon
+      font-family: 'fontello'
+      font-size: 15px
+      padding: 2px 5px
+      background-color: #faa61a
+      color: #000
+      position: absolute
+      top: 0
+      left: 0
+
+.about__news
+  text-align: right
+  .news__description
+    font-size: 16px
+    line-height: 24px
+    font-family: 'CicleFina'
+    color: #000
+    margin-bottom: 30px
+    text-align: left
+  .news__more
+    display: inline-block
+    margin-bottom: 15px
+    padding: 5px 4px 3px 4px
+    background-color: #000
+    color: #fff
+    font-family: 'Colaborate-Regular'
+    font-size: 14px
+    text-transform: uppercase
+    text-decoration: none
+    line-height: 1
+    padding-right: 30px
+    position: relative
+    transition: color .5s, background-color .5s
+    .more__icon
+      position: absolute
+      font-family: 'fontello'
+      font-size: 22px
+      padding: 0 5px
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      background-color: #faa61a
+      color: #000
+      transition: color .5s, background-color .5s
+    &:hover
+      background-color: #faa61a
+      color: #000
+      .more__icon
+        color: #fff
+        background-color: #000
+
+.about__contact
+  .contact__list
+    .list__item
+      padding-left: 50px
+      margin-bottom: 20px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        background-image: url('../img/icon/spritesheet.png')
+      p
+        background-color: #000
+        color: #fff
+        padding: 4px 2px
+        font-size: 16px
+        text-transform: uppercase
+        font-family: 'Bebas'
+        margin-bottom: 2px
+        display: inline-block
+      &--mail p
+        text-transform: none
+        font-family: 'CicleFina'
+      &--address
+        p
+          text-transform: none
+          font-family: 'CicleFina'
+          &:first-child
+            display: block
+          &:last-child
+            display: block
+
+.contact__list
+  .list__item
+    &--phone::before
+      left: 8px
+      top: 0
+      width: 12px
+      height: 23px
+      background-position: -139px -47px
+    &--fax::before
+      left: 0
+      top: 0
+      width: 25px
+      height: 27px
+      background-position: -46px -5px
+    &--mail::before
+      left: 0
+      top: 0
+      width: 26px
+      height: 17px
+      background-position: -103px -47px
+    &--address::before
+      left: 0
+      top: -5px
+      width: 28px
+      height: 28px
+      background-position: -83px -5px

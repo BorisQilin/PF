@@ -1,0 +1,83 @@
+.slider__list
+  height: 480px
+  width: 100%
+  margin-bottom: 40px
+  .list__item
+    .item__wrap
+      margin-top: 20px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding-right: 135px
+      text-align: right
+      height: 480px
+      overflow: hidden
+    &:nth-child(even) .item__wrap
+      flex-direction: row-reverse
+      text-align: left
+      padding-right: 0
+      padding-left: 135px
+    .item__pic
+      width: 50%
+      position: relative
+      .pic__figure
+        width: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .item__text
+      width: 40%
+      .text__prev
+        font-family: 'OpenSansRegular'
+        font-size: 25px
+        color: #3c3c3c
+        text-transform: uppercase
+      .text__title
+        font-family: 'OpenSansExtraBold'
+        font-size: 55px
+        letter-spacing: 5px
+        margin: 10px 0
+      .text__description
+        font-size: 16px
+        line-height: 1.8
+        color: #808080
+        font-family: 'OpenSansRegular'
+      .text__link
+        display: inline-block
+        color: #fff
+        font-size: 15px
+        text-decoration: none
+        font-family: 'OpenSansRegular'
+        position: relative
+        transition: color .5s
+        padding: 14px 36px
+        text-transform: uppercase
+        box-shadow: 0 5px 7px rgba(30, 120, 233, 0.3)
+        background-color: #2c67b1
+        transition: background-color .2s
+        margin-top: 50px
+        &:hover
+          color: #fff
+          box-shadow: 0 5px 7px rgba(255, 0, 30, 0.3)
+          background-color: #f4213a
+.tns-outer .tns-nav
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 40px
+  button
+    background-color: #ccc
+    border: 0
+    outline: 0
+    border-radius: 50%
+    cursor: pointer
+    padding: 7px
+  button.tns-nav-active
+    padding: 7px
+    background-color: #111

@@ -1,0 +1,31 @@
+.features__list
+  width: 375px
+  margin-left: 100px
+  .list__item
+    padding-left: 50px
+    position: relative
+    margin-bottom: 100px
+    .item__text
+      font-family: 'OpenSansSemiBold'
+      color: #fefefe
+      font-size: 20px
+      font-weight: 400
+      font-style: italic
+      text-transform: uppercase
+    &:nth-child(1)::before,&:nth-child(2)::before,&:nth-child(3)::before
+      content: ''
+      position: absolute
+      top: -8px
+      left: 0
+      background-image: url('../img/icon/spritesheet.png')
+      width: 33px
+      height: 33px
+      background-position: -49px -5px
+    &:nth-child(2)::before
+      width: 33px
+      height: 33px
+      background-position: -107px -52px
+    &:nth-child(3)::before
+      width: 33px
+      height: 37px
+      background-position: -97px -5px

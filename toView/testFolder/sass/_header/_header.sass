@@ -1,0 +1,63 @@
+.logo
+  @include col-2()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+
+.menu
+  min-height: 108px
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  @include align-items(center)
+.menu__list
+  @include wrapper()
+  @include row-flex()
+  @include align-items(center)
+  @include justify-content(start)
+  @include col-3()
+  .list__item
+    padding-right: 30px
+    position: relative
+    .item__link
+      text-decoration: none
+      color: #121920
+      font-size: 16px
+    &--cart
+      padding-left: 30px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: -3px
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+        width: 26px
+        height: 24px
+        background-position: -92px -1px
+    &--sing
+      padding-left: 25px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: -3px
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+        width: 21px
+        height: 24px
+        background-position: -256px -63px
+    &--btn
+      padding-right: 0
+      .item__link
+        border-radius: 6px
+        background-color: #78bc61
+        text-align: center
+        display: inline-block
+        padding: 15px 20px
+        color: #fff
+        font-family: 'MontserratBold'
+.menu__list--last
+  @include justify-content(flex-end)

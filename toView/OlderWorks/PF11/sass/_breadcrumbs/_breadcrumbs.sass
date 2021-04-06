@@ -1,0 +1,36 @@
+.breadcrumbs
+  padding: 32px 0 23px
+  .breadcrumbs__list
+    .list__item
+      display: inline-block
+      position: relative
+      .item__link
+        font-family: "MyriadPro"
+        font-size: 13px
+        color: $breadcrumbsColor
+        position: relative
+        padding: 0 15px 0 25px
+        &::after
+          content: '—'
+          text-decoration: none
+          position: absolute
+          top: 0
+          left: 100%
+        &:hover
+          text-decoration: none
+      &:first-child::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 20px
+        height: 17px
+        background-image: url('../img/spritesheet.png')
+        background-position: -205px -10px
+        background-repeat: no-repeat
+      .item__link--last
+        pointer-events: none
+        cursor: default
+        text-decoration: none
+        &::after
+          content: ''

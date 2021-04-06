@@ -1,0 +1,104 @@
+.content__main
+    padding-left: 40px
+    width: 100%
+    .main__title
+        font-family: "vida33pro", sans-serif
+        font-size: 37px
+    .accordion__box
+        position: relative
+        border: 1px solid #dedede
+        border-radius: 8px
+        margin-top: 30px
+        padding: 24px
+        .accordion
+            font-family: "vida31pro", sans-serif
+            color: #333
+            font-weight: 300
+            cursor: pointer
+            display: block
+            margin-bottom: 18px
+            &:after
+                content: ''
+                width: 25px
+                height: 25px
+                position: absolute
+                right: 32px
+                top: 65px
+                background-image: url('../img/spritesheet.png')
+                background-position: -43px -7px
+            .accordion__data
+                display: inline-block
+                padding: 4px 7px
+                background-color: #edeeee
+                color: #000000
+                margin-bottom: 24px
+                font-size: 16px
+            .accordion__title
+                display: block
+                font-family: "vida33pro", sans-serif
+                font-size: 18px
+                padding-right: 35px
+        .panel-active
+            margin-bottom: 0
+            border-bottom: 0
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+            margin-bottom: 18px
+            text-decoration: underline
+            &:after
+                content: ''
+                width: 25px
+                height: 25px
+                position: absolute
+                right: 32px
+                top: 65px
+                background-image: url('../img/spritesheet.png')
+                background-position: -84px -7px
+        .panel-active + .panel
+            // transform: translate(1)
+            position: relative
+            height: auto
+        .panel
+            background: #fff
+            font-size: 14px
+            // transform: translateY(0)
+            transform-origin: top
+            // transition: height  .2s ease
+            overflow: hidden
+            height: 0
+            position: absolute
+            font-size: 16px
+            font-family: "vida31pro", sans-serif
+            color: #5a5a58
+            padding-right: 60px
+            p
+                line-height: 1.5
+
+
+
+
+@media screen and (max-width:1280px)
+    .content__main
+        padding-left: 0px
+        margin-top: 80px
+        .accordion__box
+            margin-top: 31px
+            padding: 30px 20px 10px
+            .accordion
+                &:after
+                    right: 12px
+                    top: 51px
+            .panel-active:after
+                    right: 12px
+                    top: 51px
+
+
+
+@media screen and (max-width:500px)
+    .content__main
+        padding-left: 0px
+        margin-top: 80px
+        .accordion__box
+            padding: 10px 10px 0
+            .panel
+                padding-right: 10px

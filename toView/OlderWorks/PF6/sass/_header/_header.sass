@@ -1,0 +1,80 @@
+.logo
+  display: inline-block
+
+.mobile-menu
+  font-size: 32px
+  position: absolute
+  top: 0
+  right: 0
+  display: none
+  padding: 8px
+  cursor: pointer
+  transition: all .2s
+  color: #111
+  border: 1px solid #ccc
+  border-radius: 5px
+  background: linear-gradient(180deg, #e3e3e3 0, #fff 100%)
+
+.mobile-menu:hover
+  background: linear-gradient(0deg, #e3e3e3 0, #fff 100%)
+
+.mobile-menu:active
+  box-shadow: 0 0 2px 2px #111 inset
+
+.nav
+  position: absolute
+  top: 10px
+  right: 20px
+
+.nav__list,
+.nav__search
+  display: inline-block
+
+.nav__list__elem
+  display: inline-block
+  padding: 0 20px
+  border-right: 1px solid #a9a9a9
+
+.nav__list__elem__link
+  font-size: 14px
+  text-decoration: none
+  text-transform: uppercase
+  color: #616161
+
+.nav__list__elem:last-child
+  border-right: 0
+
+.nav__list__elem__link:hover
+  color: #00aeff
+
+.nav__search
+  position: relative
+
+.nav__search__input
+  font-size: 14px
+  font-style: italic
+  width: 130px
+  height: 30px
+  margin-left: 28px
+  padding: 9px
+  padding-right: 30px
+  background-color: #eeeff3
+  border: 0
+
+.nav__search__input:focus
+  box-shadow: 0 0 2px #444
+
+.nav__search__buttom
+  position: absolute
+  top: 0
+  border: 0
+  right: 0
+  width: 30px
+  height: 30px
+  cursor: pointer
+  background-color: #eeeff3
+  background-image: url('../img/icons/srch.jpg')
+  background-repeat: no-repeat
+  background-size: 50%
+  background-position: center
+  // background-position: 2px 1px

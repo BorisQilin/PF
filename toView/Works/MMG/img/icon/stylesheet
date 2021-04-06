@@ -1,0 +1,53 @@
+.sprite-active_dot {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.sprite-arr_d {
+    width: 10px;
+    height: 7px;
+    background-position: -29px -5px;
+}
+
+.sprite-arr_i {
+    width: 33px;
+    height: 33px;
+    background-position: -49px -5px;
+}
+
+.sprite-box {
+    width: 24px;
+    height: 21px;
+    background-position: -5px -48px;
+}
+
+.sprite-clock {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -48px;
+}
+
+.sprite-notActive_dot {
+    width: 14px;
+    height: 14px;
+    background-position: -73px -48px;
+}
+
+.sprite-round_arr {
+    width: 24px;
+    height: 24px;
+    background-position: -73px -72px;
+}
+
+.sprite-sht_i {
+    width: 33px;
+    height: 37px;
+    background-position: -97px -5px;
+}
+
+.sprite-soc_i {
+    width: 33px;
+    height: 31px;
+    background-position: -107px -52px;
+}

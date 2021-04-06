@@ -1,0 +1,24 @@
+.pagination
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  background-color: $paginationAFiltersColor
+  border: 2px solid $paginationAFiltersBorderColor
+  border-radius: 10px
+  padding: 19px 18px 17px
+  color: #60666a
+  font-size: 14px
+  .pagination__backward > .backward__link,
+  .pagination__forward > .forward__link
+    color: #60666a
+    span
+      font-family: "JazzBall"
+  .pagination__list
+    display: flex
+    flex-direction: row
+    .list__item
+      padding: 0 5px
+      .item__link
+        color: #60666a
+    .active
+      font-weight: bold

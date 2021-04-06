@@ -1,0 +1,151 @@
+.filters
+  background-color: $paginationAFiltersColor
+  border: 2px solid $paginationAFiltersBorderColor
+  // min-height: 50px
+  border-radius: 10px
+  display: flex
+  flex-direction: row
+  padding: 0 10px
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  .filters__color
+    display: flex
+    flex-direction: row
+    align-items: center
+    .color__title
+      font-size: 14px
+      font-family: "NeoSansPro"
+      color: #4c4c4c
+      margin-right: 8px
+    .color__list
+      display: flex
+      flex-direction: row
+      .list__item
+        box-sizing: border-box
+        padding: 3px
+        input[type = "radio"]
+          display: none
+        input[type = "radio"] + label span
+          display: inline-block
+          width: 17px
+          height: 17px
+          margin: 0
+          vertical-align: middle
+          border-radius: 50%
+          border: 3px solid $paginationAFiltersColor
+          box-shadow: 0px 0px 0px 2px $paginationAFiltersColor
+          cursor: pointer
+        input[type = "radio"]:checked + label span
+          box-shadow: 0px 0px 0px 2px red
+  .filtersSepLine
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: -12px
+      left: 0
+      width: 1px
+      height: 23px
+      background-image: url('../img/spritesheet.png')
+      background-repeat: no-repeat
+      background-position: -70px -10px
+  .filters__set
+    padding: 15px 0
+    .set__list
+      display: flex
+      flex-direction: row
+      .list__item
+        padding: 0 15px
+        input[type = "checkbox"]
+          display: none
+        label
+          font-size: 14px
+          font-family: "NeoSansPro"
+          color: #4c4c4c
+        input[type = "checkbox"] + label span
+          display: inline-block
+          width: 20px
+          height: 20px
+          margin: -4px 4px 0 0
+          vertical-align: middle
+          background-image: url('../img/spritesheet.png')
+          background-repeat: no-repeat
+          background-position: -130px -9px
+          cursor: pointer
+        input[type = "checkbox"]:checked + label span
+          background-position: -168px -9px
+  .filters__priceSort
+    display: flex
+    flex-direction: row
+    .priceSort__title
+      color: #4c4c4c
+      font-family: "NeoSansPro"
+      font-size: 14px
+      span
+        color: #ff0000
+        border-bottom: 1px dotted #ff0000
+        cursor: pointer
+        user-select: none
+        &:hover
+          border-bottom-width: 0px
+    .priceSort__arrows
+      user-select: none
+      display: flex
+      flex-direction: row
+      font-size: 14px
+      margin-left: 5px
+      .arrows__up,
+      .arrows__down
+        background-image: url('../img/arrD.png')
+        background-repeat: no-repeat
+        background-position: center
+        width: 6px
+        height: 16px
+        padding: 1px
+        cursor: pointer
+      .arrows__up
+        transform: rotate(-180deg)
+      .active
+        background-image: url('../img/arrU.png')
+        transform: rotate(0deg)
+      .activeD
+        background-image: url('../img/arrU.png')
+        transform: rotate(-180deg)
+
+
+
+.item__red
+  background-color: #e30013
+
+.item__black
+  background-color: #3b3b3b
+
+.item__yellow
+  background-color: #e3c400
+
+.item__white
+  background-color: #ffffff
+
+.item__green
+  background-color: #76e300
+
+.item__pink
+  background-color: #e300a0
+
+.item__orange
+  background-color: #e37000
+
+@media screen and (max-width: 850px)
+  .filters
+    flex-direction: column
+    padding-top: 10px
+    padding-bottom: 10px
+    .filtersSepLine
+      display: none
+
+@media screen and (max-width: 400px)
+  .filters
+    padding: 10px 0
+    .filters__set .set__list .list__item
+      padding: 5px

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'vida31pro';
+    src: url('fonts/vida31pro.eot');
+    src: url('fonts/vida31pro.eot') format('embedded-opentype'),
+         url('fonts/vida31pro.woff2') format('woff2'),
+         url('fonts/vida31pro.woff') format('woff'),
+         url('fonts/vida31pro.ttf') format('truetype'),
+         url('fonts/vida31pro.svg#vida31pro') format('svg');
+}

@@ -1,0 +1,50 @@
+.header
+  background-color: #262626
+  min-height: 100px
+
+.header__logo
+  display: inline-block
+  line-height: 100px
+
+.header__logo__img
+  vertical-align: middle
+
+.drop-menu
+  width: 48px
+  height: 48px
+  line-height: 48px
+  font-size: 24px
+  text-align: center
+  background: linear-gradient(#000, #1A2421)
+  position: absolute
+  right: 20px
+  top: 25px
+  display: none
+  cursor: pointer
+  &::selection
+    background: transparent
+  &:hover
+    background: linear-gradient(lightgray, white)
+
+.nav
+  text-decoration: none
+  text-transform: uppercase
+  font-weight: bold
+  display: inline-block
+  line-height: 96px
+  float: right
+
+.nav__list__element
+  display: inline-block
+  vertical-align: top
+  padding-left: 50px
+  &:last-child
+    padding-right: 10px
+
+.nav__list__element__link
+  color: #d9d9d9
+  font-size: 12px
+  text-decoration: none
+  &:hover
+    color: #f1625c
+    transition: color 1s

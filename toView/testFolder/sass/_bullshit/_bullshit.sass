@@ -1,0 +1,60 @@
+.bullshit__content
+  padding: 100px 0
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  @include align-items(center)
+  .bullshit__about
+    @include col-4()
+    .about__title
+      text-align: center
+      font-size: 60px
+      font-family: BebasNeueRegular
+      padding-bottom: 30px
+      margin-bottom: 20px
+      position: relative
+      color: #fff
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+        width: 35px
+        height: 9px
+        background-position: -228px -130px
+    .about__description
+      color: #c4fffc
+      line-height: 24px
+      margin-top: 30px
+      text-align: center
+      font-size: 18px
+  .bullshit__video
+    @include col-7()
+    position: relative
+    img
+      width: 100%
+    a
+      position: absolute
+      z-index: 1
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: #feffff
+      font-family: 'MontserratBold'
+      font-size: 18px
+      text-decoration: none
+      padding-top: 90px
+      &:after
+        content: ''
+        position: absolute
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+        width: 80px
+        height: 80px
+        background-position: -1px -187px
+        top: 0
+        left: 50%
+        transform: translateX(-50%)

@@ -1,0 +1,91 @@
+.navigation
+    display: flex
+    flex-direction: row
+    align-items: center
+    align-content: center
+    justify-content: space-between
+    width: 100%
+    .menu
+        display: flex
+        align-items: center
+        flex-direction: row
+        align-content: center
+    .logo
+        margin-right: 40px    
+        &__img
+            width: 100%
+    .menu > .menu__list
+        display: flex
+        align-items: center
+        flex-direction: row
+        align-content: center
+        .list__item
+            padding-right: 21px
+            &:last-child
+                padding-right: 0
+            .item__link
+                font-weight: 400
+                color: #893b67
+                text-decoration: none
+    .close__btn
+        display: none
+        position: absolute
+        top: 30px
+        right: 40px
+        width: 32px
+        height: 32px
+        background-image: url('../img/close.png')
+        background-position: 0 0
+
+
+@media screen and (max-width:1280px)
+    .navigation
+        display: flex
+        position: absolute
+        flex-direction: column
+        align-items: flex-start
+        align-content: flex-start
+        top: -100px
+        left: 0
+        right: 0
+        width: 100%
+        background-color: #ffffff
+        padding: 25px 40px
+        box-sizing: border-box
+        height: 0
+        z-index: 0
+        background-color: #fff
+        background-color: #fff
+        overflow-x: hidden
+        overflow-y: visible
+        transition: 0.5s
+        .menu
+            flex-direction: column
+            align-items: flex-start
+            align-content: flex-start
+        .menu > .menu__list
+            flex-direction: column
+            margin-top: 50%
+            .list__item
+                padding-right: 0
+                padding-top: 21px
+                font-size: 24px
+        .close__btn
+            display: block
+    .navigation--active
+        top: 0
+        height: 100vh
+        min-height: min-content        
+        z-index: 3
+
+
+@media screen and (max-width:500px)
+    .navigation
+        padding: 25px
+        .logo
+            margin-right: 0
+        .menu > .menu__list
+            margin-top: 10%
+        .close__btn
+            top: 30px
+            right: 40px

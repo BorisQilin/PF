@@ -1,0 +1,82 @@
+.wrap--news
+  display: flex
+  flex-direction: row
+  background-color: #f3f3f3
+  // align-items: flex-start
+  &:nth-child(odd)
+    flex-direction: row-reverse
+    background-color: #222222
+    .container
+      box-sizing: border-box
+      width: 50%
+      margin: 0
+      padding: 80px 80px 0 110px
+      .news__meta
+        font-size: 13px
+        color: #fff
+        font-family: 'GothamBookRegular'
+        margin-bottom: 20px
+        .meta__num
+          padding-right: 10px
+          position: relative
+          &::before
+            content: '|'
+            position: absolute
+            top: 0
+            left: 100%
+            color: #fff
+        .meta__in
+          padding-left: 15px
+      .news__title
+        color: #fff
+        font-size: 25px
+        text-transform: uppercase
+        line-height: 1.5
+        text-align: left
+      .news__previe
+        font-family: 'GothamBookRegular'
+        font-size: 15px
+        color: #fff
+        line-height: 1.5
+        p
+          margin-top: 30px
+  .news__pic
+    width: 50%
+    overflow: hidden
+    font-size: 0
+    img
+      height: auto
+  .container
+    box-sizing: border-box
+    width: 50%
+    margin: 0
+    padding: 80px 80px 0 110px
+    .news__meta
+      font-size: 13px
+      color: #222
+      font-family: 'GothamBookRegular'
+      margin-bottom: 20px
+      .meta__num
+        padding-right: 10px
+        position: relative
+        &::before
+          content: '|'
+          position: absolute
+          top: 0
+          left: 100%
+          color: #222
+      .meta__in
+        padding-left: 15px
+    .news__title
+      color: #222
+      font-size: 25px
+      text-transform: uppercase
+      line-height: 1.5
+      text-align: left
+    .news__previe
+      font-family: 'GothamBookRegular'
+      font-size: 15px
+      color: #222
+      line-height: 1.5
+      p
+        margin-top: 30px

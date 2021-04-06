@@ -1,0 +1,54 @@
+.info-container
+  background-color: #2d2413
+  padding-bottom: 35px
+  margin: 0 auto
+
+.wrapper
+  @include contentWrap()
+
+.second
+  padding: 0 2%
+
+.column
+  width: 31.45%
+  display: inline-block
+  vertical-align: top
+
+.column__header
+  line-height: 35px
+  vertical-align: top
+  .column__header__img
+    float: left
+    padding-right: 10px
+  .column__header__text
+    @include contentHeaders()
+    display: inline-block
+
+.column__paragraph
+  @include contentParagraphs()
+
+.column__social__list__link
+  text-decoration: none
+  display: block
+  padding: 5px 0 5px 0
+
+.column__social__list__images
+  padding-right: 15px
+
+.column__social__text
+  color: #9d8664
+  display: inline-block
+  line-height: 30px
+  vertical-align: top
+
+.column__sm-heder
+  font-size: 14px
+  color: #af9671
+
+.mailto
+  @include mailto()
+
+.column__paragraph__link-to-top
+  @include mailto()
+  display: inline-block
+  margin-top: 35px

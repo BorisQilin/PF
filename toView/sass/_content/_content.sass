@@ -1,0 +1,216 @@
+@font-face
+    font-family: 'RalewayMedium'
+    src: url('../fonts/RalewayMedium.eot')
+    src: url('../fonts/RalewayMedium.eot') format('embedded-opentype'), url('../fonts/RalewayMedium.woff2') format('woff2'), url('../fonts/RalewayMedium.woff') format('woff'), url('../fonts/RalewayMedium.ttf') format('truetype'), url('../fonts/RalewayMedium.svg#RalewayMedium') format('svg')
+
+.container
+  width: 920px
+  margin: 0 auto
+  overflow: hidden
+  position: relative
+  .hexCont
+    display: inline-block
+    position: relative
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+    background-color: #d70029
+
+.hex__list
+  margin-bottom: -200px
+  font-size: 0
+  .list__item:nth-child(even)
+    display: inline-block
+    position: relative
+    margin-left: 89px
+
+.hexagon
+  margin: 2px
+  width: 175px
+  height: 190px
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+  background-image: url('../img/2.jpg')
+  display: inline-block
+  position: relative
+  box-sizing: border-box
+  filter: grayscale(1)
+  &:hover
+    filter: grayscale(0)
+  &--one
+    background-image: url('../img/Screen.png')
+    background-size: cover
+    background-position: center
+  &--two
+    background-image: url('../img/Screen1.png')
+    background-size: cover
+    background-position: center
+  &--three
+    background-image: url('../img/Screen2.png')
+    background-size: cover
+    background-position: center
+  &--four
+    background-image: url('../img/Screen3.png')
+    background-size: cover
+    background-position: center
+  &--five
+    background-image: url('../img/Screen0.png')
+    background-size: cover
+    background-position: center
+  .vueBlock
+    background-color: rgba(255,255,255,.7)
+    width: 175px
+    height: 0px
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+    text-align: center
+    transition: height 1s
+    overflow: hidden
+    .vueBlock__link
+      font-family: sans-serif
+      color: #d70029
+      display: block
+      margin: 40% auto
+      text-transform: uppercase
+      text-decoration: none
+      position: relative
+      padding-top: 40px
+      font-size: 14px
+      padding-left: 0
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        background-image: url('../img/no_eye.png')
+        transform: translateX(-50%)
+        width: 32px
+        height: 32px
+
+.hexagonDone .vueBlock .vueBlock__link::before
+  background-image: url('../img/eye.png')
+
+.hexCont:hover .vueBlock
+  height: 190px
+
+.contact
+  position: absolute
+  bottom: -20px
+  right: -220px
+  transform: translate(-50%, -50%)
+  text-align: right
+  color: #d70029
+  .contact__title
+    font-size: 54px
+    letter-spacing: 15px
+    text-transform: uppercase
+    text-align: center
+    line-height: 1.2
+    font-family: 'RalewayMedium', sans-serif
+  .contact__mail
+    font-family: 'RalewayMedium', sans-serif
+    text-decoration: none
+    display: block
+    font-size: 18px
+    padding: 15px 20px 5px 60px
+    display: inline-block
+    margin: 0 auto
+    color: #d70029
+    position: relative
+    line-height: 1.2
+    &::before
+      content: ''
+      width: 50px
+      height: 50px
+      background-image: url('../img/gmail.png')
+      position: absolute
+      top: 0
+      left: 0
+
+.notVisible
+  opacity: 0
+
+.popUp__container
+  width: 100%
+  height: 100vh
+  background-color:  rgba(0,0,0,.9)
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 5
+  transform: translateY(-100vh)
+  transition: transform .5s linear
+
+#popUp
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 580px
+  height: 400px
+  z-index: 9
+  background-image: url('../img/Screen.png')
+  background-size: cover
+
+
+.popUp__img
+  box-sizing: border-box
+  width: 100%
+
+
+.popUp__name
+  width: 84%
+  height: 50%
+  background-color: rgba(255,255,255,.8)
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  padding: 24px
+  font-family: sans-serif
+
+
+#popUp__title,
+#popUp__descrition,
+#popUp__vueLink
+  margin-top: 10px
+  border-bottom: 1px solid #111
+
+
+#lable__title,
+#lable__descrition,
+#lable__vueLink
+  font-size: 18px
+  color: #111
+  font-family: 'RalewayMedium'
+  font-weight: 600
+
+
+#name,
+#skillUse,
+a
+  font-size: 18px
+  color: #111
+  font-family: 'RalewayMedium'
+  font-weight: 200
+  text-decoration: none
+  transition: color .3s
+  display: inline-block
+
+
+#popUp__vueLink,
+#popUp__descrition
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+
+#lable__vueLink, #vueLink__container, #skillUse, #lable__descrition
+  display: block
+  width: 50%
+  line-height: 1.5
+
+
+#vueLink__container a:hover
+  color: #d70029

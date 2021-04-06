@@ -1,0 +1,64 @@
+@media only screen and (max-width: 940px)
+  .header
+    min-height: 360px
+
+  .mobile-menu
+    display: block
+    cursor: pointer
+
+  .nav
+    position: relative
+    top: 0
+    display: none
+    background: linear-gradient(0deg, darken($baseLinkColor, 3%) 50%, lighten($baseLinkColor, 3%) 100%)
+
+  .nav__list
+    flex-direction: column
+    height: auto
+
+  .nav__list__element
+    width: 100%
+
+  .nav__list__element_link:hover
+    background: linear-gradient(0deg, lighten($baseLinkColor, 8%) 50%, lighten($baseLinkColor, 4%) 100%)
+
+  .phone > .phone__title,
+  .phone > .phone__code,
+  .nav__list__element_link
+    font-size: 13px
+
+  .service__element_title
+    font-size: 14px
+
+  .coll__contact__telephone
+    font-size: 16px
+
+  .content__about__title,
+  .content__services__title,
+  .sitebar__news__title,
+  .sitebar__online__title,
+  .our-works__title
+    font-size: 18px
+
+  .phone .phone__tel
+    font-size: 24px
+
+  .service__element
+    text-align: center
+
+  .service__element_img
+    float: none
+    padding: 0 0 15px 0
+
+  .service__element_description,
+  .service__element_link,
+  .service__element_title
+    display: block
+    padding-bottom: 5px
+
+  .column__link
+    padding: 5px
+
+  .column__link::before
+    top: 15%
+    left: 0

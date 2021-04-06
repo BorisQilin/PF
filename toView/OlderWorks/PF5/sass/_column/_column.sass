@@ -1,0 +1,25 @@
+.contact__column
+  width: 45%
+  margin: 0 2.3%
+  display: inline-block
+  text-align: left
+  vertical-align: top
+
+
+.contact__column:nth-child(2)
+  float: right
+  clear: both
+
+
+.contact__column__header,
+.contact__column__header_strong
+  @include baseHeaderFontDarken()
+
+
+.contact__column__header_strong
+  font-weight: bolder
+
+
+.contact__column__description
+  @include baseTextFontDarken()
+  padding: 25px 0 50px 0

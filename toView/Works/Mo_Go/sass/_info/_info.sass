@@ -1,0 +1,128 @@
+.info
+  padding: 70px 0
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .info__subscribe
+    flex-grow: 3
+    flex-basis: 40%
+    margin-right: 30px
+    .subscribe__title
+      font-size: 46px
+      color: #ccc
+      font-weight: bold
+    .subscribe__description
+      color: #999
+      font-size: 15px
+      line-height: 1.5
+      margin: 40px 20px 50px 0
+    .subscribe__social
+      .social__title
+        color: #333
+        font-size: 14px
+        margin-bottom: 20px
+        span
+          font-size: 18px
+          font-weight: bold
+      .social__list
+        border-top: 1px solid #e5e5e5
+        padding: 20px 0
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        .list__item
+          margin-right: 15px
+          line-height: 20px
+          vertical-align: baseline
+          .item__title
+            padding-right: 10px
+            color: #999
+            font-size: 15px
+            font-style: italic
+          .item__link
+            text-decoration: none
+            color: #95e1d3
+            font-family: 'fontello'
+            transition: color .5s
+            font-size: 18px
+            &:hover
+              color: darken(#95e1d3, 20%)
+      .social__form
+        margin-top: 20px
+        .form__input
+          max-width: 230px
+          padding: 10px
+          background-color: #fff
+          border: 1px solid #e7e7e7
+          font-size: 15px
+          font-style: italic
+          color: #333
+          box-sizing: border-box
+        .form__btn
+          width: 150px
+          height: 40px
+          background-color: #95e1d3
+          font-family: 'Montserrat'
+          font-size: 14px
+          text-transform: uppercase
+          font-weight: bold
+          border: 0
+          color: #fff
+  .info__blogs
+    flex-basis: 30%
+    .blogs__title
+      text-transform: uppercase
+      color: #333
+      font-size: 14px
+      margin-bottom: 40px
+      font-weight: bold
+    .blogs__list
+      list-style-type: none
+      .list__item
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 30px
+        .item__pic
+          // width: 120px
+          height: 80px
+        .item__text
+          // display: flex
+          // flex-direction: column
+          margin-left: 20px
+          .text__link
+            text-decoration: none
+            color: #333
+            text-transform: uppercase
+            font-size: 12px
+            font-weight: bold
+            line-height: 1.5
+            margin-bottom: 10px
+          .text__date
+            display: block
+            color: #999
+            font-size: 13px
+            font-style: italic
+  .info__instagram
+    flex-basis: 23%
+    .instagram__title
+      text-transform: uppercase
+      color: #333
+      font-size: 14px
+      margin-bottom: 40px
+      font-weight: bold
+    .instagram__list
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      margin-bottom: 20px
+      font-size: 0
+      .list__item
+        margin: 1px
+    .instagram__link
+      text-decoration: none
+      color: #333
+      font-size: 13px
+      font-style: italic
+      font-weight: 100

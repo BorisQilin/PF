@@ -1,0 +1,57 @@
+.container--testimonials
+  padding: 100px 0
+.testimonials__title
+  text-align: center
+  font-size: 60px
+  font-family: 'BebasNeueRegular'
+  padding-bottom: 15px
+  margin-bottom: 20px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    background-image: url(../img/spritesheet.png)
+    background-repeat: no-repeat
+    width: 35px
+    height: 9px
+    background-position: -183px -130px
+.testimonials__description
+  line-height: 24px
+  text-align: center
+  margin-bottom: 45px
+.testimonials__list
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  @include align-items(center)
+  .list__item
+    @include col-3()
+    position: relative
+    .item__pic
+      width: 100%
+    .item__videoLink
+      position: absolute
+      top: 15px
+      right: 15px
+      width: 32px
+      height: 31px
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+      background-position: -220px -145px
+    .item__info
+      position: absolute
+      bottom: 0
+      left: 0
+      padding: 15px
+      color: #fff
+      .info__name
+        font-size: 16px
+        font-family: 'MontserratBold'
+        margin-bottom: 5px
+      .info__tell
+        font-size: 14px
+      
+    

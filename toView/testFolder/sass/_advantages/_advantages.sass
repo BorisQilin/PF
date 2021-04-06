@@ -1,0 +1,57 @@
+.container--advantages
+  padding: 100px
+  .advantages__title
+    text-align: center
+    font-size: 60px
+    font-family: 'BebasNeueRegular'
+    padding-bottom: 15px
+    margin-bottom: 20px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translateX(-50%)
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+      width: 35px
+      height: 9px
+      background-position: -183px -130px
+  .advantages__description
+    line-height: 24px
+    text-align: center
+    margin-bottom: 45px
+  .advantages__list
+    @include wrapper()
+    @include row-flex()
+    @include justify-content(space-between)
+    @include align-items(start)
+    margin-bottom: 45px
+    .list__item
+      @include col-2()
+      text-align: center
+      img
+        margin-bottom: 40px
+        width: 100%
+      .item__title
+        font-size: 24px
+        font-family: 'BebasNeueRegular'
+        margin-bottom: 15px
+      .item__description
+        font-size: 16px
+        line-height: 20px
+  .advantages__order
+    text-align: center
+    input
+      display: inline-block
+      width: 250px
+      padding: 21px 0
+      font-family: 'MontserratBold'
+      color: #fff
+      font-size: 18px
+      line-height: 20px
+      background-color: #78bc61
+      cursor: pointer
+      border-radius: 6px
+      border: 0

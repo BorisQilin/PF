@@ -1,0 +1,45 @@
+.nav
+  position: absolute
+  top: -36px
+  width: 100%
+  background: linear-gradient(0deg, lighten($baseLinkColor, 3%) 50%, darken($baseLinkColor, 3%) 100%)
+
+.nav__list
+  height: 36px
+  @include container()
+
+.nav__list__element
+  min-width: 15%
+  text-align: center
+
+.nav__list__element_link
+  font-size: $baseFontSize
+  line-height: 36px
+  display: block
+  padding: 0 10px
+  vertical-align: baseline
+  text-decoration: none
+  text-transform: uppercase
+  color: $buttonColor
+
+.nav__list__element_link:hover
+  background: linear-gradient(90deg, lighten($baseLinkColor, 8%) 50%, lighten($baseLinkColor, 4%) 100%)
+
+.mobile-menu
+  position: absolute
+  top: -36px
+  right: 0
+  display: none
+  box-sizing: border-box
+  width: auto
+  background: linear-gradient(0deg, lighten($baseLinkColor, 3%) 50%, darken($baseLinkColor, 3%) 100%)
+
+.mobile-menu__link
+  font-weight: bold
+  line-height: 36px
+  display: inline-block
+  padding: 0 10px
+  text-align: center
+  vertical-align: baseline
+  text-decoration: none
+  color: $buttonColor

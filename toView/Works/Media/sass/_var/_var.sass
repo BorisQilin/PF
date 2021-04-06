@@ -1,0 +1,97 @@
+@font-face
+  font-family: 'fontello'
+  src: url('../fonts/fontello/fontello.eot') format('embedded-opentype'),url('../fonts/fontello/fontello.woff') format('woff'),url('../fonts/fontello/fontello.ttf') format('truetype'),url('../fonts/fontello/fontello.svg#fontello') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'CicleFina'
+  src: url('../fonts/CicleFina/CicleFina.eot') format('embedded-opentype'),url('../fonts/CicleFina/CicleFina.woff') format('woff'),url('../fonts/CicleFina/CicleFina.ttf') format('truetype'),url('../fonts/CicleFina/CicleFina.svg#CicleFina') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'CenturyGothic'
+  src: url('../fonts/CenturyGothic/CenturyGothic.eot') format('embedded-opentype'),url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'CicleFinaItalic'
+  src: url('../fonts/CicleFinaItalic/CicleFinaItalic.eot') format('embedded-opentype'),url('../fonts/CicleFinaItalic/CicleFinaItalic.woff')format('woff'),url('../fonts/CicleFinaItalic/CicleFinaItalic.ttf') format('truetype'),url('../fonts/CicleFinaItalic/CicleFinaItalic.svg#CicleFinaItalic') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'Colaborate-Regular'
+  src: url('../fonts/Colaborate-Regular/Colaborate-Regular.eot') format('embedded-opentype'),url('../fonts/Colaborate-Regular/Colaborate-Regular.woff') format('woff'),url('../fonts/Colaborate-Regular/Colaborate-Regular.ttf') format('truetype'),url('../fonts/Colaborate-Regular/Colaborate-Regular.svg#Colaborate-Regular') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'Colaborate-Thin'
+  src: url('../fonts/Colaborate-Thin/Colaborate-Thin.eot') format('embedded-opentype'),url('../fonts/Colaborate-Thin/Colaborate-Thin.woff') format('woff'),url('../fonts/Colaborate-Thin/Colaborate-Thin.ttf') format('truetype'),url('../fonts/Colaborate-Thin/Colaborate-Thin.svg#Colaborate-Thin') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'SourceSansPro-ExtraLight'
+  src: url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.eot') format('embedded-opentype'),url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.woff') format('woff'),url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.ttf') format('truetype'),url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'SourceSansPro-Regular'
+  src: url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot') format('embedded-opentype'),url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff') format('woff'),url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf') format('truetype'),url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'HelveticaLT-UltraCompressed'
+  src: url('../fonts/HelveticaLT-UltraCompressed/HelveticaLT-UltraCompressed.eot') format('embedded-opentype'),url('../fonts/HelveticaLT-UltraCompressed/HelveticaLT-UltraCompressed.woff') format('woff'),url('../fonts/HelveticaLT-UltraCompressed/HelveticaLT-UltraCompressed.ttf') format('truetype'),url('../fonts/HelveticaLT-UltraCompressed/HelveticaLT-UltraCompressed.svg#HelveticaLT-UltraCompressed') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'Bebas'
+  src: url('../fonts/Bebas/Bebas.eot') format('embedded-opentype'),url('../fonts/Bebas/Bebas.woff') format('woff'),url('../fonts/Bebas/Bebas.ttf') format('truetype'),url('../fonts/Bebas/Bebas.svg#Bebas') format('svg')
+  font-display: auto
+
+.wrap
+  background-image: url('../img/bgb.png')
+
+.content, .footer
+  max-width: 1040px
+  margin: 0 auto
+
+.logo
+  font-family: 'SourceSansPro-ExtraLight'
+  font-weight: 300
+  color: #030303
+  text-decoration: none
+  position: relative
+  line-height: 50px
+  vertical-align: bottom
+  span
+    font-family: 'SourceSansPro-Regular'
+    font-weight: 700
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url('../img/icon/spritesheet.png')
+  &--header
+    font-size: 41px
+    padding-left: 70px
+    &::before
+      width: 48px
+      height: 50px
+      background-position: -45px -43px
+  &--footer
+    font-size: 26px
+    padding-left: 40px
+    &::before
+      width: 31px
+      height: 32px
+      background-position: -121px -5px

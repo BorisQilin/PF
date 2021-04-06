@@ -1,0 +1,110 @@
+.container--footerSecond
+  padding: 25px 0
+  .footerSecond__content
+    @include wrapper()
+    @include row-flex()
+    @include justify-content(space-between)
+    @include align-items(center)
+    .contact
+      @include col-5()
+      @include wrapper()
+      @include row-flex()
+      @include justify-content(space-between)
+      @include align-items(center)
+      .contact__elem
+        padding-left: 55px
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          width: 40px
+          height: 40px
+          background-image: url(../img/spritesheet.png)
+          top: 0
+          left: 0
+          background-repeat: no-repeat
+          display: block
+        &--mail:before
+          background-position: -107px -43px
+        &--phone:before
+          background-position: -179px -145px
+        p
+          font-size: 13px
+          color: #fff
+          a
+            text-decoration: none
+            color: #fff
+            padding-bottom: 3px
+            font-size: 18px
+    .langSelect
+      position: relative
+      .checkLang
+        z-index: 2
+        display: inline-block
+        background-color: #1e242b
+        width: 195px
+        .item__link
+          display: block
+          padding: 15px
+          position: relative
+          padding-left: 45px
+          color: #fff
+          text-decoration: none
+          &:before
+            content: ''
+            position: absolute
+            top: 18px
+            left: 15px
+            width: 19px
+            height: 13px
+          &--en:before
+            background-image: url(../img/en.png)
+          &--fr:before
+            background-image: url(../img/fr.png)
+          &--ch:before
+            background-image: url(../img/ch.png)
+      &:after
+        content: ''
+        position: absolute
+        top: 22px
+        right: 30px
+        background-image: url(../img/spritesheet.png)
+        width: 7px
+        height: 4px
+        background-position: -61px -1px
+      .langSelect__list
+        z-index: 0
+        position: absolute
+        top: -150px
+        background-color: #1e242b
+        transform: scaleY(0)
+        transform-origin: bottom
+        transition: transform .3s, top .5s
+        .list__item
+          box-sizing: border-box
+          width: 195px
+          .item__link
+            display: block
+            padding: 15px
+            position: relative
+            padding-left: 45px
+            color: #fff
+            text-decoration: none
+            &:before
+              content: ''
+              position: absolute
+              top: 18px
+              left: 15px
+              width: 19px
+              height: 13px
+            &--en:before
+              background-image: url(../img/en.png)
+            &--fr:before
+              background-image: url(../img/fr.png)
+            &--ch:before
+              background-image: url(../img/ch.png)
+            &:hover
+              background-color: lighten(#1e242b, 15%)
+      .langSelect__list--active
+        transform: scaleY(1)
+        top: -150px

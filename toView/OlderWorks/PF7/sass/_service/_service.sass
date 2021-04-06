@@ -1,0 +1,29 @@
+.service
+  padding: 60px 0
+  @include container()
+
+.service__element
+  width: 33%
+
+.service__element_img
+  float: left
+  clear: both
+  padding-right: 10px
+
+.service__element_title,
+.service__element_description,
+.service__element_link
+  display: inline-block
+
+.service__element_title
+  font-size: $baseFontSize - 2px
+  color: darken($baseTxtColor, 15%)
+
+.service__element_description
+  font-size: $baseFontSize - 8px
+  color: $baseTxtColor
+
+.service__element_link
+  font-size: $baseFontSize - 9px
+  vertical-align: bottom
+  color: $baseLinkColor

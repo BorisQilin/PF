@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1024px)
+  .mobile-menu
+    display: block
+
+  .nav
+    z-index: 9
+    top: 55px
+    right: 0
+    display: none
+    width: 300px
+    text-align: center
+    background: linear-gradient(180deg, #e3e3e3 0, #fff 100%)
+
+  .nav:after
+    position: absolute
+    right: 13px
+    bottom: 100%
+    width: 0
+    height: 0
+    margin-right: 0
+    content: ' '
+    pointer-events: none
+    border: solid transparent
+    border-width: 6px
+    border-color: rgba(136, 183, 213, 0)
+    border-bottom-color: #e3e3e3
+
+  .nav__search
+    text-align: left
+
+  .nav__search__buttom
+    top: 10px
+    right: 10px
+
+  .nav__search__input
+    width: 250px
+    margin: 0
+    padding: 0
+
+  .nav__list,
+  .nav__search
+    display: block
+    padding: 10px
+    vertical-align: top
+
+  .nav__list__elem
+    display: block
+    padding: 0
+    border: 0
+
+  .nav__list__elem__link
+    display: block
+    padding: 10px
+    transition: all .3s
+
+  .nav__list__elem__link:hover
+    border-left: 3px solid #00aeff
+    background: #fff
+
+@media only screen and (max-width: 910px)
+  .slider__item__header
+    font-size: 32px
+
+  .slider__item__botton
+    font-size: 19px
+    margin-left: 25px
+    padding: 20px 30px
+
+  .slider__item__image
+    width: 80%
+    margin-top: 106px
+
+  .works__box__photo
+    width: 30%

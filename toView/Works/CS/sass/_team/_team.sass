@@ -1,0 +1,42 @@
+.team__title
+  color: #222
+  &::before
+    content: 'T'
+    color: #222
+.team__description
+  color: #222222
+  font-family: 'GothamBookRegular'
+  font-size: 30px
+  text-align: center
+  margin-top: -50px
+.team__list
+  margin: 70px 0 120px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .list__item
+    max-width: 270px
+    position: relative
+    .item__pic
+      width: 100%
+    .item__description
+      position: absolute
+      bottom: -35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 220px
+      padding: 20px 25px
+      box-sizing: border-box
+      background-color: #fff
+      text-align: center
+      .description__name
+        font-size: 20px
+        line-height: 1.5
+        font-family: 'GothamBold'
+        text-transform: uppercase
+        color: #11749e
+      .description__prof
+        color: #000
+        font-family: 'GothamBold'
+        font-size: 15px
+        line-height: 1.5

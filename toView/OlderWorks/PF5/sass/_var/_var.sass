@@ -1,0 +1,39 @@
+body
+  overflow-x: hidden
+
+@mixin container
+  max-width: 940px
+  margin: 0 auto
+  padding: 100px 40px
+
+.container
+  @include container()
+
+.right
+  float: right
+  clear: both
+
+@mixin baseHeaderFontDarken
+  font-size: 60px
+  color: #fff
+
+@mixin baseTextFontDarken
+  font-size: 18px
+  color: #fff
+
+@mixin baseHeaderFontLighten
+  font-size: 60px
+  color: #222
+
+@mixin baseTextFontLighten
+  font-size: 18px
+  color: #777
+
+@mixin descriptionLighten
+  font-size: 22px
+  color: #777
+
+@mixin headerSkills
+  font-size: 22px
+  color: #222
+  font-weight: bolder

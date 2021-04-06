@@ -1,0 +1,38 @@
+.portfolio-container
+  background-color: #201b0e
+
+.wrapper
+  @include contentWrap()
+
+.header
+  @include contentHeaders()
+
+.works
+  text-align: center
+
+.works__elem
+  width: 29.5%
+  display: inline-block
+  margin: 0 auto
+  vertical-align: top
+  padding: 15px
+
+.works__elem__images
+  border: 1px solid #3c3218
+  width: 96%
+  padding: 5px
+  transition: all 1s
+  &:hover
+    transform: scale(1.1)
+
+.works__elem__header
+  color: #af9671
+  font-size: 14px
+  font-weight: bold
+  padding: 10px 0 5px 0
+  text-align: left
+
+.works__elem__paragraph
+  color: #cfcdb4
+  font-size: 14px
+  text-align: left

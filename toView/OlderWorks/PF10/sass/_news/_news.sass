@@ -1,0 +1,64 @@
+.news
+    width: 100%
+    padding: 25px 155px 45px
+    background-color: #eeeeee
+    box-sizing: border-box
+    .news__list
+        .news__item .item__link
+            text-decoration: none
+            font-family: "vida31pro", sans-serif
+            font-size: 14px
+            line-height: 1.5
+            .data
+                display: inline-block
+                color: #bebebe
+                margin-right: 3px
+            .label
+                display: inline-block
+                color: #000000
+                padding: 0 3px
+                background-color: #ffffff
+                font-size: 12px
+                text-transform: uppercase
+            .description
+                display: block
+                line-height: 1.5
+                color: #000000
+                font-size: 14px
+
+
+
+@media screen and (max-width:1280px)
+    .news
+        position: relative
+        padding: 25px 10% 45px 
+        .tns-nav
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            button
+                width: 10px
+                height: 10px
+                padding: 0px
+                margin: 5px
+                border-radius: 50%
+                background-color: #000
+                outline: none
+                border-width: 0
+            .tns-nav-active
+                background-color: #bebebe
+
+
+@media screen and (max-width:640px)
+    .news
+        padding: 25px 40px 45px
+        .news__list
+            .news__item .item__link
+                .description
+                    font-size: 22px
+
+
+@media screen and (max-width:500px)
+    .news
+        padding: 25px 10px 45px

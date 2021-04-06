@@ -1,0 +1,144 @@
+.card__blanc
+  padding: 95px 0
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  .blanc__img, .blanc__specification
+    @include col-5()
+  .blanc__img img
+    width: 100%
+  .blanc__specification
+    padding-top: 20px
+    .title
+      text-align: center
+      font-size: 60px
+      font-family: BebasNeueRegular
+      padding-bottom: 15px
+      margin-bottom: 20px
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+        width: 35px
+        height: 9px
+        background-position: -183px -130px
+    .description
+      line-height: 24px
+      text-align: center
+      margin-bottom: 5px
+    .over
+      text-align: center
+      font-family: 'MontserratBold'
+    .specification__form
+      margin-top: 30px
+      select
+        width: 100%
+        padding: 20px
+        border-radius: 6px
+        background-color: #fff
+        border: 2px solid #e5e4d7
+        color: #121920
+        font-size: 24px
+      .checkedList
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 20px
+        position: relative
+        .checkedList__item
+          @include wrapper()
+          @include row-flex()
+          @include col-6()
+        .checkedList__item--toolTip
+          position: absolute
+          top: -140px
+          right: 10px
+          width: 277px
+          line-height: 24px
+          border-radius: 6px
+          background-color: #fff
+          padding: 14px 45px 14px 14px
+          box-shadow: 0 5px 20px rgba(18, 25, 32, 0.2)
+          z-index: -1
+          opacity: 0
+          transition: opacity .25s
+          p > a
+            color: #36c1ba
+          &:after
+            content: ''
+            position: absolute
+            bottom: -10px
+            left: 50%
+            width: 20px
+            height: 10px
+            background-image: url(../img/spritesheet.png)
+            background-repeat: no-repeat
+            background-position: -70px -1px
+        .showToolTip
+          // display: block
+          z-index: 1
+          opacity: 1
+        input[type="radio"]
+          display:none
+          position: absolute
+          & + label
+            cursor: pointer
+            position: relative
+          & ~ label > .radioTitle,
+          & ~ label > .radioDescription
+            padding-left: 50px
+            font-size: 16px
+            font-family: 'MontserratBold'
+            display: block
+          & ~ label > .radioDescription
+            color: #878a8d
+            font-family: 'MontserratRegular'
+          & + label::before 
+            content: ""
+            position: absolute
+            display: inline-block
+            width: 40px
+            height: 40px
+            background-image: url(../img/spritesheet.png)
+            background-position: -120px -1px
+            background-repeat: no-repeat
+            left: 0
+          & + label::before 
+            background-position: -120px -1px
+          &:checked + label::before 
+            background-position: -162px -1px
+          &:checked + label > .radioTitle,
+          &:checked:disabled + label > .radioTitle
+            color: #36c1ba
+          &:disabled + label::before
+            background-position: -120px -1px
+          &:checked:disabled + label::before
+            background-position: -162px -1px
+      .add
+        @include wrapper()
+        @include row-flex()
+        @include justify-content(space-between)
+        @include align-items(center)
+        margin-top: 40px
+        .result
+          line-height: 24px
+          .sum
+            font-size: 18px
+            font-family: 'MontserratBold'
+            display: block
+        input[type="submit"]
+          border-radius: 6px
+          background-color: #78bc61
+          padding: 20px 0
+          width: 260px
+          text-align: center
+          color: #fff
+          font-size: 24px
+          font-family: 'MontserratBold'
+          border: 0
+          cursor: pointer

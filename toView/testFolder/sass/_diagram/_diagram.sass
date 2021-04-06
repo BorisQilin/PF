@@ -1,0 +1,32 @@
+.container--diagram
+  padding: 100px 0 125px
+  text-align: center
+.diagram__title
+  text-align: center
+  font-size: 60px
+  font-family: 'BebasNeueRegular'
+  padding-bottom: 15px
+  margin-bottom: 20px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    background-image: url(../img/spritesheet.png)
+    background-repeat: no-repeat
+    width: 35px
+    height: 9px
+    background-position: -183px -130px
+.diagram__description
+  line-height: 24px
+  padding-bottom: 40px
+  @include col-8()
+  @include col-lg-12()
+  margin: 0 auto
+.diagram__pic
+  width: 100%
+  @include col-8()
+  @include col-lg-12()
+  margin: 0 auto

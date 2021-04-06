@@ -1,0 +1,42 @@
+.mobile-menu
+  display: none
+  padding: 2px 8px 7px
+  background-color: rgba(255, 255, 255, .3)
+  border-radius: 3px
+  position: absolute
+  top: 25px
+  right: 25px
+  transition: all 1s
+  line-height: 20px
+
+
+.mobile-menu:hover
+  background-color: rgba(255, 255, 255, .7)
+
+
+.mobile-menu__link
+  font-size: 24px
+  color: #fff
+  text-decoration: none
+
+
+.menu
+  display: inline-block
+  float: right
+  clear: both
+
+
+.menu__list__element
+  padding: 0 15px
+  display: inline-block
+  line-height: 32px
+  vertical-align: baseline
+
+
+.menu__link
+  @include baseTextFontDarken()
+  text-decoration: none
+
+
+.menu__link:hover
+  text-decoration: underline

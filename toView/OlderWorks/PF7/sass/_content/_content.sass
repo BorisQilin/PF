@@ -1,0 +1,50 @@
+.content
+  padding: 0 10px
+  @include container()
+  align-items: flex-start
+
+.content__sitebar
+  width: 270px
+
+.content__box
+  margin-left: 50px
+
+.content__about,
+.content__about__title,
+.content__services
+  padding-bottom: 10px
+  border-bottom: 2px dashed $baseTxtColor
+
+.content__about__title
+  font-size: $baseFontSize + 4px
+  color: darken($baseLinkColor, 5%)
+
+.content__about__text
+  font-size: $baseFontSize - 6px
+  line-height: 1.5
+  padding-top: 15px
+  color: $baseTxtColor
+
+.content__services
+  padding-top: 20px
+
+.content__services__title
+  font-size: $baseFontSize
+  padding-bottom: 10px
+  color: darken($baseLinkColor, 5%)
+
+.column__box
+  @include container()
+
+.column__link
+  font-size: $baseFontSize - 6px
+  position: relative
+  display: block
+  padding: 5px 25px
+  color: $baseLinkColor
+
+.column__link::before
+  position: absolute
+  top: 20%
+  left: 3%
+  content: '-'

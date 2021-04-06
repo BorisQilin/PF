@@ -1,0 +1,47 @@
+@include reset()
+
+@font-face
+  font-family: 'MontserratRegular'
+  src: url('../fonts/MontserratRegular/MontserratRegular.eot') format('embedded-opentype'),url('../fonts/MontserratRegular/MontserratRegular.woff') format('woff'),url('../fonts/MontserratRegular/MontserratRegular.ttf') format('truetype'),url('../fonts/MontserratRegular/MontserratRegular.svg#MontserratRegularMontserratRegular') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'MontserratBold'
+  src: url('../fonts/MontserratBold/MontserratBold.eot') format('embedded-opentype'),url('../fonts/MontserratBold/MontserratBold.woff') format('woff'),url('../fonts/MontserratBold/MontserratBold.ttf') format('truetype'),url('../fonts/MontserratBold/MontserratBold.svg#MontserratBoldMontserratBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'BebasNeueRegular'
+  src: url('../fonts/BebasNeueRegular/BebasNeueRegular.eot') format('embedded-opentype'),url('../fonts/BebasNeueRegular/BebasNeueRegular.woff') format('woff'),url('../fonts/BebasNeueRegular/BebasNeueRegular.ttf') format('truetype'),url('../fonts/BebasNeueRegular/BebasNeueRegular.svg#BebasNeueRegularBebasNeueRegular') format('svg')
+  font-display: auto
+
+body
+  font-family: 'MontserratRegular'
+  color: #121920
+  overflow: hidden
+
+.container .wrap
+  position: relative
+  @include wrapper()
+
+.container
+  &--header
+    background-color: #f0f6f4
+    position: fixed
+    width: 100%
+    z-index: 2
+  &--card
+    padding-top: 108px
+  &--bullshit
+    background-color: #36c1ba
+  &--testimonials
+    background-color: #f0f6f4
+  &--facts 
+    background-color: #f0f6f4
+  &--details
+    background-color: #f0f6f4
+  &--footerFirst
+    background-color: #192632
+  &--footerSecond
+    background-color: #121920
+

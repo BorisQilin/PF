@@ -1,0 +1,70 @@
+.wrap--comments > .container
+  .slider
+    padding: 0 95px
+    position: relative
+    .slider__btn
+      position: absolute
+      width: 100%
+      height: 22px
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      .btn__prev
+        cursor: pointer
+        background-color: transparent
+        border: 0
+        outline: 0
+        position: absolute
+        top: 0
+        left: 20px
+        background-image: url('../img/icon/spritesheet.png')
+        background-position: -268px -127px
+        width: 12px
+        height: 22px
+      .btn__next
+        cursor: pointer
+        background-color: transparent
+        border: 0
+        outline: 0
+        position: absolute
+        top: 0
+        background-image: url('../img/icon/spritesheet.png')
+        width: 12px
+        height: 22px
+        right: 20px
+        background-position: -268px -85px
+    .slider__list
+      margin: 0 auto
+      .slider__item
+        max-width: 1010px
+        .item__text
+          color: #999
+          font-size: 24px
+          padding: 5px 0
+          line-height: 1.5
+          padding-left: 210px
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 150px
+            height: 150px
+            background-image: url('../img/icon/spritesheet.png')
+            background-position: -10px -10px
+          .text__title
+            font-family: 'KaushanScript'
+            font-size: 24px
+            color: #333
+            padding-left: 70px
+            position: relative
+            &::before
+              content: ''
+              position: absolute
+              top: 50%
+              left: 0
+              width: 60px
+              height: 3px
+              background-color: #f38181
+              transform: translateY(-50%)

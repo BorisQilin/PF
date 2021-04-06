@@ -1,0 +1,29 @@
+.map__title
+  color: #f38181
+  font-size: 24px
+  text-transform: uppercase
+  padding: 40px 0 20px
+  font-weight: bold
+  position: relative
+  text-decoration: none
+  font-family: 'Montserrat'
+  display: block
+  &::before
+    content: ''
+    height: 26px
+    width: 20px
+    position: absolute
+    top: 0
+    left: 50%
+    background-image: url('../img/icon/spritesheet.png')
+    transform: translateX(-50%)
+    background-position: -228px -165px
+  &::after
+    content: ''
+    height: 3px
+    width: 60px
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    background-color: #f38181

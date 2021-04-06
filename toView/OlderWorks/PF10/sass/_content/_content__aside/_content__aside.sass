@@ -1,0 +1,153 @@
+.content__aside
+    min-width: 350px
+    max-width: 350px
+    border-right: 1px solid #53565a1a
+    padding: 15px 25px 0 0
+    box-sizing: border-box
+    .aside__menu
+        padding-bottom: 30px
+        margin-bottom: 35px
+        border-bottom: 1px solid #53565a1a
+        .menu__list
+            padding-left: 25px
+            .item__link
+                display: inline-block
+                font-family: "vida33pro", sans-serif
+                font-size: 16px
+                color: #893b67
+                text-decoration: none
+                padding-bottom: 38px 
+            .list__item:nth-last-child(1)>.item__link
+                padding-bottom: 0px                 
+        .aside__compare
+            display: inline-block
+            font-family: "vida31pro", sans-serif
+            font-size: 16px
+            color: #53565a
+            padding: 10px 20px
+            border: 1px solid #53565a
+            border-radius: 20px
+            text-decoration: none
+            width: 280px
+            box-sizing: border-box
+            position: relative
+            margin-top: 30px
+            .compare__counter
+                position: absolute
+                top: -5px
+                right: -5px
+                width: 20px
+                height: 20px
+                background-color: #893b67
+                line-height: 20px
+                vertical-align: middle
+                text-align: center
+                color: #ffffff
+                font-family: "vida33pro", sans-serif
+                font-size: 13px
+                border-radius: 50%
+    .aside__newsPage
+        font-family: "vida33pro", sans-serif
+        display: flex
+        flex-direction: column
+        .newsPage__block
+            padding-bottom: 40px
+            margin-top: 40px
+            position: relative
+            border-bottom: 1px solid #53565a1a
+            padding-left: 22px
+            &:first-child
+                margin-top: 0px
+            &:last-child
+                border-bottom: 0px solid #53565a1a          
+            .newsPage__title
+                font-size: 24px
+                padding-bottom: 15px
+                color: #893b67
+            .newsPage__descripten
+                font-size: 16px
+                color: #000
+            .newsPage__link
+                display: block
+                position: absolute
+                bottom: 42px
+                right: 0
+                padding-right: 25px
+                font-size: 14px
+                color: #893b67
+                text-decoration: none
+                &:after
+                    content: ''
+                    position: absolute
+                    width: 21px
+                    height: 21px
+                    top: -3px
+                    right: -5px
+                    background-image: url('../img/spritesheet.png')
+                    background-position: -8px -7px
+
+
+@media screen and (max-width:1280px)
+    .content__aside
+        max-width: 100%        
+        min-width: auto
+        border-color: transparent
+        padding: 0
+        .aside__menu
+            padding-bottom: 0
+            margin-bottom: 27px
+            border-color: transparent
+            .menu__list
+                display: none               
+            .aside__compare
+                padding: 10px 30px
+                width: 100%
+                &:after
+                    content: ''
+                    position: absolute
+                    width: 11px
+                    height: 8px
+                    top: 12px
+                    right: 25px
+                    background-image: url('../img/spritesheet.png')
+                    background-position: -113px -89px
+                .compare__counter
+                    left: 125px
+        .aside__newsPage
+            flex-direction: row
+            justify-content: space-between
+            .newsPage__block
+                padding-bottom: 0px
+                margin-top: 0px
+                border-bottom: 0px solid #53565a1a
+                padding-left: 0px
+                padding-right: 20px
+                padding-bottom: 0
+                width: 40%
+                &:after
+                    content: ''
+                    position: absolute
+                    width: 1px
+                    height: 60px
+                    top: 12px
+                    border-right: 1px solid #53565a1a
+                    right: -15%
+                &:last-child::after
+                    display: none                  
+                .newsPage__link
+                    bottom: 0
+                    right: 0
+                    padding-right: 25px
+
+
+@media screen and (max-width:500px)
+    .content__aside
+        .aside__newsPage
+            .newsPage__block
+                padding-right: 0
+                width: 43%     
+                .newsPage__link
+                    bottom: -25px
+                    right: 15px
+                    padding-right: 25px
+

@@ -1,0 +1,111 @@
+.container--facts
+	padding: 100px
+.facts__title
+  text-align: center
+  font-size: 60px
+  font-family: 'BebasNeueRegular'
+  padding-bottom: 20px
+  margin-bottom: 40px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    background-image: url(../img/spritesheet.png)
+    background-repeat: no-repeat
+    width: 35px
+    height: 9px
+    background-position: -183px -130px
+.facts__block
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  @include align-items(center)
+  margin-bottom: 40px
+  .facts__list, img
+    @include col-4()
+  .facts__list:first-child
+    .list__item
+      padding-right: 75px
+      text-align: right
+      position: relative
+      margin-bottom: 55px
+      .item__title
+        margin-bottom: 5px
+        font-size: 18px
+        font-family: 'MontserratBold'
+      .item__description
+        font-size: 16px
+        line-height: 24px
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url(../img/spritesheet.png)
+        background-repeat: no-repeat
+      &:nth-child(1):after
+        width: 46px
+        height: 61px
+        background-position: -149px -43px
+      &:nth-child(2)
+        margin-right: 45px
+        &:after
+          width: 61px
+          height: 54px
+          background-position: -1px -106px
+      &:nth-child(3):after
+        width: 51px
+        height: 61px
+        background-position: -64px -106px
+  .facts__list:last-child > .list__item
+    padding-left: 75px
+    position: relative
+    margin-bottom: 55px
+    .item__title
+      margin-bottom: 5px
+      font-size: 18px
+      font-family: 'MontserratBold'
+    .item__description
+      font-size: 16px
+      line-height: 24px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+    &:nth-child(1):before
+      width: 60px
+      height: 56px
+      background-position: -117px -106px
+    &:nth-child(2)
+      margin-left: 45px
+      &:before
+        width: 58px
+        height: 60px
+        background-position: -204px -1px
+    &:nth-child(3):before
+      width: 57px
+      height: 61px
+      background-position: -197px -63px
+
+.facts__link
+  text-align: center
+  .downloadFile
+    display: inline-block
+    font-size: 18px
+    color: #78bc61
+    margin-bottom: 40px
+  .order
+    display: inline-block
+    border-radius: 6px
+    background-color: #78bc61
+    color: #ffffff
+    font-size: 18px
+    padding: 23px 50px
+    font-family: 'MontserratBold'
+    text-decoration: none

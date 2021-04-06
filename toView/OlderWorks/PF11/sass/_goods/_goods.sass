@@ -1,0 +1,128 @@
+.goods
+  margin: 24px 0 30px
+  .goods__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    text-align: center
+    .list__item
+      box-sizing: border-box
+      border-radius: 10px
+      border: 1px solid #d0dbe6
+      max-width: 192px
+      padding: 14px 30px 16px
+      display: inline-flex
+      flex-direction: column
+      justify-content: space-between
+      .item__figure
+        width: 131px
+        min-height: 130px
+        .img__cont
+          min-height: 130px
+          .figure__img
+            width: 100%
+            margin-bottom: 13px
+        .item__link
+          display: block
+          color: #0093ca
+          font-size: 14px
+          line-height: 1.2
+          margin-bottom: 11px
+        .item__descrition
+          color: #494949
+          font-size: 13px
+          line-height: 1.2
+          margin-bottom: 10px
+      .item__info
+        position: relative
+        .info__price
+          color: #000000
+          font-size: 18px
+          span
+            color: #393939
+            font-size: 12px
+        .info__price--old
+          font-size: 15px
+          color: #aaa
+          margin: 5px 0
+          position: relative
+          &::after
+            content: ''
+            position: absolute
+            width: 40px
+            height: 15px
+            background-image: url('../img/spritesheet.png')
+            left: 50%
+            top: 50%
+            background-repeat: no-repeat
+            background-position: -10px -8px
+            transform: translate(-50%, -50%)
+        .info__order
+          margin-top: 6px
+          background-color: #eef8ff
+          border-radius: 20px
+          padding: 5px
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          align-items: center
+          .order__amount
+            width: 60px
+            height: 30px
+            border: 1px solid #c9c9c9
+            border-radius: 20px
+            box-sizing: border-box
+            color: #1f1f1f
+            font-size: 13px
+            text-align: right
+            outline: 0
+            background-image: url('../img/sht.png')
+            background-repeat: no-repeat
+            background-position: 33px center
+            padding-right: 28px
+            background-color: #fff
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button
+            -webkit-appearance: none
+          input[type='number']
+            -moz-appearance: textfield
+          .order__control
+            color: #798690
+            font-family: "JazzBall"
+            font-size: 19px
+            display: flex
+            flex-direction: column
+            line-height: 0.5
+            margin-left: 5px
+            user-select: none
+            p
+              width: 15px
+              cursor: pointer
+              margin-bottom: 5px
+              text-align: center
+              &:last-child
+                margin-bottom: 0
+          .order__basket
+            padding: 0
+            margin: 0
+            outline: 0
+            border: 0
+            cursor: pointer
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 40px
+            height: 40px
+            background-color: #f73d3c
+            border-radius: 50%
+            text-align: center
+            // vertical-align: baseline
+            background-image: url('../img/spritesheet.png')
+            background-repeat: no-repeat
+            background-position: -82px 1px
+
+@media screen and (max-width: 400px)
+  .goods .goods__list
+    justify-content: center
+    .list__item
+      margin-bottom: 10px

@@ -1,0 +1,120 @@
+@font-face
+  font-family: 'fontello'
+  src: url('../fonts/fontello/fontello.eot')
+  src: url('../fonts/fontello/fontello.eot') format('embedded-opentype'),url('../fonts/fontello/fontello.woff2') format('woff2'),url('../fonts/fontello/fontello.woff') format('woff'),url('../fonts/fontello/fontello.ttf') format('truetype'),url('../fonts/fontello/fontello.svg#fontello') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'KaushanScript'
+  src: url('../fonts/KaushanScript/KaushanScriptRegular.eot')
+  src: url('../fonts/KaushanScript/KaushanScriptRegular.eot') format('embedded-opentype'),url('../fonts/KaushanScript/KaushanScriptRegular.woff2') format('woff2'),url('../fonts/KaushanScript/KaushanScriptRegular.woff') format('woff'),url('../fonts/KaushanScript/KaushanScriptRegular.ttf') format('truetype'),url('../fonts/KaushanScript/KaushanScriptRegular.svg#KaushanScript') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('../fonts/Montserrat/MontserratRegular.eot')
+  src: url('../fonts/Montserrat/MontserratRegular.eot') format('embedded-opentype'),url('../fonts/Montserrat/MontserratRegular.woff2') format('woff2'),url('../fonts/Montserrat/MontserratRegular.woff') format('woff'),url('../fonts/Montserrat/MontserratRegular.ttf') format('truetype'),url('../fonts/Montserrat/MontserratRegular.svg#Montserrat') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto/RobotoRegular.eot')
+  src: url('../fonts/Roboto/RobotoRegular.eot') format('embedded-opentype'),url('../fonts/Roboto/RobotoRegular.woff2') format('woff2'),url('../fonts/Roboto/RobotoRegular.woff') format('woff'),url('../fonts/Roboto/RobotoRegular.ttf') format('truetype'),url('../fonts/Roboto/RobotoRegular.svg#Roboto') format('svg')
+  font-display: auto
+
+body
+  font-family: 'Roboto'
+  font-display: auto
+
+
+.wrap
+  max-width: 1920px
+  margin: 0 auto
+  .container
+    max-width: 1200px
+    margin: 0 auto
+    .content__description
+      padding-top: 90px
+      margin-bottom: 20px
+      font-size: 24px
+      color: #333
+      text-align: center
+    .content__title
+      text-align: center
+      font-size: 30px
+      color: #333
+      text-transform: uppercase
+      font-weight: bolder
+      padding-bottom: 40px
+      margin-bottom: 50px
+      position: relative
+      &::after
+        content: ''
+        width: 60px
+        height: 3px
+        background-color: #f38181
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    .content__text
+      text-align: center
+      padding-bottom: 100px
+      max-width: 955px
+      line-height: 1.5
+      font-size: 15px
+      color: #999
+      margin: 0 auto
+  &--header
+    background-image: url('../img/bgLayers/fScreenBgi.jpg')
+    background-size: cover
+    background-position: center
+  &--count
+    background-color: #95e1d3
+  &--design
+    background-image: url('../img/bgLayers/sScreenBgi.jpg')
+    background-position: bottom center
+    height: 910px
+  &--comments
+    background-color: #f8f8f8
+    padding: 70px 0
+  &--partners
+    background-color: #f8f8f8
+    padding: 50px 0
+  &--work
+    .container
+      max-width: 100%
+  &--clients
+    background-image: url('../img/bgLayers/tScreenBgi.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    .container
+      padding-bottom: 50px
+  &--map
+    background-image: url('../img/bgLayers/mapBgi.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    .container
+      padding: 60px
+      text-align: center
+  &--info
+    background-color: #f8f8f8
+  &--footer
+    background-color: #f8f8f8
+    .container
+      border-top: 1px solid #e5e5e5
+
+h1, h2
+  font-family: 'Montserrat'
+  font-display: auto
+
+h3
+  font-family: 'KaushanScript'
+  font-display: auto
+
+.content__image
+  display: flex
+  flex-direction: row
+  justify-content: space-between

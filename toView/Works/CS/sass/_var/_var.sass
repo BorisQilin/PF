@@ -1,0 +1,138 @@
+@font-face
+  font-family: 'fontello'
+  src: url('../fonts/fontello/fontello.eot')
+  src: url('../fonts/fontello/fontello.eot') format('embedded-opentype'),url('../fonts/fontello/fontello.woff') format('woff'),url('../fonts/fontello/fontello.ttf') format('truetype'),url('../fonts/fontello/fontello.svg#fontello') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'GothamBold'
+  src: url('../fonts/GothamBold/GothamBold.eot')
+  src: url('../fonts/GothamBold/GothamBold.eot') format('embedded-opentype'),url('../fonts/GothamBold/GothamBold.woff') format('woff'),url('../fonts/GothamBold/GothamBold.ttf') format('truetype'),url('../fonts/GothamBold/GothamBold.svg#GothamBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'GothamBookRegular'
+  src: url('../fonts/GothamBook/GothamBookRegular/GothamBookRegular.eot')
+  src: url('../fonts/GothamBook/GothamBookRegular/GothamBookRegular.eot') format('embedded-opentype'),url('../fonts/GothamBook/GothamBookRegular/GothamBookRegular.woff') format('woff'),url('../fonts/GothamBook/GothamBookRegular/GothamBookRegular.ttf') format('truetype'),url('../fonts/GothamBook/GothamBookRegular/GothamBookRegular.svg#GothamBookRegular') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'GothamMediumRegular'
+  src: url('../fonts/GothamBook/GothamMediumRegular/GothamMediumRegular.eot')
+  src: url('../fonts/GothamBook/GothamMediumRegular/GothamMediumRegular.eot') format('embedded-opentype'),url('../fonts/GothamBook/GothamMediumRegular/GothamMediumRegular.woff')format('woff'),url('../fonts/GothamBook/GothamMediumRegular/GothamMediumRegular.ttf') format('truetype'),url('../fonts/GothamBook/GothamMediumRegular/GothamMediumRegular.svg#GothamMediumRegular') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'OpenSansRegular'
+  src: url('../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot')
+  src: url('../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'),url('../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff') format('woff'),url('../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf') format('truetype'),url('../fonts/OpenSans/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'OpenSansBold'
+  src: url('../fonts/OpenSans/OpenSansBold/OpenSansBold.eot')
+  src: url('../fonts/OpenSans/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'),url('../fonts/OpenSans/OpenSansBold/OpenSansBold.woff') format('woff'),url('../fonts/OpenSans/OpenSansBold/OpenSansBold.ttf') format('truetype'),url('../fonts/OpenSans/OpenSansBold/OpenSansBold.svg#OpenSansBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'RobotoRegular'
+  src: url('../fonts/Roboto/RobotoRegular/RobotoRegular.eot')
+  src: url('../fonts/Roboto/RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),url('../fonts/Roboto/RobotoRegular/RobotoRegular.woff') format('woff'),url('../fonts/Roboto/RobotoRegular/RobotoRegular.ttf') format('truetype'),url('../fonts/Roboto/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'RobotoBold'
+  src: url('../fonts/Roboto/RobotoBold/RobotoBold.eot')
+  src: url('../fonts/Roboto/RobotoBold/RobotoBold.eot') format('embedded-opentype'),url('../fonts/Roboto/RobotoBold/RobotoBold.woff') format('woff'),url('../fonts/Roboto/RobotoBold/RobotoBold.ttf') format('truetype'),url('../fonts/Roboto/RobotoBold/RobotoBold.svg#RobotoBold') format('svg')
+  font-display: auto
+
+body
+  font-family: 'RobotoRegular'
+  font-display: auto
+
+
+.wrap
+  max-width: 1600px
+  margin: 0 auto
+  &--header
+    background-image: url('../img/bgLayers/bg_f_screen.jpg')
+    background-position: center top
+    background-repeat: no-repeat
+    // height: 100vh
+    background-size: cover
+  &--feature
+    background-color: #11749e
+  &--comment
+    background-color: #11749e
+  &--services
+    background-image: url('../img/bgLayers/bg_s_screen.jpg')
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: cover
+  &--form
+    background-image: url('../img/bgLayers/bg_form.jpg')
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: cover
+  &--map
+    overflow: hidden
+    position: relative
+    height: 400px
+    #map
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      height: 400px
+      width: 150%
+  &--footer
+    background-color: #222222
+    padding: 40px 0
+    .footer__text
+      color: #fff
+      font-size: 13px
+      font-family: 'RobotoRegular'
+  .container
+    max-width: 1165px
+    margin: 0 auto
+
+h2
+  font-family: 'GothamBold'
+  color: #fff
+  font-size: 38px
+  text-transform: uppercase
+  line-height: 350px
+  position: relative
+  text-align: center
+  &::before
+    content: ' '
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    opacity: .2
+    color: #fff
+    font-size: 247px
+    font-family: 'RobotoBold'
+//
+// p
+//   font-family: 'GothamMediumRegular'
+//
+// span
+//   font-family: 'OpenSansRegular'
+//
+// a
+//   font-family: 'OpenSansBold'
+//
+// h3
+//   font-family: 'RobotoRegular'
+//
+// div
+//   font-family: 'RobotoBold'
+//
+//
+// .social__list li a
+//   font-family: 'fontello'
+//   color: #000

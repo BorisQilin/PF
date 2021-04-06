@@ -1,0 +1,38 @@
+.mobole-menu
+  position: absolute
+  top: 13px
+  right: 85px
+  display: none
+  padding: 7px 12px
+  cursor: pointer
+  opacity: .5
+  border-radius: 5px
+  background: $firmColor
+
+.mobole-menu:hover
+  opacity: 1
+
+.mobole-menu__text
+  font-size: $lgHeaderFontSize
+  color: $lightenTextColot
+
+.mobole-menu__text:hover
+  color: darken($lightenTextColot, 15%)
+
+.header__menu
+  position: absolute
+  top: 30px
+  right: 85px
+
+.menu__list
+  @include container()
+
+.menu__list__elem
+  padding: 0 20px
+
+.menu__list__elem__link
+  font-size: $linkFontSize
+  font-weight: bold
+  text-decoration: none
+  text-transform: uppercase
+  color: $headerTextColor

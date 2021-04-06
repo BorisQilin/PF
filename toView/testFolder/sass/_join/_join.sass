@@ -1,0 +1,52 @@
+.container--join
+  padding: 100px
+
+.join__title
+  text-align: center
+  font-size: 60px
+  font-family: 'BebasNeueRegular'
+  padding-bottom: 15px
+  margin-bottom: 20px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    background-image: url(../img/spritesheet.png)
+    background-repeat: no-repeat
+    width: 35px
+    height: 9px
+    background-position: -183px -130px
+
+.join__description
+  line-height: 24px
+  text-align: center
+  margin-bottom: 45px
+
+.join__form
+  @include wrapper()
+  @include row-flex()
+  @include justify-content(space-between)
+  @include align-items(center)
+  @include col-8()
+  margin: 0 auto
+  input[type="email"]
+    width: 66%
+    border-radius: 6px
+    border: 2px solid #e5e4d7
+    background-color: #ffffff
+    padding: 20px
+    font-size: 24px
+    line-height: 24px
+  input[type="submit"]
+    border-radius: 6px
+    background-color: #78bc61
+    width: 25%
+    padding: 21px
+    font-size: 24px
+    line-height: 24px
+    font-family: 'MontserratBold'
+    color: #ffffff
+    border: 0

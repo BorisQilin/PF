@@ -1,0 +1,83 @@
+@media only screen and (max-width: 739px)
+  .wrapper
+    padding: 0 10px
+    padding-top: 13px
+
+  .header
+    .first-header
+      font-size: 18px
+    .second-header
+      font-size: 14px
+  .nav
+    position: absolute
+    top: 65px
+    right: 10px
+    width: 130px
+    display: none
+
+  .nav-list
+    background: #201b0e
+
+  .nav-element
+    display: block
+    padding: 10px 15px
+
+  .nav-list::after
+    bottom: 100%
+    left: 100px
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(136, 183, 213, 0)
+    border-bottom-color: #201b0e
+    border-width: 8px
+    margin-right: 0px
+
+  .nav-element__link
+    text-decoration: none
+    display: block
+    font-size: 14px
+    color: #ab926e
+    transition: all 1.5s
+    &:hover
+      text-decoration: underline
+      color: #ea9f3e
+
+  .mobile-menu
+    display: block
+
+  .header-container__column
+    padding: 20px 0
+    .column__first
+      padding-right: 0
+    .column__first,
+    .column__second
+      width: 90%
+      display: block
+      margin: 0 auto
+    .column__paragraph__img
+      width: 25%
+
+  .works__elem
+    width: 90%
+
+  .info-container
+    .column
+      display: block
+      width: 90%
+      margin: 0 auto
+      .column__social__list
+        padding-left: 0
+      .last
+        .column__paragraph__group,
+        .column__social__list
+          display: block
+          width: 90%
+        .column__social__text
+          width: 80px
+        .column__social__list
+          display: inline-block
+          text-align: center

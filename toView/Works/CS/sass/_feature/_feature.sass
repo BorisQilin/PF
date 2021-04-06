@@ -1,0 +1,47 @@
+.feature__title::before
+  content: 'W'
+
+.feature__list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 0 0 130px
+  .list__item
+    max-width: 23%
+    text-align: center
+    .item__icon
+      width: 133px
+      height: 133px
+      background-color: #2e85aa
+      border-radius: 50%
+      margin: 0 auto
+      position: relative
+      &::before
+        content: ''
+        width: 35px
+        height: 35px
+        background-image: url('../img/icon/spritesheet.png')
+        background-position: -5px -5px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    .item__title
+      color: #fff
+      font-size: 18px
+      font-family: 'GothamBookRegular'
+      text-transform: uppercase
+      margin: 20px 0 30px
+    .item__description
+      color: #fff
+      font-size: 15px
+      line-height: 1.5
+      font-family: 'GothamBookRegular'
+  .list__item:nth-child(3) > .item__icon::before
+    width: 35px
+    height: 35px
+    background-position: -128px -5px
+  .list__item:nth-child(4) > .item__icon::before
+    width: 30px
+    height: 35px
+    background-position: -173px -5px

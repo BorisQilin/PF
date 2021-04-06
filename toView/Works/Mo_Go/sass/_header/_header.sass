@@ -1,0 +1,103 @@
+.header
+  display: flex
+  flex-direction: column
+  .nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 30px
+    align-items: flex-end
+    .nav__logo
+      color: #fff
+      font-size: 30px
+      font-weight: bolder
+      padding-bottom: 11px
+    .nav__list
+      display: flex
+      flex-direction: row
+      .list__item
+        .item__link
+          margin: 0 30px
+          color: #fff
+          font-family: 'Montserrat'
+          font-size: 14px
+          text-transform: uppercase
+          text-decoration: none
+          padding-bottom: 10px
+          border-bottom: 3px solid transparent
+          font-weight: bolder
+          transition: color .5s, border-bottom-color .5s
+          &:hover
+            color: #fce38a
+            border-bottom: 3px solid #fce38a
+          &--cart
+            display: block
+            background-image: url('../img/icon/spritesheet.png')
+            width: 18px
+            height: 15px
+            background-position: -232px -48px
+            margin: 0 20px
+            border-bottom-width: 0
+            &:hover
+              border-bottom-width: 0
+              border-bottom-color: transparent
+          &--search
+            display: block
+            background-image: url('../img/icon/spritesheet.png')
+            width: 18px
+            height: 18px
+            background-position: -232px -10px
+            margin: 0 20px
+            border-bottom-width: 0
+            &:hover
+              border-bottom-width: 0
+              border-bottom-color: transparent
+  .welcome
+    text-align: center
+    margin-top: 165px
+    .welcome__description
+      font-size: 72px
+      color: #fff
+    .welcome__title
+      font-size: 150px
+      color: #fff
+      font-weight: bolder
+      text-transform: uppercase
+      margin: 40px 0 50px
+      padding-bottom: 70px
+      position: relative
+      &:after
+        content: ''
+        width: 60px
+        height: 3px
+        position: absolute
+        bottom: 0
+        left: 50%
+        background-color: #fff
+        transform: translateX(-50%)
+    .welcome__btn
+      display: inline-block
+      text-decoration: none
+      color: #fff
+      text-transform: uppercase
+      padding: 15px 30px
+      border: 3px solid #fff
+      font-weight: bolder
+      margin-bottom: 155px
+  .submenu
+    .submenu__list
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      .list__item
+        padding: 25px 0
+        min-width: 280px
+        border-top: 3px solid #fff
+        .item__link
+          color: #fff
+          text-decoration: none
+          text-transform: uppercase
+          font-size: 18px
+          span
+            font-size: 24px
+            font-weight: bolder

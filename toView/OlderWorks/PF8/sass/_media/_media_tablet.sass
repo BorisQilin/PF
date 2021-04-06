@@ -1,0 +1,80 @@
+@media only screen and (max-width: 810px)
+  .header
+    background-size: cover
+
+  .header__wrapper
+    min-height: 535px
+
+  .mobole-menu
+    display: block
+
+  .header__menu
+    top: 70px
+    right: 85px
+    display: none
+    width: 250px
+    padding: 3px
+    background: $baseTextColor
+    box-shadow: 0 0 5px 2px $headerTextColor inset
+
+  .header__menu:after
+    position: absolute
+    right: 18px
+    bottom: 100%
+    width: 0
+    height: 0
+    margin-right: 0
+    content: ' '
+    pointer-events: none
+    border: solid transparent
+    border-width: 8px
+    border-color: rgba(136, 183, 213, 0)
+    border-bottom-color: $headerTextColor
+
+  .menu__list
+    flex-direction: column
+
+  .menu__list__elem
+    width: 100%
+    padding: 0
+    text-align: center
+
+  .menu__list__elem__link
+    display: block
+    width: 100%
+    margin: 0 auto
+    padding: 15px 0
+
+  .menu__list__elem__link:hover
+    color: $lightenTextColot
+    background: linear-gradient(0deg, #fff 0, #fa5c65 50%, #fff 100%)
+
+  .header__slogan__title
+    font-size: 36px
+    padding-bottom: 15px
+
+  .header__slogan__description
+    font-size: 16px
+    padding-bottom: 20px
+
+  .header__slogan__button
+    padding: 15px 25px
+
+  .content__snippets
+    padding: 40px 0 10px
+
+  .content__portfolio__column
+    width: 49%
+
+  .content__team__column
+    flex-direction: column
+
+  .content__team__column__elem
+    width: 40%
+    padding-bottom: 20px
+
+  .content__team__link
+    margin: 20px 0
+
+  .footer__wrapper
+    padding: 20px 10px

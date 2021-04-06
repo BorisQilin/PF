@@ -1,0 +1,34 @@
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin: 10px 0 40px
+  align-items: center
+
+.header__menu
+  .menu__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .list__item
+      margin-right: 15px
+      .item__link
+        font-family: 'CicleFina'
+        font-size: 14px
+        text-decoration: none
+        font-weight: 400
+        text-transform: uppercase
+        padding-left: 15px
+        position: relative
+        color: #000
+        .link__icon
+          position: absolute
+          font-family: 'fontello'
+          font-size: 12px
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          color: #faa61a
+          transition: color .5s
+        &:hover .link__icon
+          color: #000

@@ -1,0 +1,119 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-2-layers {
+    width: 150px;
+    height: 150px;
+    background-position: -10px -10px;
+}
+
+.sprite-ALARM {
+    width: 32px;
+    height: 31px;
+    background-position: -180px -10px;
+}
+
+.sprite-BOOK_2 {
+    width: 32px;
+    height: 32px;
+    background-position: -180px -61px;
+}
+
+.sprite-BULLSEYE {
+    width: 32px;
+    height: 32px;
+    background-position: -180px -113px;
+}
+
+.sprite-EQUALIZER {
+    width: 28px;
+    height: 32px;
+    background-position: -180px -165px;
+}
+
+.sprite-HOME {
+    width: 32px;
+    height: 31px;
+    background-position: -10px -217px;
+}
+
+.sprite-IMAGE {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -217px;
+}
+
+.sprite-LINE_GRAPH {
+    width: 32px;
+    height: 32px;
+    background-position: -114px -217px;
+}
+
+.sprite-MAGNIFYING_GLASS {
+    width: 18px;
+    height: 18px;
+    background-position: -232px -10px;
+}
+
+.sprite-PICTURE {
+    width: 30px;
+    height: 30px;
+    background-position: -166px -217px;
+}
+
+.sprite-PICTURE_w {
+    width: 30px;
+    height: 30px;
+    background-position: -216px -217px;
+}
+
+.sprite-PIN_2 {
+    width: 20px;
+    height: 26px;
+    background-position: -228px -165px;
+}
+
+.sprite-SHOPPING_CART {
+    width: 18px;
+    height: 15px;
+    background-position: -232px -48px;
+}
+
+.sprite-SPEECH_BUBBLE_2 {
+    width: 16px;
+    height: 15px;
+    background-position: -232px -83px;
+}
+
+.sprite-USERS {
+    width: 32px;
+    height: 23px;
+    background-position: -270px -10px;
+}
+
+.sprite-VIEW {
+    width: 20px;
+    height: 12px;
+    background-position: -270px -53px;
+}
+
+.sprite-_DOWN_copy {
+    width: 12px;
+    height: 22px;
+    background-position: -268px -85px;
+}
+
+.sprite-_DOWN_copy_2 {
+    width: 12px;
+    height: 22px;
+    background-position: -268px -127px;
+}
+
+.sprite-_OK {
+    width: 32px;
+    height: 28px;
+    background-position: -268px -169px;
+}

@@ -1,0 +1,104 @@
+[{
+		"title": "CS",
+		"img": "img/Screen.png",
+		"description": "HTML, CSS(SASS), JS, google map API, Gulp",
+		"vueLink": [{
+				"title": "CS",
+				"src": "https://borschsergey.github.io/Works/CS/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "MMG",
+		"img": "img/Screen1.png",
+		"description": "HTML, CSS(SASS), JS, Photoshop, Gulp",
+		"vueLink": [{
+				"title": "MMG",
+				"src": "https://borschsergey.github.io/Works/MMG/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "Mo_Go",
+		"img": "img/Screen2.png",
+		"description": "HTML, CSS(SASS), JS, CSS Grid layout, Gulp",
+		"vueLink": [{
+				"title": "Mo_Go",
+				"src": "https://borschsergey.github.io/Works/Mo_Go/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "Media",
+		"img": "img/Screen3.png",
+		"description": "HTML, CSS(SASS), JS, jQuery, Slick, Gulp",
+		"vueLink": [{
+				"title": "Media",
+				"src": "https://borschsergey.github.io/Works/Media/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "Older works",
+		"img": "img/Screen0.png",
+		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",
+		"vueLink": [{
+				"title": "SS",
+				"src": "https://borschsergey.github.io/OlderWorks/PF1/index.html"
+			},
+			{
+				"title": "WPaint",
+				"src": "https://borschsergey.github.io/OlderWorks/PF2/index.html"
+			},
+			{
+				"title": "YWS",
+				"src": "https://borschsergey.github.io/OlderWorks/PF3/index.html"
+			},
+			{
+				"title": "PG",
+				"src": "https://borschsergey.github.io/OlderWorks/PF4/index.html"
+			},
+			{
+				"title": "Escape",
+				"src": "https://borschsergey.github.io/OlderWorks/PF5/index.html"
+			},
+			{
+				"title": "BBHome",
+				"src": "https://borschsergey.github.io/OlderWorks/PF6/index.html"
+			},
+			{
+				"title": "BBWorks",
+				"src": "https://borschsergey.github.io/OlderWorks/PF6/works.html"
+			},
+			{
+				"title": "BBContact",
+				"src": "https://borschsergey.github.io/OlderWorks/PF6/contactUs.html"
+			},
+			{
+				"title": "SI",
+				"src": "https://borschsergey.github.io/OlderWorks/PF7/index.html"
+			},
+			{
+				"title": "Freelancer",
+				"src": "https://borschsergey.github.io/OlderWorks/PF8/index.html"
+			},
+			{
+				"title": "Poznan",
+				"src": "https://borschsergey.github.io/OlderWorks/PF9/index.html"
+			},
+			{
+				"title": "Company",
+				"src": "https://borschsergey.github.io/OlderWorks/PF10/index.html"
+			},
+			{
+				"title": "GB",
+				"src": "https://borschsergey.github.io/OlderWorks/PF11/index.html"
+			}
+		]
+	}
+
+]

@@ -1,0 +1,40 @@
+.tabs__list
+  max-width: 50%
+  .list__item
+    max-width: 470px
+    padding: 30px
+    transition: background-color .2s
+    cursor: pointer
+    &:hover
+      box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08)
+      border-radius: 12px
+      background-color: #fff
+    .text__title
+      color: #3c3c3c
+      padding-left: 45px
+      font-size: 16px
+      line-height: 2
+      font-family: 'OpenSansRegular'
+      margin-bottom: 15px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 25px
+        height: 25px
+        background-image: url('../img/icon/spritesheet.png')
+        top: 5px
+        left: 0
+      span
+        font-family: 'OpenSansBold'
+    .text__description
+      color: #7f7f7f
+      font-family: 'OpenSansRegular'
+      font-size: 14px
+      line-height: 1.5
+    &:nth-child(1) .text__title::before
+      background-position: -73px -72px
+    &:nth-child(2) .text__title::before
+      background-position: -5px -48px
+    &:nth-child(3) .text__title::before
+      background-position: -39px -48px

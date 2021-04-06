@@ -1,0 +1,38 @@
+$headerTextColor: #314a5b
+$baseTextColor: #9aa0ab
+$lightenTextColot: #fff
+$firmColor: #fa5c65
+
+$linkFontSize: 14px
+$textFontSize: 15px
+$headerFontSize: 26px
+$lgHeaderFontSize: 40px
+
+body
+  font-family: sans-serif
+
+.header__wrapper,
+.content__wrapper,
+.footer__wrapper
+  position: relative
+  display: flex
+  max-width: 950px
+  min-height: 1070px
+  margin: 0 auto
+  padding: 5px
+
+.content__wrapper,
+.footer__wrapper
+  display: block
+  min-height: auto
+
+
+@mixin container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.title_dot
+  font-family: serif
+  color: $firmColor

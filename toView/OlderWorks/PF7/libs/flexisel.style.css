@@ -1,0 +1,96 @@
+.clearout
+{
+    clear: both;
+
+    height: 20px;
+}
+
+.nbs-flexisel-container
+{
+    position: relative;
+
+    max-width: 100%;
+    height: 150px;
+}
+.nbs-flexisel-ul
+{
+    position: relative;
+
+    width: 99999px;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    text-align: center;
+}
+
+.nbs-flexisel-inner
+{
+    position: relative;
+
+    float: left;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.nbs-flexisel-item
+{
+    position: relative;
+
+    float: left;
+
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.slider__item__image
+{
+    position: relative;
+
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right
+{
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.nbs-flexisel-nav-left
+{
+    left: 0;
+
+    width: 12px;
+    height: 16px;
+
+    background-image: url('../../../img/slid_l.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nbs-flexisel-nav-right
+{
+    right: 0;
+
+    width: 12px;
+    height: 16px;
+
+    background-image: url('../../../img/slid_r.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}

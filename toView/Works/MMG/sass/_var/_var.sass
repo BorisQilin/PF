@@ -1,0 +1,121 @@
+@font-face
+  font-family: 'fontello'
+  src: url('../fonts/fontello/fontello.eot')
+  src: url('../fonts/fontello/fontello.eot') format('embedded-opentype'),url('../fonts/fontello/fontello.woff') format('woff'),url('../fonts/fontello/fontello.ttf') format('truetype'),url('../fonts/fontello/fontello.svg#fontello') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'Cabin'
+  src: url('../fonts/Cabin/CabinRegular.eot')
+  src: url('../fonts/Cabin/CabinRegular.eot') format('embedded-opentype'),url('../fonts/Cabin/CabinRegular.woff') format('woff'),url('../fonts/Cabin/CabinRegular.ttf') format('truetype'),url('../fonts/Cabin/CabinRegular.svg#Cabin') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'OpenSansRegular'
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot')
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'),url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'),url('../fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype'),url('../fonts/OpenSansRegular/OpenSansRegular.svg#OpenSansRegular') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'OpenSansExtraBold'
+  src: url('../fonts/OpenSansExtraBold/OpenSansExtraBold.eot')
+  src: url('../fonts/OpenSansExtraBold/OpenSansExtraBold.eot') format('embedded-opentype'),url('../fonts/OpenSansExtraBold/OpenSansExtraBold.woff')format('woff'),url('../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf') format('truetype'),url('../fonts/OpenSansExtraBold/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'OpenSansLight'
+  src: url('../fonts/OpenSansLight/OpenSansLight.eot')
+  src: url('../fonts/OpenSansLight/OpenSansLight.eot') format('embedded-opentype'),url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'),url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype'),url('../fonts/OpenSansLight/OpenSansLight.svg#OpenSansLight') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'OpenSansBold'
+  src: url('../fonts/OpenSansBold/OpenSansBold.eot')
+  src: url('../fonts/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'),url('../fonts/OpenSansBold/OpenSansRegular.woff') format('woff'),url('../fonts/OpenSansBold/OpenSansBold.ttf') format('truetype'),url('../fonts/OpenSansBold/OpenSansBold.svg#OpenSansBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'OpenSansSemiBold'
+  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot')
+  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot') format('embedded-opentype'),url('../fonts/OpenSansSemiBold/OpenSansSemiBold.woff') format('woff'),url('../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf') format('truetype'),url('../fonts/OpenSansSemiBold/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg')
+  font-display: auto
+
+
+@font-face
+  font-family: 'OpenSansSemiBoldItalic'
+  src: url('../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot')
+  src: url('../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot') format('embedded-opentype'),url('../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff') format('woff'),url('../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf') format('truetype'),url('../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.svg#OpenSansSemiBoldItalic') format('svg')
+  font-display: auto
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'OpenSansRegular'
+  font-display: auto
+
+
+.wrap
+  max-width: 1440px
+  margin: 0 auto
+  padding: 0 135px
+  &--header
+    background-image: url('../img/bg.png')
+    min-height: 600px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  &--slider
+    padding: 0
+    margin-bottom: 20px
+    position: relative
+  &--tabs
+    background-image: url('../img/tab.png')
+    background-position: right
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    padding-bottom: 100px
+    background-color: #faf7f7
+  &--download
+    background-image: url('../img/bg2.png')
+    background-position: right
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    margin-bottom: 90px
+    height: 670px
+  &--contact
+    background-image: url('../img/bg3.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 90px
+    padding-bottom: 60px
+    position: relative
+    text-align: center
+    &::before
+      top: 0
+      left: 50%
+      border: solid transparent
+      content: " "
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-color: rgba(136, 183, 213, 0)
+      border-top-color: #fff
+      border-width: 30px
+      margin-left: -30px
+  &--footer
+    padding: 90px 135px
+    border: 1px solid #e7e8ea
+    background-color: #42b549

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Viewport" content="width=device-width">
+	<title>GoodsBall</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div id="wrapper">
+		<main class="container">
+			<!-- breadcrumbs -->
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="list__item">
+						<a href="#" class="item__link item__link--home">Главная</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="item__link">Каталог товаров</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="item__link item__link--last">Воздушные шары</a>
+					</li>
+				</ul>
+			</div><!-- breadcrumbs end -->
+
+			<h1 class="pegaTitle">Каталог шариков</h1>
+
+			<!-- filters -->
+			<div class="filters">
+				<!-- filters__color -->
+				<div class="filters__color">
+					<h2 class="color__title">Цвет:</h2>
+
+					<ul class="color__list">
+						<li class="list__item">
+							<input type="radio" id="red" name="color">
+							<label for="red">
+								<span class="item__red"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="black" name="color" checked>
+							<label for="black">
+								<span class="item__black"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="yellow" name="color">
+							<label for="yellow">
+								<span class="item__yellow"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="white" name="color">
+							<label for="white">
+								<span class="item__white"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="green" name="color">
+							<label for="green">
+								<span class="item__green"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="pink" name="color">
+							<label for="pink">
+								<span class="item__pink"></span>
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="radio" id="orange" name="color">
+							<label for="orange">
+								<span class="item__orange"></span>
+							</label>
+						</li>
+					</ul>
+				</div><!-- filters__color end -->
+
+				<span class="filtersSepLine"></span>
+
+				<!-- filters__set -->
+				<div class="filters__set">
+					<ul class="set__list">
+						<li class="list__item">
+							<input type="checkbox" id="all" name="set">
+							<label for="all">
+								<span class="item__all"></span>
+								Все шары
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="checkbox" id="sets" name="set" checked>
+							<label for="sets">
+								<span class="item__sets"></span>
+								Комплекты
+							</label>
+						</li>
+						<li class="list__item">
+							<input type="checkbox" id="onebyone" name="set">
+							<label for="onebyone">
+								<span class="item__onebyone"></span>
+								По одному
+							</label>
+						</li>
+					</ul>
+				</div><!-- filters__set end -->
+
+				<span class="filtersSepLine"></span>
+
+				<!-- filters__price -->
+				<div class="filters__priceSort">
+					<p class="priceSort__title">Сортировать по: <span>Цене</span></p>
+					<div class="priceSort__arrows">
+						<span class="arrows__up active"></span>
+						<span class="arrows__down"></span>
+					</div>
+				</div><!-- filters__price end -->
+			</div><!-- filters end -->
+
+			<!-- goods -->
+			<div class="goods">
+				<!-- goods__list -->
+				<ul class="goods__list">
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Rball.jpg" alt="red balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный, полупрозрачный, средний, красный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">75 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Yball.jpg" alt="yellow balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">15 075 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Rball.jpg" alt="red balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный, полупрозрачный, средний, красный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">75 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Yball.jpg" alt="yellow balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">15 075 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Yball.jpg" alt="yellow balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">15 075 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Yball.jpg" alt="yellow balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">15 075 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+
+
+					<li class="list__item">
+						<div class="item__figure">
+							<p class="img__cont">
+								<img src="img/Rball.jpg" alt="red balloon" class="figure__img">
+							</p>
+							<a href="#" class="item__link">Шары «Звезды и Кометы»</a>
+							<p class="item__descrition">Фигуры, латексный, полупрозрачный, средний, красный</p>
+						</div>
+
+						<div class="item__info">
+							<p class="info__price">75 Р <span>/ шт.</span></p>
+							<p class="info__price info__price--old">90 Р</p>
+							<div class="info__order">
+								<input type="number" class="order__amount" placeholder="0" min="0">
+								<div class="order__control">
+									<p class="order__plus">+</p>
+									<p class="order__minus">-</p>
+								</div>
+								<button class="order__basket"></button>
+							</div>
+						</div>
+					</li>
+
+				</ul><!-- goods__list end -->
+			</div><!-- goods end -->
+
+			<!-- pagination -->
+			<div class="pagination">
+				<p class="pagination__backward">
+					<a href="#" class="backward__link"><span>&lt;</span> Назад</a>
+				</p>
+				<ul class="pagination__list">
+					<li class="list__item">
+						<a href="#" class="item__link">1</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">2</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link active">3</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">4</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">...</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">5</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">6</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">7</a>
+					</li>
+
+					<li class="list__item">
+						<a href="#" class="item__link">8</a>
+					</li>
+				</ul>
+				<p class="pagination__forward">
+					<a href="#" class="forward__link">Далее <span>&gt;</span></a>
+				</p>
+			</div><!-- pagination end -->
+
+		</main><!-- container end -->
+	</div><!-- wrapper end -->
+
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>
