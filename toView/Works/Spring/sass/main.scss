@@ -1,0 +1,91 @@
+@import 'smart-grid.scss';
+@include reset();
+
+@import '_vars.scss';
+
+@import '_header.scss';
+
+@import '_advantages.scss';
+
+@import '_filler-sales.scss';
+
+@import '_team.scss';
+
+@import '_proposal.scss';
+
+@import '_penultimate-footer.scss';
+
+@import '_last-footer.scss';
+
+
+
+/*team.html*/
+@import '_team__header.scss';
+
+@import '_team__content.scss';
+
+
+/*advantages.html*/
+@import '_advantages_page.scss';
+
+
+/*contacts.html*/
+@import '_contacts_page_header.scss';
+
+@import '_contacts_page_content.scss';
+
+
+/*vacancies.html*/
+@import '_vacancies_page_header.scss';
+
+@import '_vacancies_page_content.scss';
+
+
+/*base.html*/
+@import '_base_header.scss';
+
+@import '_base_content-list.scss';
+
+@import '_base-page__content__boocks';
+
+
+/*404.html*/
+@import '_404.scss';
+
+@import '_Privacy_Policy.scss';
+
+
+/*vacancies_description.html*/
+@import '_vacancies_description_page_header.scss';
+
+@import '_vacancies_description_page_content.scss';
+
+
+/*base_books_article.html.html*/
+@import '_base_books_article_page_header.scss';
+
+@import '_base_books_article_page_content.scss';
+
+
+
+@import '_briefcases.scss';
+
+
+// .cont{
+// 	@include row-flex();
+// 	@include wrapper();
+// 	@include justify-content(space-around);
+//
+// 	p{
+// 		@include col-3();
+//        	@include col-lg-4();
+//        	@include col-md-6();
+//        	@include col-sm-8();
+//        	@include col-xs-12();
+//
+//        	img{
+//        	width: 100%;
+//        	height: 100%;
+//        	}
+// 	}
+// }

@@ -1,0 +1,66 @@
+.base_books_article {
+  background-image: none;
+
+  .first-scrin-darken {
+    background-color: #fff;
+
+    .wrapper {
+      .header__box {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+
+        .header {
+          height: auto;
+
+          .header__logo {
+            margin-left: 3%;
+            height: 50px;
+            flex-basis: 118px;
+
+            #logo {
+              height: 50px;
+              line-height: 50px;
+              display: inline-block;
+              stroke-width: 120px;
+
+              .st0 {
+                fill: #111;
+              }
+
+              .st1 {
+                fill: #E60329;
+              }
+            }
+          }
+
+          .dropbtn {
+            color: #111;
+            svg > g > polygon{
+              fill:#111;
+              color: #111;
+            }
+          }
+
+          .nav {
+            .nav__list {
+              .list__item {
+                .item__link {
+                  color: #111;
+                }
+              }
+            }
+          }
+
+          .header__social {
+            .cocial__list {
+              .list__item {
+                .item__link {
+                  color: #111;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,528 @@
+.filler-sales{
+  @extend .first-scrin;
+  background-image: url('../img/wallperz2.jpg');
+
+  .filler-sales-darken{
+    @extend .first-scrin-darken;
+
+    .wrapper{
+      @include wrapper();
+      padding: 100px 0;
+
+      .filler-sales__title{
+        font-size: 48px;
+        color: $lightenHeaderColor;
+        font-family: 'AktivGroteskCorp_Light';
+        text-align: center;
+        padding-bottom: 50px;
+      }
+
+      .filler-sales__customers{
+
+        .customers__tab{
+
+          .delivery_list{
+            @include col-lg-5();
+            @include col-md-6();
+            position: relative;
+            text-align: center;
+            background-color: rgba(255,255,255,.5);
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 1px solid #c6c6c6;
+            transition: background-color .5s;
+            display: none;
+
+            &:hover{
+              background-color: #fff;
+
+              #btn{
+                .btn__text{
+                  color: #111;
+                }
+                span{
+                  color: #111;
+                }
+              }
+            }
+
+            #btn{
+              margin: 0 auto;
+              display: inline-block;
+              padding: 20px 30% 20px 30px;
+              border-radius: 50px;
+
+              .btn__text{
+                font-family: 'AktivGroteskCorp_Light';
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                transition: color .5s;
+                display: inline-block;
+                padding: 0;
+              }
+
+              span{
+                transform: rotate(90deg);
+                font-size: 35px;
+                height: 30px;
+                color: #fff;
+                position: absolute;
+                top: 30%;
+                right: 7%;
+                transition: color .5s;
+              }
+            }
+          }
+
+          .tab__nav{
+            @include col-10();
+            margin: 0 auto 70px;
+            border-radius:50px;
+            background: rgba(255,255,255,.5);
+            border: 1px solid #c6c6c6;
+
+
+            .nav__list{
+              display: flex;
+              width: 100%;
+              border-radius: 50px;
+
+              .list__item{
+                flex: 1 1 100%;
+                overflow: hidden;
+                transition: background .5s;
+                border-right: 1px solid #c6c6c6;
+
+                .item__link{
+                  padding: 20px 0;
+                  display: block;
+                  text-align: center;
+                  font-family: 'AktivGroteskCorp_Light';
+                  text-decoration: none;
+                  color: #fff;
+                  font-size: 18px;
+                  transition: color .5s;
+
+                  &:hover{
+                    color: #111;
+                  }
+                }
+
+                .current{
+                  color: #111;
+                  background: #fff;
+                }
+
+                &:hover{
+                  background: #fff;
+                }
+
+                &:first-child{
+                  border-radius: 50px 0 0 50px;
+                }
+
+                &:last-child{
+                  border-radius:0 50px 50px 0;
+                  border-right: 0;
+                }
+              }
+            }
+          }
+
+          .tab{
+            @include wrapper();
+
+            .tab__content{
+              @include row-flex();
+              @include justify-content(space-between);
+
+              .content__graphic{
+                @include col-6();
+                @include col-lg-12();
+
+                .graphic__pic{
+                  position: relative;
+                  @include col-10();
+                  @include col-lg-6();
+                  margin-left: 18%;
+
+                  .graphic__resize{
+                    width: 50px;
+                    border-radius: 50%;
+                    height: 40px;
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    top: 35%;
+                    right: 45%;
+                    padding-top: 10px;
+                    background-color: #fff;
+                    box-shadow: 0px 0px 25px #707070;
+                  }
+                }
+                .graphic__video{
+                  @include col-10();
+                  @include col-lg-6();
+                  margin-top: -15%;
+                  position: relative;
+                  padding-bottom: 45%;
+                  padding-top: 25px;
+                  height: 0;
+
+                  iframe {
+                  	position: absolute;
+                  	top: 0;
+                  	left: 0;
+                  	width: 100%;
+                  	height: 100%;
+                  }
+                }
+
+                .video_bg-1,.video_bg-2,.video_bg-3,.video_bg-4,.video_bg-5 {
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  position: absolute;
+
+                  background-image: url('../img/play_poster.png');
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: 100%;
+                  // background-color: rgba(255,7,43,.7);
+
+                  .bg__link{
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    margin-top: -25px;
+                    margin-right: -27.5px;
+
+                    .link__img{
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+
+              .content__description{
+                @include col-6();
+                @include col-lg-12();
+                font-size: 16px;
+                font-family: 'AktivGroteskCorp_Light';
+                color: #fff;
+                line-height: 1.5;
+                padding-top: 7px;
+
+                .description__specification{
+                  margin-bottom: 30px;
+                }
+
+                .description__logo{
+                  display: flex;
+                  width: 100%;
+                  margin-bottom: 20px;
+
+                  .logo__pic{
+                    width: auto;
+                    border-right: 1px solid #b8b3ab;
+                    padding-right: 20px;
+                    margin-right: 20px;
+
+                    .logo__img{
+                      width: 100%;
+                    }
+                  }
+                }
+
+                .description__review{
+                  color: #111;
+                  padding: 20px;
+                  border-radius: 5px;
+                  background-color: #fff;
+                  position: relative;
+
+                  &:after {
+                  	bottom: 100%;
+                  	left: 8%;
+                  	border: solid transparent;
+                  	content: "";
+                  	height: 0;
+                  	width: 0;
+                  	position: absolute;
+                  	pointer-events: none;
+                  	border-color: rgba(136, 183, 213, 0);
+                  	border-bottom-color: #fff;
+                  	border-width: 15px;
+                  	margin-left: 0px;
+                    transform: matrix(-0.2,1,-1,0.01,0,15);
+                  }
+
+                  .review__title{
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                  }
+                }
+
+                .read__description__review{
+                  border: 0;
+                  outline: 0;
+                  border-radius: 50px;
+                  background-color: #fff;
+                  color: #e60329;
+                  padding: 20px 50px;
+                  text-transform: uppercase;
+                  font-family: 'AktivGroteskCorp_Light';
+                  font-size: 14px;
+                  cursor: pointer;
+                  margin: 0 auto;
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .filler-sales{
+
+    .filler-sales-darken{
+
+      .wrapper{
+        padding: 60px 0;
+
+        .filler-sales__customers{
+
+          .customers__tab{
+            .delivery_list{
+              display: inline-block;
+              @include col-md-10();
+            }
+
+            .tab__nav{
+              @include col-4();
+              position: absolute;
+              border-radius: 5px;
+              z-index: 9;
+              left: 50%;
+              top: 230px;;
+              transform: translateX(-50%);
+              background: #fff;
+              display: none;
+
+              .nav__list{
+                display: block;
+
+                .list__item{
+
+                  .item__link{
+                    color: #111;
+                  }
+                }
+              }
+            }
+
+            .tab{
+              .tab__content{
+                margin: 0;
+
+                .content__graphic{
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 0 auto;
+
+                  .graphic__pic{
+                    margin-left: 0;
+                  }
+
+                  .graphic__video{
+                    margin-top: 0;
+                    position: relative;
+                    padding-bottom: 26.4%;
+                    padding-top: 0;
+                    height: 0;
+                  }
+                }
+
+                .content__description{
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .filler-sales{
+
+    .filler-sales-darken{
+
+      .wrapper{
+        padding: 40px 0;
+
+        .filler-sales__title{
+          font-size: 23px;
+          padding-bottom: 20px;
+        }
+
+        .filler-sales__customers{
+
+          .customers__tab{
+
+            .delivery_list{
+              display: inline-block;
+              @include col-md-10();
+              @include col-sm-12();
+              margin-bottom: 20px;
+            }
+
+            .tab__nav{
+              @include col-md-10();
+              @include col-sm-12();
+              top: 150px;
+
+              .nav__list{
+
+                .list__item{
+
+                  .item__link{
+                    padding: 15px 0;
+                  }
+                }
+              }
+            }
+
+            .tab{
+              padding: 0;
+
+              .tab__content{
+                margin: 0;
+
+                .content__graphic{
+                  margin: 0;
+                  @include col-md-12();
+                  margin: 0 auto;
+                  flex-direction: column;
+
+                  .graphic__pic{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    img{
+                      width: 100%;
+                    }
+                    a img{
+                      width: auto;
+                    }
+
+                  }
+
+                  .graphic__video{
+                    margin: 0 auto;
+                    width: 100%;
+                    padding-bottom: 50%;
+                  }
+                }
+
+                .content__description{
+                  margin: 0 auto;
+                  padding-top: 15px;
+
+                  .description__logo{
+
+                    .logo__img{
+
+                      .logo__pic{
+                        width: auto;
+                        border-right: 0;
+                        padding-right: 0;
+                        margin-right: 0;
+                      }
+                    }
+
+                    .logo__descrip{
+                      display: none;
+                    }
+                  }
+
+                  .description__review{
+                    display: none;
+                  }
+
+                  .read__description__review{
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:414px){
+  .filler-sales{
+
+    .filler-sales-darken{
+
+      .wrapper{
+
+        .filler-sales__customers{
+
+          .customers__tab{
+
+            .delivery_list{
+              width: 100%;
+            }
+
+            .tab__nav{
+              top: 150px;
+            }
+
+            .tab{
+              padding: 0;
+
+              .tab__content{
+
+                .content__graphic{
+                  width: 100%;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .content__description{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:320px){
+  .filler-sales .filler-sales-darken .wrapper .filler-sales__customers .customers__tab .tab{
+    padding: 0;
+  }
+
+  .filler-sales .filler-sales-darken .wrapper .filler-sales__customers .customers__tab .tab__nav{
+    top: 180px;
+  }
+}

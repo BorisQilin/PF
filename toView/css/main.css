@@ -190,6 +190,11 @@ table {
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center; }
+  .hexagon--six {
+    background-image: url("../img/Screen5.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; }
   .hexagon--sixteen {
     background-image: url("../img/Screen0.png");
     -webkit-background-size: cover;

@@ -1,0 +1,470 @@
+.briefcases__content {
+  background-color: #f7f7f7;
+
+  .content__title{
+    color: #111;
+    font-size: 48px;
+    font-family: 'AktivGroteskCorp_Light';
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 400;
+  }
+
+  .briefcases__content__box {
+    @include wrapper();
+
+    .content__element {
+      @include justify-content(space-between);
+      @include col-12();
+      @include row-flex();
+      padding: 60px 0;
+      margin: 0 auto;
+      border-bottom: 1px solid #e8e8e8;
+
+      .content__graphic {
+        @include col-6();
+        @include col-lg-12();
+
+        .graphic__pic {
+          position: relative;
+          @include col-10();
+          @include col-lg-6();
+          margin-left: 18%;
+
+          img {
+            width: 100%;
+          }
+
+          .graphic__resize {
+            width: 50px;
+            border-radius: 50%;
+            height: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: 35%;
+            right: 45%;
+            padding-top: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 25px #707070;
+
+            img {
+              width: auto;
+            }
+          }
+        }
+
+        .graphic__video {
+          @include col-10();
+          @include col-lg-6();
+          margin-top: -15%;
+          position: relative;
+          padding-bottom: 45%;
+          padding-top: 25px;
+          height: 0;
+
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .video_bg-1,
+        .video_bg-2,
+        .video_bg-3,
+        .video_bg-4,
+        .video_bg-5 {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          background-image: url('../img/play_poster.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 100%;
+          // background-color: rgba(255,7,43,.7);
+          .bg__link {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-top: -25px;
+            margin-right: -27.5px;
+
+            .link__img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .content__description {
+        @include col-6();
+        @include col-lg-12();
+        font-size: 16px;
+        font-family: 'AktivGroteskCorp_Light';
+        color: #111;
+        line-height: 1.5;
+        // padding-top: 7px;
+
+        .description__title{
+          font-size: 20px;
+          font-family: 'AktivGroteskCorp_Regular';
+          color: #111;
+          padding-bottom: 10px;
+        }
+
+        .description__specification {
+          margin-bottom: 30px;
+        }
+
+        .description__logo {
+          display: flex;
+          width: 100%;
+          margin-bottom: 20px;
+
+          .logo__pic {
+            width: auto;
+            border-right: 1px solid #b8b3ab;
+            padding-right: 20px;
+            margin-right: 20px;
+
+            .logo__img {
+              width: 100%;
+            }
+          }
+        }
+
+        .description__review {
+          color: #111;
+          padding: 20px;
+          border-radius: 5px;
+          background-color: #fff;
+          position: relative;
+
+          &:after {
+            bottom: 100%;
+            left: 8%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #fff;
+            border-width: 15px;
+            margin-left: 0;
+            transform: matrix(-0.2,1,-1,0.01,0,15);
+          }
+
+          .review__title {
+            padding-bottom: 10px;
+            font-size: 18px;
+          }
+        }
+
+        .read__description__review {
+          border: 0;
+          outline: 0;
+          border-radius: 50px;
+          background-color: #fff;
+          color: #e60329;
+          padding: 20px 50px;
+          text-transform: uppercase;
+          font-family: 'AktivGroteskCorp_Light';
+          font-size: 14px;
+          cursor: pointer;
+          margin: 0 auto;
+          display: none;
+        }
+      }
+    }
+
+    .content__read-more{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      color: #111;
+      text-transform: uppercase;
+      font-family: 'AktivGroteskCorp_Light';
+      font-size: 16px;
+      position: relative;
+      padding: 50px 0 20px;
+
+      &:before{
+        content: '';
+        transform: rotate(90deg);
+        font-size: 350%;
+        font-family: 'sp-icon';
+        color: #111;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -28px;
+      }
+    }
+  }
+}
+
+.proposal_briefcases-page{
+  background-color: #f7f7f7;
+
+  .wrapper{
+
+    .proposal__box{
+      #action__box_briefcases-page{
+        @include wrapper();
+        @include col-8();
+        justify-content: center;
+
+        input{
+          box-sizing: border-box;
+          width: calc(53% - 30px);
+        }
+
+        .box__form{
+          margin: 0;
+          padding: 0 15px;
+          box-sizing: border-box;
+
+          input{
+            width: calc(51% - 10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .briefcases__content {
+
+    .content__title{
+      padding-top: 60px;
+    }
+
+    .briefcases__content__box {
+      .content__element {
+        margin: 0 auto;
+
+        .content__graphic {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 auto;
+
+          .graphic__pic {
+            margin-left: 0;
+          }
+
+          .graphic__video {
+            margin-top: 0;
+            position: relative;
+            padding-bottom: 26.4%;
+            padding-top: 0;
+            height: 0;
+          }
+        }
+
+        .content__description {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .proposal__box{
+    #action__box_briefcases-page{
+      @include col-9();
+
+      .box__form{
+        input{
+          width: calc(52% - 20px);
+        }
+
+        textarea{
+          height: 230px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:767px) {
+  .briefcases__content {
+    padding: 0;
+
+    .content__title{
+      font-size: 23px;
+      padding-top: 40px;
+    }
+
+    .briefcases__content__box {
+      .content__element {
+        margin: 0 auto;
+        padding: 40px 0;
+
+        .content__graphic {
+          margin: 0;
+          @include col-md-12();
+          margin: 0 auto;
+          flex-direction: column;
+
+          .graphic__pic {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            img {
+              width: 100%;
+            }
+
+            a img {
+              width: auto;
+            }
+          }
+
+          .graphic__video {
+            margin: 0 auto;
+            width: 100%;
+            padding-bottom: 50%;
+          }
+        }
+
+        .content__description {
+          margin: 0 auto;
+          padding-top: 15px;
+
+          .description__logo {
+            .logo__img {
+              .logo__pic {
+                width: auto;
+                border-right: 0;
+                padding-right: 0;
+                margin-right: 0;
+              }
+            }
+
+            .logo__descrip {
+              display: none;
+            }
+          }
+
+          .description__review {
+            display: none;
+          }
+
+          .read__description__review {
+            display: block;
+          }
+        }
+      }
+
+      .content__read-more{
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .proposal_briefcases-page{
+
+    .wrapper{
+
+      .proposal__title{
+        @include col-12();
+        font-size: 23px;
+      }
+
+      .proposal__box{
+        margin: 0 auto;
+        @include col-md-11();
+
+        #action__box_briefcases-page{
+          @include col-md-12();
+
+          .box__form{
+            input{
+              width: 100%;
+            }
+
+            textarea{
+              height: 230px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:414px) {
+  .briefcases__content {
+    padding: 0;
+
+    .briefcases__content__box {
+      .content__element {
+        .content__graphic {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .content__description {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .proposal_briefcases-page{
+
+    .wrapper{
+
+      .proposal__box{
+        @include col-sm-12();
+
+        #action__box_briefcases-page{
+          padding: 0;
+          width: 100%;
+
+          .box__form{
+            width: 100%;
+            // padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:320px) {
+  .briefcases__content .briefcases__content__box .content__element {
+    padding: 40px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .filler-sales .filler-sales-darken .wrapper .filler-sales__customers .customers__tab .tab__nav {
+    top: 180px;
+  }
+
+  .proposal_briefcases-page{
+
+    .wrapper{
+      padding-left: 0;
+      padding-right: 0;
+
+      .proposal__box{
+        width: 100%;
+        // margin-left: -15px;
+        // margin-right: -15px;
+
+        #action__box_briefcases-page{
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

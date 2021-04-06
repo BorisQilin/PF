@@ -1,0 +1,412 @@
+.base_books_article_breadcrumbs {
+  @include wrapper();
+  margin: 40px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  .breadcrumbs_text {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+
+    .text_name-page {
+      color: #737373;
+      font-size: 14px;
+      font-family: 'AktivGroteskCorp_Light';
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+      transition: border-bottom-color 0.5s;
+
+      &:hover {
+        border-bottom: 1px solid #737373;
+      }
+    }
+
+    .text_name-separator {
+      color: #737373;
+      font-family: 'AktivGroteskCorp_Light';
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.base_books_article__text_about {
+  @include wrapper();
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .base_books_article__text_about__box {
+    @include col-9();
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    .text_about__title {
+      color: #111;
+      font-family: 'AktivGroteskCorp_Light';
+      font-size: 48px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .text_about__marker {
+      padding-bottom: 40px;
+
+      .marker__category,
+      .marker__date {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-right: 5px;
+        background-color: #f7f7f7;
+        color: #000;
+        font-family: 'AktivGroteskCorp_Light';
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: inline-block;
+      }
+    }
+
+    .text_about__main_content {
+      .main_content__annotation {
+        font-family: 'AktivGroteskCorp_Light';
+        font-size: 24px;
+        color: #111;
+        padding-bottom: 20px;
+      }
+
+      .main_content__annotation__description,
+      .main_content__description {
+        font-family: 'AktivGroteskCorp_Light';
+        font-size: 16px;
+        color: #111;
+        padding-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .main_content__annotation__description {
+        font-style: italic;
+      }
+    }
+
+    .text_about__who_recommends {
+      background-color: #fdfdfd;
+      padding: 15px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .recommends__description {
+        flex-basis: 320px;
+        flex-shrink: 1;
+
+        .description__human {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .human__pic {
+            width: 35%;
+            margin-right: 30px;
+          }
+
+          .human__name {
+            font-family: 'AktivGroteskCorp_Regular';
+            font-size: 18px;
+            color: #111;
+            // font-weight: 600;
+            line-height: 1.45;
+
+            .human__position {
+              display: block;
+              font-family: 'AktivGroteskCorp_Light';
+              font-size: 14px;
+              color: #ababab;
+            }
+          }
+        }
+      }
+
+      .recommends__say {
+        flex-shrink: 2;
+
+        .say__text {
+          font-family: 'AktivGroteskCorp_Light';
+          font-size: 16px;
+          color: #111;
+          line-height: 25px;
+          position: relative;
+          padding: 0 35px;
+          margin-left: 5%;
+          font-style: italic;
+
+          &:after {
+            content: '»';
+            font-size: 50px;
+            color: #cacaca;
+            font-family: 'AktivGroteskCorp_Light';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-70%);
+            right: 0;
+            font-style: normal;
+            font-weight: bold;
+          }
+
+          &:before {
+            content: '«';
+            font-size: 50px;
+            color: #cacaca;
+            font-family: 'AktivGroteskCorp_Light';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-70%);
+            left: 0;
+            font-style: normal;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .text_about__social {
+      display: flex;
+      flex-wrap: wrap;
+
+      .text_about__social__element {
+        margin: 20px 10px;
+      }
+    }
+  }
+
+  .text_about__sections {
+    @include col-3();
+    @include col-lg-4();
+    // width: 25%;
+    // margin-left: 30px;
+    .sections__title {
+      font-family: 'AktivGroteskCorp_Light';
+      color: #111;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .sections__list {
+      .list__item {
+        border-bottom: 1px dotted #ececec;
+        padding-left: 40px;
+
+        .item__link {
+          text-decoration: none;
+          font-family: 'AktivGroteskCorp_Regular';
+          font-size: 18px;
+          color: #111;
+          position: relative;
+          display: block;
+          padding: 10px 0;
+          // font-weight: 300;
+
+          &:before {
+            font-family: 'sp-icon';
+            content: '';
+            // color: #ff0025;
+            color: #111;
+            font-size: 20px;
+            position: absolute;
+            font-weight: bolder;
+            left: -33px;
+            top: 50%;
+            transform: scale(1.25,1.15) translateY(-45%);
+            font-weight: 600;
+            transition: color 0.5s;
+          }
+
+          &:hover:before {
+            color: #ff0025;
+          }
+        }
+      }
+    }
+  }
+
+  .text_about__other_articles {
+    @include col-9();
+
+    .other_articles__title {
+      font-size: 18px;
+      color: #111;
+      font-family: 'AktivGroteskCorp_Light';
+      padding-bottom: 20px;
+    }
+
+    .text_about__other_articles__box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .articles__list {
+        @include col-6();
+        @include col-lg-12();
+
+        .list__item {
+          padding: 5px 0;
+
+          .item__link {
+            text-decoration: none;
+            color: #111;
+            font-family: 'AktivGroteskCorp_Light';
+            font-size: 16px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom-color 0.5s;
+
+            &:hover {
+              border-bottom: 2px solid #a3a3a3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .base_books_article__text_about {
+    @include wrapper();
+    padding-bottom: 40px;
+
+    .base_books_article__text_about__box {
+      width: 100%;
+
+      .text_about__who_recommends {
+        .recommends__description {
+          flex-basis: 290px;
+
+          .description__human {
+            .human__pic {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .text_about__sections {
+      @include col-3();
+      @include col-lg-4();
+    }
+
+    .text_about__other_articles {
+      @include col-9();
+      // @include col-lg-8();
+      width: calc(70.666667% - 30px);
+
+      .text_about__other_articles__box {
+        .articles__list {
+          @include col-6();
+          @include col-lg-12();
+
+          .list__item {
+            padding: 7px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .base_books_article_breadcrumbs {
+    margin: 20px auto;
+  }
+
+  .base_books_article__text_about {
+
+    .base_books_article__text_about__box {
+
+      .text_about__title {
+        font-size: 30px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+      }
+
+      .text_about__marker {
+        padding-bottom: 20px;
+      }
+
+      .text_about__who_recommends {
+        background-color: #fdfdfd;
+        padding: 15px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .recommends__say {
+          display: none;
+        }
+      }
+
+      .text_about__social {
+        display: flex;
+        flex-wrap: wrap;
+
+        .text_about__social__element {
+          margin: 20px 10px;
+        }
+      }
+    }
+
+    .text_about__sections {
+      @include col-md-6();
+    }
+
+    .text_about__other_articles {
+      @include col-md-12();
+      margin-top: 30px;
+
+      .text_about__other_articles__box {
+
+        .articles__list {
+          @include col-md-12();
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:414px){
+
+  .base_books_article__text_about .base_books_article__text_about__box .text_about__who_recommends{
+    margin: 0 0 10px 0;
+  }
+  .base_books_article__text_about .base_books_article__text_about__box .text_about__social .text_about__social__element{
+    margin: 5px;
+  }
+
+  .base_books_article__text_about {
+
+    .text_about__sections {
+      @include col-md-9();
+    }
+
+    .text_about__other_articles {
+      width: 100%;
+
+      .text_about__other_articles__box {
+
+        .articles__list {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

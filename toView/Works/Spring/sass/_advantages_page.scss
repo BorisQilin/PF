@@ -1,0 +1,744 @@
+.advantages_page{
+  background-image: url('../img/wallperz3.jpg');
+
+  .first-scrin-darken{
+    .wrapper{
+
+      .text__advantages_page{
+        @include wrapper();
+        padding: 0;
+        padding-top: 100px;
+        padding-bottom: 170px;
+
+        .text__advantages_page__title{
+          font-family: 'AktivGroteskCorp_Light';
+          text-align: center;
+          font-size: 48px;
+          color: #fff;
+          padding-bottom: 60px;
+        }
+
+        .text__advantages_page__description{
+          display: flex;
+          justify-content: space-around;
+
+          .description__wrapper{
+            @include col-5();
+            @include col-lg-6();
+
+            .text__advantages_page__description__box{
+              align-content: stretch;
+              position: relative;
+              flex-direction: column;
+              display: flex;
+              justify-content: space-between;
+              height: 100%;
+
+              .cont{
+                margin-bottom: 20px;
+
+                .description__box__title{
+                  font-size: 24px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  text-align: center;
+                  color: #fff;
+                  padding-bottom: 30px;
+                }
+
+                .description__box__description{
+                  font-size: 16px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  color: #fff;
+                  padding-bottom: 30px;
+                  text-align: left;
+                  line-height: 1.5;
+                  position: relative;
+                  padding-left: 55px;
+
+                  &:before{
+                    content: '?';
+                    font-family: 'AktivGroteskCorp_Light';
+                    position: absolute;
+                    left: 0;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    vertical-align: middle;
+                    line-height: 40px;
+                    height: 40px;
+                    width: 40px;
+                  }
+                }
+
+                &:after{
+                  content: '';
+                  font-family: 'sp-icon';
+                  position: absolute;
+                  left: 50%;
+                  margin-left: -35px;
+                  top: 65%;
+                  color: #fff;
+                  font-size: 70px;
+                  transform: rotate(90deg);
+                }
+              }
+
+              .text__advantages_page__box_bottom__elem{
+                align-content: flex-end;
+                position: relative;
+
+                p{
+                  font-size: 16px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  color: #fff;
+                  margin-top: 40px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+
+        #advantages_page_slider{
+          display: flex;
+          justify-content: space-around;
+          display: none;
+
+          .description__wrapper{
+            @include col-5();
+            @include col-lg-6();
+
+            .text__advantages_page__description__box{
+              align-content: stretch;
+              position: relative;
+              flex-direction: column;
+              display: flex;
+              justify-content: space-between;
+              height: 100%;
+
+              .cont{
+                margin-bottom: 20px;
+
+                .description__box__title{
+                  font-size: 24px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  text-align: center;
+                  color: #fff;
+                  padding-bottom: 30px;
+                }
+
+                .description__box__slider{
+                  font-size: 16px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  color: #fff;
+                  padding-bottom: 30px;
+                  text-align: left;
+                  line-height: 1.5;
+                  position: relative;
+                  padding-left: 55px;
+
+                  &:before{
+                    content: '?';
+                    font-family: 'AktivGroteskCorp_Light';
+                    position: absolute;
+                    left: 0;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    vertical-align: middle;
+                    line-height: 40px;
+                    height: 40px;
+                    width: 40px;
+                  }
+                }
+
+                &:after{
+                  content: '';
+                  font-family: 'sp-icon';
+                  position: absolute;
+                  left: 50%;
+                  margin-left: -35px;
+                  top: 65%;
+                  color: #fff;
+                  font-size: 70px;
+                  transform: rotate(90deg);
+                }
+              }
+
+              .text__advantages_page__box_bottom__elem{
+                align-content: flex-end;
+                position: relative;
+
+                p{
+                  font-size: 16px;
+                  font-family: 'AktivGroteskCorp_Light';
+                  color: #fff;
+                  margin-top: 40px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.terms-of-cooperation{
+
+  .wrapper{
+    @include wrapper();
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .terms-of-cooperation__title{
+      font-family: 'AktivGroteskCorp_Light';
+      text-align: center;
+      font-size: 48px;
+      color: #111;
+      padding-bottom: 60px;
+    }
+    .terms-of-cooperation__box{
+      @include row-flex();
+      @include justify-content(space-around);
+
+      .box__element{
+        @include col-3();
+        @include col-lg-4();
+        @include col-md-6();
+        @include col-sm-10();
+        @include col-xs-12();
+        text-align: center;
+
+        .element__icon{
+          padding-bottom: 20px;
+          font-size: 400%;
+          text-align: center;
+          font-family: 'sp-icon';
+          color: $iconFontColor;
+        }
+
+        .element__description{
+          font-family: 'AktivGroteskCorp_Light';
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.advantages_page__content{
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  .advantages_page__content__box{
+    @include wrapper();
+    padding-bottom: 60px;
+
+    .content__box__element{
+      @include row-flex();
+      justify-content: center;
+
+      .element__person{
+        @include col-4();
+        @include col-lg-4();
+        @include col-md-6();
+        @include col-sm-10();
+        @include col-xs-12();
+        margin-left: 2%;
+
+        .person__pic{
+          border-radius: 50%;
+          flex-basis: 300px;
+          box-sizing: border-box;
+          text-align: center;
+
+          .person__img{
+            box-sizing: border-box;
+            border-radius: 50%;
+          }
+        }
+
+        .person__social{
+          padding-top: 20px;
+          text-align: center;
+          font-family: 'sp-icon';
+          line-height: 35px;
+
+          .social__elem{
+            display: inline-block;
+            font-size: 120%;
+            vertical-align: bottom;
+            padding: 1%;
+            opacity: .5;
+            transition: opacity .5s;
+            cursor: pointer;
+            color: #111;
+            text-decoration: none;
+
+            &:hover{
+              opacity: 1;
+            }
+          }
+
+          .spring-icon-facebook-letter-logo{
+            margin-top: -5px;
+            font-size: 130%;
+          }
+
+          .spring-icon-vk{
+            font-size: 150%;
+          }
+
+          .spring-icon-twitter-logo{
+            font-size: 120%;
+            margin-top: -5px;
+          }
+
+          .spring-icon-linkedin-logo{
+            font-size: 120%;
+            margin-top: -5px;
+            vertical-align: inherit;
+            padding-bottom: 6px;
+          }
+        }
+      }
+
+      .element__text{
+        width: 64%;
+        @include col-md-10();
+        @include col-sm-11();
+        @include col-xs-12();
+        padding-left: 30px;
+        font-family: 'AktivGroteskCorp_Light';
+
+        .text__name{
+          font-size: 24px;
+          color: #111;
+        }
+
+        .text__prof{
+          font-size: 16px;
+          color: #a7a7a7;
+          line-height: 1.5;
+          padding-bottom: 10px;
+        }
+
+        .text__about{
+          color: #111;
+          font-size: 16px;
+          padding-bottom: 20px;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    hr{
+      margin: 40px 0 60px 0;
+      border-color: #e8e8e8;
+      border-style: solid;
+    }
+  }
+}
+
+.how-to-get-our-partnership{
+  .wrapper{
+    @include wrapper();
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .how-to-get-our-partnership__title{
+      font-family: 'AktivGroteskCorp_Light';
+      text-align: center;
+      font-size: 48px;
+      color: #111;
+      padding-bottom: 60px;
+    }
+
+    .how-to-get-our-partnership__box{
+      @include row-flex();
+      @include justify-content(space-between);
+
+      .box__element{
+        @include col-3();
+        @include col-lg-4();
+        @include col-md-7();
+        @include col-sm-10();
+        @include col-xs-12();
+        flex-wrap: wrap;
+        text-align: center;
+
+        .element__icon{
+          padding-bottom: 20px;
+          font-size: 400%;
+          text-align: center;
+          font-family: 'sp-icon';
+          color: $iconFontColor;
+        }
+
+        .spring-icon-id-card{
+          background-image: url('../img/id-card.svg');
+          width: 70px;
+          height: 80px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+          margin: 0 auto;
+        }
+        .spring-icon-conversation{
+          background-image: url('../img/conversation.svg');
+          width: 70px;
+          height: 80px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+          margin: 0 auto;
+        }
+        .spring-icon-rocket-ship{
+          background-image: url('../img/rocket-ship.svg');
+          width: 70px;
+          height: 80px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+          margin: 0 auto;
+        }
+        .spring-icon-cooperate{
+          background-image: url('../img/cooperate.svg');
+          width: 70px;
+          height: 80px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;
+          margin: 0 auto;
+        }
+
+        .element__title{
+          font-family: 'AktivGroteskCorp_Light';
+          font-size: 20px;
+          color: #111;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+
+        .element__description{
+          font-family: 'AktivGroteskCorp_Light';
+          font-size: 16px;
+          text-align: center;
+          color: #919191;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1024px){
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .how-to-get-our-partnership .wrapper .how-to-get-our-partnership__box{
+    justify-content: space-around;
+  }
+
+  .how-to-get-our-partnership .wrapper .how-to-get-our-partnership__box .box__element{
+    width: 37%;
+    margin-bottom: 50px;
+  }
+
+  .terms-of-cooperation .wrapper{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .terms-of-cooperation .wrapper .terms-of-cooperation__title{
+    font-size: 36px;
+  }
+
+  .advantages_page__content{
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .advantages_page__content .advantages_page__content__box .content__box__element .element__text{
+    padding-left: 30px;
+  }
+
+  .advantages_page__content .advantages_page__content__box hr{
+    margin: 20px 0 35px 0;
+  }
+
+  .how-to-get-our-partnership .wrapper{
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .how-to-get-our-partnership .wrapper .how-to-get-our-partnership__title{
+    padding-bottom: 40px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page .text__advantages_page__title{
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page .text__advantages_page__description{
+    display: none;
+  }
+
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page #advantages_page_slider{
+    display: block;
+
+    .description__wrapper .text__advantages_page__description__box{
+      margin: 0 5%;
+
+      .cont{
+        .description__box__title{
+          font-size: 18px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .description__box__slider{
+          text-align: center;
+          padding: 0;
+
+
+          &:before{
+            display: none;
+          }
+        }
+
+        .text__advantages_page__box_bottom__elem p{
+          text-align: center;
+        }
+        &:after{
+          top: 55%;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+
+  #advantages_page_slider{
+    @include col-lg-12();
+    margin: 0 auto;
+
+    .slick-arrow {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 70%;
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      padding: 0;
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      transition: border-color .5s;
+
+      &:hover {
+        border: 1px solid #e60329;
+      }
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      font-family: 'sp-icon';
+      font-size: 65px;
+      line-height: 1;
+      color: #fff;
+      position: relative;
+      top: -8px;
+      z-index: 5;
+      transition: color .5s;
+    }
+
+    .slick-prev:hover:before{
+      color: #e60329;
+    }
+
+    .slick-next:hover:before{
+      color: #e60329;
+    }
+
+    .slick-next {
+      right: 5%;
+    }
+
+    .slick-prev {
+      left: 5%;
+      transform: rotate(180deg);
+      z-index: 1;
+    }
+
+    .slick-next:before {
+      content: "";
+      left: -10px;
+    }
+
+    .slick-prev:before {
+      content: "";
+      left: -10px;
+    }
+
+    .slick-dots {
+      position: absolute;
+      bottom: -40px;
+      display: block;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+          font-size: 0;
+          line-height: 0;
+          display: block;
+          width: 10px;
+          height: 10px;
+          padding: 5px;
+          cursor: pointer;
+          color: transparent;
+          border: 0;
+          outline: none;
+          background: transparent;
+          box-shadow: 0 0 0 2px #fff inset;
+          border-radius: 50%;
+          padding: 0;
+
+          &:before{
+            font-size: 25px;
+            line-height: 10px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 10px;
+            height: 10px;
+            content: "•";
+            text-align: center;
+            opacity: 0;
+            color: #e60329;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+    }
+
+    .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+        opacity: 1;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+    }
+  }
+
+  #advantages_page_slider{
+
+    &:focus{
+      outline: -webkit-focus-ring-color auto 0px;
+    }
+
+    .slick-list {
+      &:focus{
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+      .slick-track{
+        &:focus{
+          outline: -webkit-focus-ring-color auto 0px;
+        }
+        .slick-slide{
+          &:focus{
+            outline: -webkit-focus-ring-color auto 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .first-scrin .first-scrin-darken .wrapper .arr-down__advantages_page{
+    display: none;
+  }
+
+  .terms-of-cooperation .wrapper{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .terms-of-cooperation__title{
+        font-size: 23px;
+        padding-bottom: 20px;
+    }
+
+    .terms-of-cooperation__box{
+      flex-direction: column;
+      align-items: center;
+
+      .box__element{
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .how-to-get-our-partnership .wrapper .how-to-get-our-partnership__title{
+    font-size: 23px;
+    padding-bottom: 20px;
+  }
+
+  .how-to-get-our-partnership .wrapper .how-to-get-our-partnership__box .box__element{
+    margin-bottom: 30px;
+
+    .element__icon, .element__title{
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width:414px){
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page #advantages_page_slider .description__wrapper .text__advantages_page__description__box .cont{
+    &:after{
+      top: 65%;
+    }
+  }
+
+  .advantages_page .first-scrin-darken .wrapper .text__advantages_page #advantages_page_slider .description__wrapper .text__advantages_page__description__box .text__advantages_page__box_bottom__elem p{
+    margin-top: 60px;
+  }
+
+  #advantages_page_slider .slick-arrow{
+    top: 75%;
+  }
+
+  .advantages_page__content .advantages_page__content__box .content__box__element .element__text{
+    padding-left: 0;
+  }
+}

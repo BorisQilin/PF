@@ -1,0 +1,467 @@
+.vacancies_description_breadcrumbs{
+  @include wrapper();
+  margin: 40px auto;
+  box-sizing: border-box;
+
+  .breadcrumbs_text{
+
+    .text_name-page{
+      color: #737373;
+      font-size: 14px;
+      font-family: 'AktivGroteskCorp_Light';
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+      transition: border-bottom-color .5s;
+
+      &:hover{
+        border-bottom: 1px solid #737373;
+      }
+    }
+    .text_name-separator{
+      color: #737373;
+      font-family: 'AktivGroteskCorp_Light';
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.vacancies_description__title{
+  color: #111;
+  text-align: center;
+  font-family: 'AktivGroteskCorp_Light';
+  font-size: 48px;
+  padding: 20px 0 60px;
+}
+
+.vacancies_description__about{
+  @include wrapper();
+  box-sizing: border-box;
+  @include col-10();
+  @include col-lg-12();
+  margin: 0 auto;
+
+  .about_responsibilities{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .present_box{
+      flex-basis: 200px;
+      margin-right: 4%;
+
+      .present__images{
+        width: 100%;
+      }
+
+      .present__description{
+        color: #111;
+        font-family: 'AktivGroteskCorp_Light';
+        padding-top: 15px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+
+    .list_box{
+      width: 73%;
+
+      .list__title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #111;
+        font-family: 'AktivGroteskCorp_Light';
+        padding-bottom: 15px;
+      }
+
+      .list__responsibilities{
+        .list__item{
+          font-size: 16px;
+          color: #111;
+          font-family: 'AktivGroteskCorp_Light';
+          padding-bottom: 5px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .about_skills{
+    // @include wrapper();
+    box-sizing: border-box;
+    // @include col-10();
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+    .about_skills_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .about_skills_knows, .about_skills_knows-how{
+        width: 46%;
+      }
+
+      .about_skills_knows{
+        .knows__title{
+          font-size: 20px;
+          color: #111;
+          padding-bottom: 10px;
+          font-family: 'AktivGroteskCorp_Light';
+          font-weight: 600;
+        }
+
+        .knows__list{
+          .list__item{
+            font-size: 16px;
+            color: #111;
+            font-family: 'AktivGroteskCorp_Light';
+            padding-bottom: 5px;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .about_skills_knows-how{
+        .knows-how__title{
+          font-size: 20px;
+          color: #111;
+          padding-bottom: 10px;
+          font-family: 'AktivGroteskCorp_Light';
+          font-weight: 600;
+        }
+
+        .knows-how__list{
+          .list__item{
+            font-size: 16px;
+            color: #111;
+            font-family: 'AktivGroteskCorp_Light';
+            padding-bottom: 5px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.proposal_vacancies_description-page{
+  background-color: #f7f7f7;
+
+  .wrapper{
+
+    .proposal__box{
+      #action__box_vacancies_description-page{
+        @include wrapper();
+        @include col-6();
+        justify-content: center;
+
+        input{
+          box-sizing: border-box;
+          width: calc(53% - 30px);
+        }
+
+        .box__form{
+          margin: 0;
+          padding: 0 15px;
+          box-sizing: border-box;
+
+          input{
+            width: calc(51% - 10px);
+          }
+
+          .file_upload{
+            cursor: pointer;
+            box-sizing: border-box;
+            width: calc(51% - 10px);
+            position: relative;
+            overflow: hidden;         /* example */
+            line-height: 33px;       /* the same as height */
+            max-height: 50px;
+            padding: 8px 25px;
+            margin-bottom: 15px;
+            border: 1px solid #ebebeb;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: -webkit-box-shadow .5s;
+            transition: -webkit-box-shadow .5s;
+            transition: box-shadow .5s;
+            transition: box-shadow .5s,-webkit-box-shadow .5s;
+            background-color: #fff;
+
+            .upload__btn{
+              float: right;
+              font-family: 'sp-icon';
+              line-height: 33px;
+              vertical-align: baseline;
+              color: #bfccda;
+              background-color: transparent;
+              text-transform: none;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              font-size: 25px;
+              margin: 0;
+              outline-offset: 0;
+              outline: -webkit-focus-ring-color auto 0;
+              transition: background-color .5s,box-shadow .5s;
+            }
+            & > p{
+              opacity: .8;
+            }
+
+            input[type=file]{
+              // position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              transform: scale(20);
+              letter-spacing: 10em;     /* IE 9 fix */
+              -ms-transform: scale(20); /* IE 9 fix */
+              opacity: 0;
+              cursor: pointer
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .vacancies_description_breadcrumbs{
+    margin: 20px auto;
+  }
+
+  .vacancies_description__title{
+    padding: 0px 0 40px;
+  }
+
+  .vacancies_description__about{
+    .about_skills{
+      padding-bottom: 60px;
+    }
+  }
+
+  .proposal_vacancies_description-page{
+    background-color: #f7f7f7;
+
+    .wrapper{
+
+      .proposal__title{
+        @include col-9();
+        font-size: 48px;
+      }
+
+      .proposal__box{
+        #action__box_vacancies_description-page{
+          @include col-9();
+
+          .box__form{
+            input{
+              width: calc(52% - 20px);
+            }
+
+            textarea{
+              height: 230px;
+            }
+
+            .file_upload{
+              width: calc(52% - 20px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .vacancies_description_breadcrumbs{
+    margin: 20px auto;
+  }
+
+  .vacancies_description__title{
+    font-size: 30px;
+    padding: 5px 0 40px;
+  }
+
+  .vacancies_description__about{
+
+    .about_responsibilities{
+      // padding-bottom: 40px;
+      flex-direction: column;
+      // justify-content: center;
+      border-bottom: 0px solid #e8e8e8;
+      padding: 0;
+
+      .present_box{
+        flex-basis: 190px;
+        max-width: 200px;
+        margin-right: 0;
+        margin: 0 auto;
+        text-align: center;
+
+        .present__description{
+          margin-bottom: 40px;
+        }
+      }
+
+      .list_box{
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .about_skills{
+      box-sizing: border-box;
+      padding-bottom: 0;
+
+      .about_skills_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .about_skills_knows, .about_skills_knows-how{
+          width: 80%;
+          padding-bottom: 40px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .proposal_vacancies_description-page{
+
+    .wrapper{
+
+      .proposal__title{
+        @include col-12();
+        font-size: 23px;
+      }
+
+      .proposal__box{
+        margin: 0 auto;
+        @include col-md-11();
+
+        #action__box_vacancies_description-page{
+          @include col-md-12();
+
+          .box__form{
+            input{
+              width: 100%;
+            }
+
+            textarea{
+              height: 230px;
+            }
+
+            .file_upload{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:414px){
+  .vacancies_description__about{
+    .about_responsibilities{
+      padding: 0;
+
+      .present_box{
+        flex-basis: 190px;
+        max-width: 300px;
+        margin-right: 0;
+        margin: 0 auto;
+        text-align: center;
+
+        .present__images{
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .present__description{
+          margin-bottom: 40px;
+        }
+      }
+
+      .list_box{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .about_skills{
+
+      .about_skills_box{
+
+        .about_skills_knows, .about_skills_knows-how{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .proposal_vacancies_description-page{
+
+    .wrapper{
+
+      .proposal__box{
+        @include col-sm-12();
+
+        #action__box_vacancies_description-page{
+          padding: 0;
+          width: 100%;
+
+          .box__form{
+            width: 100%;
+            // padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:320px){
+  .vacancies_description__about{
+    .about_responsibilities{
+      padding: 0;
+
+      .present_box{
+
+        .present__images{
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .proposal_vacancies_description-page{
+
+    .wrapper{
+      padding-left: 0;
+      padding-right: 0;
+
+      .proposal__box{
+        width: 100%;
+        // margin-left: -15px;
+        // margin-right: -15px;
+
+        #action__box_vacancies_description-page{
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.base-page__content{
+  @include wrapper();
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .base-page__content__header{
+    color: #111;
+    font-family: 'AktivGroteskCorp_Light';
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .base-page__content__lists{
+
+    .content__lists__box{
+      @include row-flex();
+      @include justify-content(space-between);
+      @include col-10();
+      @include col-lg-12();
+      border-bottom: 1px solid #e8e8e8;
+      margin: 0 auto;
+
+      .content__lists__element{
+        @include col-6();
+        padding-bottom: 60px;
+        padding-top: 60px;
+        color: #111;
+        font-size: 16px;
+        font-family: 'AktivGroteskCorp_Light';
+
+        .element__header{
+          font-size: 16px;
+          padding-left: 35px;
+          position: relative;
+          vertical-align: baseline;
+          margin-bottom: 20px;
+          font-weight: 600;
+
+          .header__icon{
+            font-size: 23px;
+            font-family: 'sp-icon';
+            color: $iconFontColor;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-60%);
+            font-weight: 100;
+          }
+        }
+
+        .element__list{
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-padding-start: 0;
+          padding-left: 35px;
+
+          .list__item{
+            line-height: normal;
+            padding-bottom: 10px;
+
+            .item__link{
+              text-decoration: none;
+              color: #111;
+              font-size: 16px;
+              border-bottom: 2px solid transparent;
+              transition: border-color .5s;
+
+              &:hover{
+                border-bottom: 2px solid #a3a3a3;
+              }
+            }
+          }
+        }
+      }
+
+      .content__lists__element_double{
+        width: 100%;
+
+        .list_group{
+          display: flex;
+          @include justify-content(space-around);
+          margin: 0 auto;
+
+          .element__list{
+            @include col-6();
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:1024px){
+  .base-page__content{
+    @include wrapper();
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .base-page__content__lists{
+
+      .content__lists__box{
+
+        .content__lists__element{
+          padding-bottom: 40px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:767px){
+  .base-page__content{
+    @include wrapper();
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .base-page__content__header{
+      font-size: 30px;
+    }
+
+    .base-page__content__lists{
+
+      .content__lists__box{
+        flex-direction: column;
+
+        .content__lists__element{
+          padding-bottom: 20px;
+          padding-top: 20px;
+          @include col-10();
+          margin: 0 auto;
+        }
+
+        .content__lists__element_double{
+          @include col-10();
+
+          .list_group{
+            display: flex;
+            @include justify-content(space-around);
+            margin: 0 auto;
+            flex-direction: column;
+            width: 100%;
+
+            .element__list{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:560px){
+  .base-page__content{
+
+    .base-page__content__lists{
+
+      .content__lists__box{
+
+        .content__lists__element{
+          @include col-12();
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:414px){
+  .base-page__content{
+    padding: 40px 0;
+
+    .base-page__content__lists{
+
+      .content__lists__box{
+
+        .content__lists__element{
+          width: 100%;
+
+          .element__list{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:320px){
+  .base-page__content{
+    padding: 40px 0;
+
+    .base-page__content__lists{
+
+      .content__lists__box{
+
+        .content__lists__element{
+          width: 100%;
+
+          .element__list{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

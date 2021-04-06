@@ -1,0 +1,229 @@
+.team{
+  @extend .first-scrin;
+  background-color: #f5f5f5;
+  background-image: url('../img/bg_logoS.jpg');
+  background-position: bottom center;
+  background-size: 100%;
+  box-shadow: 0 0 5px -1px #707070;
+
+  .wrapper{
+    @include wrapper();
+    padding: 100px 0;
+
+    .team__title{
+      font-size: 48px;
+      font-family: 'AktivGroteskCorp_Light';
+      text-align: center;
+      padding-bottom: 50px;
+      color: #111;
+    }
+
+    .team__box{
+      @include col-11();
+      @include col-lg-12();
+
+      margin: 0 auto;
+      position: relative;
+
+      .team__box__list{
+        @include row-flex();
+        @include justify-content(center);
+
+        .list__item{
+          text-align: center;
+
+          .item__link{
+            display: block;
+            padding: 20px;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            transition: border-color .5s;
+            border-radius: 50%;
+            position: relative;
+
+            &:after {
+              top: 90%;
+              left: 50%;
+              width: 0;
+              height: 0;
+              content: url('../img/tap.png');
+              position: absolute;
+              pointer-events: none;
+              margin-left: -10px;
+              opacity: 0;
+              transition: opacity .5s, top 5s;
+            }
+
+            .link__pic{
+              padding: 15px;
+              border: 1px solid transparent;
+              border-radius: 50%;
+              transition: border-color .5s;
+              box-sizing: border-box;
+            }
+
+            &:hover{
+              border: 1px solid #ccc;
+
+
+              .link__pic{
+                border: 1px dotted #707070;
+                border-collapse: -44px;
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .team__popup{
+        @include col-10();
+        @include col-lg-10();
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 0 50px 0 #ccc;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0 auto;
+        z-index: 2;
+        padding: 40px;
+
+        .team__popup__close{
+          position: absolute;
+          top: -33px;
+          right: -20px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+          vertical-align: baseline;
+          font-size: 40px;
+          color: #111;
+
+          &:hover, &active{
+            color: #ff072b;
+          }
+        }
+
+        .popup__img{
+          width: calc(47% - 30px);
+
+          .popup__pic{
+            box-sizing: border-box;
+            border: 1px solid #eeeeee;
+            padding: 20px;
+            border-radius: 50%;
+            width: 100%;
+          }
+        }
+
+        .popup__description{
+          width: -webkit-calc(52% - 30px);
+          font-family: 'AktivGroteskCorp_Light';
+          line-height: 1.8;
+
+          .description__title{
+            font-size: 18px;
+            color: #111;
+          }
+
+          .description__title-sub{
+            font-size: 14px;
+            color: #a6a6a6;
+            padding-bottom: 20px;
+          }
+
+          .description__about{
+            font-size: 16px;
+            color: #909090;
+          }
+        }
+      }
+
+      .see-more{
+        margin-top: 20px;
+        text-align: center;
+
+        .see-more__link{
+          display: inline-block;
+          text-decoration: none;
+          color: #111;
+
+          .link__arr{
+            display: inline-block;
+            font-family: 'sp-icon';
+            transform: rotate(90deg);
+            font-size: 50px;
+            border-left: 1px solid #111;
+            line-height: 100px;
+          }
+
+          .link__text{
+            display: block;
+            font-family: 'AktivGroteskCorp_Light';
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1024px){
+  .team .wrapper{
+    padding: 60px 0;
+
+    .team__box{
+
+      .team__box__list{
+
+        .list__item{
+          width: 18%;
+
+          .item__link {
+            padding: 15px;
+
+            .link__pic{
+              padding: 10px;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .team__popup{
+        padding: 30px;
+        align-items: center;
+
+        .popup__img{
+          width: 40%;
+        }
+
+        .popup__description{
+          width: 55%;
+
+          .description__title-sub{
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .team{
+    display: none;
+  }
+}

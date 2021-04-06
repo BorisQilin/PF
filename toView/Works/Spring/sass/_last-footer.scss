@@ -1,0 +1,28 @@
+.last-footer{
+  background-color: #1f2023;
+  padding: 10px 0;
+
+  .wrapper{
+    @include wrapper();
+
+    .last-footer__copy{
+      color: #646466;
+      font-size: 14px;
+      font-family: 'AktivGroteskCorp_Light';
+      padding-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .last-footer{
+
+    .wrapper{
+
+      .last-footer__copy{
+        font-size: 12px;
+        padding-left: 0;
+      }
+    }
+  }
+}

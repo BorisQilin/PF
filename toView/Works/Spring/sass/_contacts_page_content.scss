@@ -1,0 +1,174 @@
+.contacts-page__proposal{
+  background-color: #f7f7f7;
+
+  .wrapper{
+    @include wrapper();
+
+    .proposal__box{
+      @include row-flex();
+      margin: 0 auto;
+      justify-content: center;
+
+      .action__box{
+        box-sizing: border-box;
+        @include col-7();
+        @include col-lg-6();
+        margin-right: 30px;
+
+        .action__box__title{
+          font-size: 24px;
+          font-family: 'AktivGroteskCorp_Light';
+          @include col-8();
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+      }
+
+      .other-ways-of-communication{
+        @include col-4();
+        @include col-lg-6();
+        @include col-md-11();
+        @include col-sm-12();
+        box-sizing: border-box;
+        padding-left: 50px;
+
+        .other-ways-of-communication__title{
+          font-size: 24px;
+          font-family: 'AktivGroteskCorp_Light';
+          margin-bottom: 20px;
+        }
+
+        .other-ways-of-communication__description{
+          font-size: 16px;
+          font-family: 'AktivGroteskCorp_Light';
+          margin-bottom: 30px;
+          line-height: 1.2;
+        }
+
+        .other-ways-of-communication__list{
+
+          .list__item{
+            margin-bottom: 20px;
+            color: #111;
+            font-size: 18px;
+            position: relative;
+
+            &:before{
+              content: '-';
+              font-family: 'AktivGroteskCorp_Light';
+              font-size: 50px;
+              color: #e60329;
+              position: absolute;
+              top: -20px;
+              left: -30px;
+            }
+
+            .item__description{
+              display: block;
+              color: #888888;
+              font-size: 16px;
+              padding-top: 10px;
+
+              .item__link{
+                color: #111;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .contacts-page__proposal{
+
+    .wrapper{
+
+      .proposal__box{
+
+        .action__box{
+          margin-right: 0px;
+
+          .action__box__title{
+            display: none;
+          }
+
+          textarea{
+            min-height: 230px;
+          }
+
+          button{
+            padding: 15px 30px;
+            margin: 20px auto 0;
+            // margin: 0;
+            // margin-top: 20px;
+          }
+
+          .checkbox__container{
+            margin: 20px auto 0;
+          }
+        }
+
+        .other-ways-of-communication{
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .contacts-page__proposal{
+
+    .wrapper{
+
+      .proposal__title{
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      .proposal__box{
+
+        .other-ways-of-communication{
+          margin: 0 auto;
+          padding-left: 30px;
+
+          .other-ways-of-communication__title{
+            margin-left: -30px;
+          }
+
+          .other-ways-of-communication__description{
+            margin-left: -30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:414px){
+  #contacts-page__proposal{
+
+    .wrapper{
+
+      .proposal__title{
+      font-size: 30px;
+      padding-bottom: 0;
+      }
+
+      .proposal__box{
+
+        .action__box > .box__form{
+          padding: 0;
+        }
+
+        .other-ways-of-communication{
+          margin: 0 auto;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

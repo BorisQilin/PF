@@ -1,0 +1,30 @@
+$lightenHeaderColor: #fff;
+$darkenHeaderColor: #111;
+$baseTextColor: #707070;
+$iconFontColor: #ff072b;
+$btnFormSend: #e60329;
+$darcenTextBottomBox: #57595c;
+$bottomBoxBgColor: #282a2e;
+$lastBoxBg: #1f2023;
+
+
+@font-face {
+  font-family: 'AktivGroteskCorp_Regular';
+  src: url('../fonts/AktivGroteskCorp_Regular/AktivGroteskCorp_Regular.ttf');
+}
+@font-face {
+  font-family: 'AktivGroteskCorp_Light';
+  src: url('../fonts/AktivGroteskCorp_Light/AktivGroteskCorp_Light.ttf');
+}
+@font-face {
+  font-family: 'AktivGroteskCorp_Bold';
+  src: url('../fonts/AktivGroteskCorp_Bold/AktivGroteskCorp_Bold.ttf');
+}
+@font-face {
+  font-family: 'sp-icon';
+  src: url('../fonts/IconFont/sp-icon.ttf');
+  src: url('../fonts/IconFont/sp-icon.eot');
+  src: url('../fonts/IconFont/sp-icon.svg');
+  src: url('../fonts/IconFont/sp-icon.woff');
+  src: url('../fonts/IconFont/sp-icon.woff2');
+}

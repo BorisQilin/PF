@@ -1,0 +1,113 @@
+.advantages{
+  padding: 100px 0 35px;
+
+  .wrapper{
+    @include wrapper();
+
+    .advantages__box{
+      @include row-flex();
+      @include justify-content(space-around);
+      flex-wrap: wrap;
+
+      .box__element{
+    		@include col-4();
+       	@include col-lg-6();
+       	@include col-md-10();
+        @include col-sm-12();
+        font-family: 'AktivGroteskCorp_Light';
+        margin-bottom: 65px;
+
+        .element__icon{
+          font-size: 400%;
+          text-align: center;
+          font-family: 'sp-icon';
+          color: $iconFontColor;
+        }
+
+        .element__title{
+          margin-top: 20px;
+          text-align: center;
+          font-size: 20px;
+          color: $darkenHeaderColor;
+          font-weight: bolder;
+        }
+
+        .element__description{
+          font-size: 16px;
+          color: $baseTextColor;
+          padding: 25px 18px 20px;
+          text-align: center;
+          line-height: 1.5;
+        }
+
+        .element__description-bold{
+          font-weight: bolder;
+          text-align: left;
+          padding-left: 20px;
+        }
+
+        .element__list{
+          margin-left: 40px;
+          padding: 0 20px 0 0;
+
+          .list__item{
+            list-style-type: disc;
+            color: #f0687f;
+            margin-bottom: 15px;
+
+            span{
+              color: $baseTextColor;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .advantages{
+    padding: 60px 0 20px;
+
+    .wrapper{
+
+      .advantages__box{
+
+        .box__element{
+          margin-bottom: 20px;
+
+          .element__icon{
+            font-size: 350%;
+          }
+
+          .element__description-bold{
+            font-weight: normal;
+            text-align: left;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .advantages{
+    padding: 40px 0 0;
+
+    .wrapper{
+
+      .advantages__box{
+
+        .box__element{
+          margin-bottom: 20px;
+
+          .element__icon{
+            font-size: 350%;
+          }
+        }
+      }
+    }
+  }
+}

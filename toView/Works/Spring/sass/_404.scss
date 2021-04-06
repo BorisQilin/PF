@@ -1,0 +1,16 @@
+.not__found{
+  text-align: center;
+  padding: 100px 0;
+}
+
+@media screen and (max-width:1024px){
+  .not__found{
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width:767px){
+  .not__found{
+    padding: 40px 0;
+  }
+}

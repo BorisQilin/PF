@@ -1,0 +1,571 @@
+.content__our-team {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .our-team__box {
+    @include wrapper();
+
+    .title__our-team {
+      padding-bottom: 50px;
+      color: #111;
+      font-family: 'AktivGroteskCorp_Light';
+      font-size: 48px;
+      text-align: center;
+    }
+
+    .slider__box {
+      @include row-flex();
+      @include justify-content(space-around);
+      position: relative;
+
+      &:focus{
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+
+      .our-team__slider {
+        width: 100%;
+        display: inline-block;
+
+        &:focus{
+          outline: -webkit-focus-ring-color auto 0px;
+        }
+
+        .slick-track{
+          &:focus{
+            outline: -webkit-focus-ring-color auto 0px;
+          }
+
+          .slick-slide{
+            &:focus{
+              outline: -webkit-focus-ring-color auto 0px;
+            }
+          }
+        }
+
+        .slider__item {
+
+          .item__box{
+            @include row-flex();
+            @include justify-content(space-between);
+            @include col-8();
+            @include col-lg-10();
+            @include col-sm-12();
+            @include col-xs-12();
+            align-items: flex-start;
+            margin: 0 auto;
+            padding: 0 15px;
+            margin-bottom: 50px;
+
+            .item__picture {
+              flex-basis: 200px;
+              border-radius: 50%;
+              height: 200px;
+            }
+
+            .description__who_phone{
+              margin-right: 25px;
+              text-align: right;
+              align-self: center;
+              display: none;
+
+              .who__name {
+                font-size: 18px;
+                color: #111;
+                font-family: 'AktivGroteskCorp_Light';
+                line-height: 1.5;
+              }
+
+              .who__works {
+                font-size: 14px;
+                color: #a0a0a0;
+                font-family: 'AktivGroteskCorp_Light';
+                line-height: 1.5;
+              }
+            }
+
+            .item__description {
+              width: calc(100% - 240px);
+              margin-left: 30px;
+              flex-grow: 2;
+              margin-top: 30px;
+
+              .description__box {
+                display: flex;
+                flex-direction: column;
+
+                .description__said {
+                  position: relative;
+                  background-color: #fff;
+                  padding: 20px;
+                  box-sizing: border-box;
+                  z-index: 1;
+                  border-radius: 5px;
+                  margin-bottom: 20px;
+                  box-shadow: 0 0 20px 20px #f3f3f3;
+
+                  &:after {
+                    content: '';
+                    z-index: -1;
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    transform: rotate(130deg) skew(55deg, 0deg);
+                  }
+
+                  .said__what {
+                    color: #111;
+                    font-family: 'AktivGroteskCorp_Light';
+                    line-height: 1.5;
+                    font-size: 16px;
+                  }
+                }
+
+                .description__who {
+                  margin-left: 25px;
+
+                  .who__name {
+                    font-size: 18px;
+                    color: #111;
+                    font-family: 'AktivGroteskCorp_Light';
+                    line-height: 1.5;
+                  }
+
+                  .who__works {
+                    font-size: 14px;
+                    color: #a0a0a0;
+                    font-family: 'AktivGroteskCorp_Light';
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+
+        .slick-arrow {
+          font-size: 0;
+          line-height: 0;
+          position: absolute;
+          top: 50%;
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-top: -25px;
+          padding: 0;
+          cursor: pointer;
+          color: transparent;
+          border: none;
+          outline: none;
+          background: transparent;
+          border: 1px solid #111;
+          border-radius: 50%;
+          transition: border-color .5s;
+
+          &:hover {
+            border: 1px solid #e60329;
+          }
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+          font-family: 'sp-icon';
+          font-size: 65px;
+          line-height: 1;
+          color: #111;
+          position: relative;
+          top: -8px;
+          z-index: 5;
+          transition: color .5s;
+        }
+
+        .slick-prev:hover:before{
+          color: #e60329;
+        }
+
+        .slick-next:hover:before{
+          color: #e60329;
+        }
+
+        .slick-next {
+          right: 5%;
+        }
+
+        .slick-prev {
+          left: 5%;
+          transform: rotate(180deg);
+          z-index: 1;
+        }
+
+        .slick-next:before {
+          content: "";
+          left: -10px;
+        }
+
+        .slick-prev:before {
+          content: "";
+          left: -10px;
+        }
+
+        .slider__item_even{
+          .item__box{
+            flex-direction: row-reverse;
+
+            .item__picture {
+              margin-left: 30px;
+            }
+
+            .item__description {
+              margin-left: 0;
+
+              .description__box {
+                .description__said {
+                  &:after {
+                    display: none;
+                  }
+
+                  &:before {
+                    content: '';
+                    z-index: -1;
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    position: absolute;
+                    top: 10%;
+                    right: 0;
+                    transform: rotate(230deg) skew(-55deg, 0deg);
+                  }
+                }
+
+                .description__who {
+                  margin-right: 25px;
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+          position: absolute;
+          bottom: 10px;
+          display: block;
+          width: 100%;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+
+          li {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+
+            button {
+              font-size: 0;
+              line-height: 0;
+              display: block;
+              width: 10px;
+              height: 10px;
+              padding: 5px;
+              cursor: pointer;
+              color: transparent;
+              border: 0;
+              outline: none;
+              background: transparent;
+              box-shadow: 0 0 0 2px #111 inset;
+              border-radius: 50%;
+              padding: 0;
+
+              &:before{
+                font-size: 25px;
+                line-height: 10px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 10px;
+                height: 10px;
+                content: "•";
+                text-align: center;
+                opacity: 0;
+                color: #e60329;
+                -webkit-font-smoothing: antialiased;
+              }
+            }
+          }
+        }
+
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+            opacity: 1;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: 1;
+        }
+        }
+      }
+    }
+
+  .our-team__maybe-you {
+
+    .our-team__maybe-you__box{
+      @include row-flex();
+      @include justify-content(space-between);
+      @include col-8();
+      @include col-lg-10();
+      @include col-sm-12();
+      @include col-xs-12();
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      margin: 0 auto;
+      padding: 0 15px;
+      margin-bottom: 50px;
+
+      .description__who_phone{
+        margin-right: 25px;
+        text-align: right;
+        align-self: center;
+        display: none;
+
+        .who__name {
+          font-size: 18px;
+          color: #111;
+          font-family: 'AktivGroteskCorp_Light';
+          line-height: 1.5;
+        }
+
+        .who__works {
+          .works__public {
+            font-size: 16px;
+            color: #e60329;
+            text-transform: uppercase;
+            font-family: 'AktivGroteskCorp_Light';
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .maybe-you__picture {
+        flex-basis: 200px;
+        border-radius: 50%;
+        height: 200px;
+      }
+
+      .maybe-you__description {
+        width: calc(100% - 240px);
+
+        .description__box {
+          display: flex;
+          flex-direction: column;
+
+          .description__said {
+            position: relative;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 1;
+            border-radius: 5px;
+            margin: 30px 0;
+            box-shadow: 0 0 20px 20px #f3f3f3;
+
+            &:before {
+              content: '';
+              z-index: -1;
+              width: 30px;
+              height: 30px;
+              background: #fff;
+              position: absolute;
+              top: 10%;
+              right: 0;
+              transform: rotate(230deg) skew(-55deg, 0deg);
+            }
+
+            .said__what {
+              color: #111;
+              font-family: 'AktivGroteskCorp_Light';
+              line-height: 1.5;
+              font-size: 16px;
+            }
+          }
+
+          .description__who {
+            margin-right: 25px;
+            text-align: right;
+
+            .who__name {
+              font-size: 18px;
+              color: #111;
+              font-family: 'AktivGroteskCorp_Light';
+              line-height: 1.5;
+            }
+
+            .who__works {
+              .works__public {
+                font-size: 16px;
+                color: #e60329;
+                text-transform: uppercase;
+                font-family: 'AktivGroteskCorp_Light';
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px){
+  .content__our-team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .description__who_phone{
+    position: relative;
+  }
+
+  // .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .description__who_phone:after{
+  //   content: "";
+  //   color: #fff;
+  //   position: absolute;
+  //   font-family: 'sp-icon';
+  //   font-size: 45px;
+  //   bottom: -40px;
+  //   left: 30%;
+  //   transform: rotate(90deg);
+  // }
+
+  .content__our-team{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .content__our-team .our-team__box .title__our-team{
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .description__who_phone{
+    display: block;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__picture{
+    height: 100px;
+    flex-basis: 100px;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__picture{
+    height: 100px;
+    flex-basis: 100px;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__description .description__box .description__who{
+    display: none;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__description{
+    width: 100%;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slick-arrow{
+    top: auto;
+    bottom: -10px;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description .description__box .description__said:after{
+    transform: rotateY(180deg) rotateZ(-150deg) skew(60deg, 0deg);
+    left: 3%;
+    top: 0;
+    height: 15px;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item_even .item__box .item__description .description__box .description__said:before{
+    transform: rotateY(180deg) rotateZ(-60deg) skew(60deg, 0deg);
+    right: 3%;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description .description__box .description__said:before{
+    transform: rotateY(180deg) rotateZ(-60deg) skew(60deg, 0deg);
+    right: 3%;
+    top: 0;
+    height: 15px;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description .description__box .description__said{
+    width: 100%;
+  }
+
+  .content__our-team .our-team__box .our-team__box .maybe-you__description{
+    width: 100%;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .description__who_phone{
+    display: block;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description .description__box .description__who{
+    display: none;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description .description__box .description__said{
+    width: 100%;
+    display: block;
+    box-shadow: rgb(243, 243, 243) 0px 0px 10px 10px;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .description__who_phone{
+    margin-right: 0;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .description{
+    margin-right: 0;
+  }
+
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item .item__box .item__description{
+    @include col-xs-12();
+    margin: 10px 0;
+    display: block;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box{
+    margin-top: 40px;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__description .description__box .description__said{
+    box-shadow: 0 0 10px 10px #f3f3f3;
+    margin: 20px 0;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__description .description__box .description__said:before{
+    transform: rotateY(180deg) rotateZ(-60deg) skew(60deg, 0deg);
+    right: 3%;
+    top: 0;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width:320px){
+  .content__our-team .our-team__box .slider__box .our-team__slider .slider__item_even .item__box .item__picture{
+    margin-left: 5px;
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .description__who_phone{
+    margin-left: -10px;
+    margin-right: 0px;
+
+  }
+
+  .content__our-team .our-team__maybe-you .our-team__maybe-you__box .maybe-you__picture{
+    margin-right: -10px;
+  }
+}
