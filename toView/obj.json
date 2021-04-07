@@ -103,7 +103,7 @@
 	{
 		"title": "Simpleat",
 		"img": "img/Screen6.png",
-		"description": "HTML(pug), CSS(SASS), JS, Gulp",
+		"description": "HTML, CSS(SASS), JS, Gulp",
 		"vueLink": [{
 				"title": "Pasta",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Simpleat/index.html"
