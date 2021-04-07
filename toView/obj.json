@@ -4,7 +4,7 @@
 		"description": "HTML, CSS(SASS), JS, google map API, Gulp",
 		"vueLink": [{
 				"title": "CS",
-				"src": "https://borisqilin.github.io/PF/toView//Works/CS/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/Works/CS/index.html"
 			}
 		]
 	},
@@ -15,7 +15,7 @@
 		"description": "HTML, CSS(SASS), JS, Photoshop, Gulp",
 		"vueLink": [{
 				"title": "MMG",
-				"src": "https://borisqilin.github.io/PF/toView//Works/MMG/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/Works/MMG/index.html"
 			}
 		]
 	},
@@ -26,7 +26,7 @@
 		"description": "HTML, CSS(SASS), JS, CSS Grid layout, Gulp",
 		"vueLink": [{
 				"title": "Mo_Go",
-				"src": "https://borisqilin.github.io/PF/toView//Works/Mo_Go/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/Works/Mo_Go/index.html"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 		"description": "HTML, CSS(SASS), JS, jQuery, Slick, Gulp",
 		"vueLink": [{
 				"title": "Media",
-				"src": "https://borisqilin.github.io/PF/toView//Works/Media/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/Works/Media/index.html"
 			}
 		]
 	},
@@ -48,7 +48,7 @@
 		"description": "HTML(pug), CSS(SASS), JS, Gulp",
 		"vueLink": [{
 				"title": "Pasta",
-				"src": "https://borisqilin.github.io/PF/toView//Works/Pasta/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/Works/Pasta/index.html"
 			}
 		]
 	},
@@ -101,60 +101,71 @@
 	},
 
 	{
+		"title": "Simpleat",
+		"img": "img/Screen5.png",
+		"description": "HTML(pug), CSS(SASS), JS, Gulp",
+		"vueLink": [{
+				"title": "Pasta",
+				"src": "https://borisqilin.github.io/PF/toView/Works/Simpleat/index.html"
+			}
+		]
+	},
+
+	{
 		"title": "Older works",
 		"img": "img/Screen0.png",
 		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",
 		"vueLink": [{
 				"title": "SS",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF1/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF1/index.html"
 			},
 			{
 				"title": "WPaint",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF2/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF2/index.html"
 			},
 			{
 				"title": "YWS",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF3/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF3/index.html"
 			},
 			{
 				"title": "PG",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF4/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF4/index.html"
 			},
 			{
 				"title": "Escape",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF5/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF5/index.html"
 			},
 			{
 				"title": "BBHome",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF6/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF6/index.html"
 			},
 			{
 				"title": "BBWorks",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF6/works.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF6/works.html"
 			},
 			{
 				"title": "BBContact",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF6/contactUs.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF6/contactUs.html"
 			},
 			{
 				"title": "SI",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF7/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF7/index.html"
 			},
 			{
 				"title": "Freelancer",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF8/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF8/index.html"
 			},
 			{
 				"title": "Poznan",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF9/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF9/index.html"
 			},
 			{
 				"title": "Company",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF10/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF10/index.html"
 			},
 			{
 				"title": "GB",
-				"src": "https://borisqilin.github.io/PF/toView//OlderWorks/PF11/index.html"
+				"src": "https://borisqilin.github.io/PF/toView/OlderWorks/PF11/index.html"
 			}
 		]
 	}
