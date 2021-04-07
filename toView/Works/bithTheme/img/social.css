@@ -1,0 +1,17 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-social {
+    width: 99px;
+    height: 28px;
+    background-position: -5px -5px;
+}
+
+._-social_hover {
+    width: 99px;
+    height: 28px;
+    background-position: -5px -43px;
+}

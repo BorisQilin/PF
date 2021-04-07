@@ -1,0 +1,82 @@
+.banner_slider
+  width: 100%
+  margin-bottom: 105px
+.slider_item
+  padding-top: 110px
+  // background-color: #ccc
+  .item_head,.item_description
+    color: #fff
+    text-align: center
+  .item_head
+    font-family: 'GothamBlack'
+    font-size: 35px
+    letter-spacing: -0.88px
+    text-transform: uppercase
+  .item_description
+    font-size: 16px
+    font-family: 'OpenSans-Light'
+  .item_form
+    @include row-flex()
+    @include justify-content(center)
+    @include align-items(center)
+    margin: 30px 40px 70px
+    .input-name, .input-email, .input-tel
+      position: relative
+      margin: 5px
+    .input-name input, .input-email input, .input-tel input, button
+      box-sizing: border-box
+      height: 45px
+      border: 0
+      border-radius: 0
+      background-color: #fff
+      font-size: 14px
+      padding: 0 15px 0 40px
+      color: #000000
+      min-width: 285px
+      font-family: 'OpenSans-Regular'
+    .input-name::after, .input-email::after, .input-tel::after
+      content: ''
+      position: absolute
+      width: 16px
+      height: 16px
+      background-image: url(../img/icon.png)
+      top: 50%
+      left: 15px
+      transform: translateY(-50%)
+    .input-name::after
+      background-position: -81px -5px
+    .input-email::after
+      background-position: 93px -3px
+    .input-tel::after
+      background-position: 46px -4px
+    button
+      background-color: #ffbb42
+      color: #fff
+      padding: 0 45px
+      margin: 5px
+      cursor: pointer
+  .item_img
+    display: block
+    margin: 0 auto
+
+.slick-dots
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-top: 25px
+  li
+    font-size: 0
+    padding: 0
+    border-radius: 0
+    width: 17px
+    height: 17px
+    background-color: #fff
+    margin: 0 5px
+    cursor: pointer
+    background-image: url(../img/icon.png)
+    background-position: -30px -4px
+    button
+      display: none
+  .slick-active
+    background-image: url(../img/icon.png)
+    background-position: -4px -4px

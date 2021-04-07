@@ -1,0 +1,95 @@
+.service_box
+  width: 100%
+.service_head
+  color: #394b50
+  font-family: 'GothamBlack'
+  font-size: 30px
+  text-transform: uppercase
+  text-align: center
+.service_description
+  color: #394b50
+  font-size: 18px
+  font-family: 'Lato-Light'
+  text-align: center
+  margin-bottom: 90px
+
+.services_list
+  font-family: 'OpenSans-Regular'
+  display: flex
+  flex-direction: row
+  @include col-12()
+  @include justify-content(space-between)
+  @include align-items(center)
+  flex-wrap: wrap
+  padding-bottom: 75px
+  .list_item
+    position: relative
+    box-sizing: border-box
+    @include col-6()
+    padding-left: 90px
+    .item_head
+      color: #394b50
+      font-family: 'Lato-Bold'
+      font-size: 16px
+      text-transform: uppercase
+    .item_description
+      color: #7b7b7b
+      font-size: 14px
+      line-height: 22px
+      margin: 20px 0 80px
+    &:nth-child(1):before,&:nth-child(2):before,&:nth-child(3):before,&:nth-child(4):before,&:nth-child(5):before,&:nth-child(6):before
+      content: ''
+      position: absolute
+      top: 0
+      left: 15px
+      background-color: #ffffff
+      background-image: url(../img/services.png)
+      transition: background-position .4s linear
+    &:nth-child(1):before
+      width: 45px
+      height: 46px
+      background-position: -51px -10px
+    &:nth-child(2):before
+      width: 47px
+      height: 48px
+      background-position: -295px -10px
+    &:nth-child(3):before
+      width: 62px
+      height: 44px
+      background-position: -106px -10px
+    &:nth-child(4):before
+      width: 50px
+      height: 51px
+      background-position: -235px -10px
+    &:nth-child(5):before
+      width: 47px
+      height: 47px
+      background-position: -178px -10px
+    &:nth-child(6):before
+      width: 31px
+      height: 55px
+      background-position: -10px -10px
+    &:nth-child(1):hover:before
+      width: 45px
+      height: 46px
+      background-position: -51px -85px
+    &:nth-child(2):hover:before
+      width: 47px
+      height: 48px
+      background-position: -295px -85px
+    &:nth-child(3):hover:before
+      width: 62px
+      height: 44px
+      background-position: -106px -85px
+    &:nth-child(4):hover:before
+      width: 50px
+      height: 51px
+      background-position: -235px -85px
+    &:nth-child(5):hover:before
+      width: 47px
+      height: 47px
+      background-position: -178px -85px
+    &:nth-child(6):hover:before
+      width: 31px
+      height: 55px
+      background-position: -10px -85px

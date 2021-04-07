@@ -1,0 +1,86 @@
+.step_box
+  padding: 155px 0 150px
+  width: 100%
+  text-align: center
+
+.steps_head
+  font-family: 'GothamBlack'
+  color: #394b50
+  font-size: 30px
+  text-transform: uppercase
+.steps_description
+  color: #394b50
+  font-family: 'Lato-Light'
+  font-size: 18px
+  line-height: 22px
+.steps_list
+  padding-top: 60px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  margin-bottom: 40px
+  .list_item
+    width: 21%
+    margin: 60px 0 60px
+    &-img
+      position: relative
+      &::before
+        content: ''
+        display: block
+        margin: 0 auto
+        // background-color: #444
+        background-image: url(../img/step.png)
+      &:nth-child(1)::before
+        width: 71px
+        height: 61px
+        background-position: -5px -5px
+      &:nth-child(2)::before
+        width: 51px
+        height: 66px
+        background-position: -86px -5px
+      &:nth-child(3)::before
+        width: 82px
+        height: 61px
+        background-position: -147px -5px
+      &:nth-child(4)::before
+        width: 69px
+        height: 67px
+        background-position: -239px -5px
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: -50%
+        transform: translate(-50%, -150%)
+        // background-color: #444
+        background-image: url(../img/step.png)
+        width: 128px
+        height: 33px
+        background-position: -318px -5px
+      &:nth-child(2)::after
+        transform: rotate(180deg) translate(50%, -250%)
+      &:nth-child(4)::after
+        display: none
+    .item_head
+      color: #394b50
+      font-family: 'Lato-Bold'
+      font-size: 20px
+      line-height: 22px
+      text-transform: uppercase
+      margin-bottom: 20px
+    .item_description
+      color: #7b7b7b
+      font-family: 'OpenSans-Regular'
+      font-size: 14px
+      line-height: 22px
+
+.step_getStart
+  display: inline-block
+  background-color: #ffbb42
+  padding: 15px 25px
+  color: #ffffff
+  font-family: 'Lato-Regular'
+  font-size: 14px
+  text-transform: uppercase
+  text-decoration: none

@@ -1,0 +1,202 @@
+.footer_inform
+  @include row-flex()
+  @include col-16()
+  @include justify-content(space-around)
+  @include align-items(top)
+  padding: 30px
+  box-sizing: border-box
+  background: radial-gradient(ellipse farthest-corner, rgba(255,255,255,.3) 1%, transparent 70%)
+  margin: 0 auto
+
+.footerInform_menu
+  @include col-3()
+  .menu_title
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+    color: #ffffff
+    font-family: "TenorSans"
+    font-size: 26px
+    margin-bottom: 20px
+  .footer_list
+    padding-left: 10px
+    .list_item
+      margin-bottom: 10px
+      .item_link
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+        color: #ffffff
+        font-size: 11px
+        text-transform: uppercase
+        text-decoration: none
+
+.footerInform_contact
+  @include col-7()
+  .contact_title
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+    color: #ffffff
+    font-family: "TenorSans"
+    font-size: 26px
+    margin-bottom: 20px
+  .contact_box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .contact_map
+      background-image: url(../img/icon.png)
+      min-width: 207px
+      min-height: 135px
+      background-position: -80px -108px
+    address
+      width: calc(100% - 227px)
+      p
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+        color: #ffffff
+        font-size: 11px
+        line-height: 1.5
+        margin-bottom: 15px
+      span
+        display: block
+
+.footerInform_form
+  @include col-5()
+  .form_title
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+    color: #ffffff
+    font-family: "TenorSans"
+    font-size: 26px
+    margin-bottom: 20px
+  form
+    width: 100%
+    box-sizing: border-box
+    .form_name
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 10px
+      label
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+        color: #ffffff
+        font-size: 14px
+      input
+        font-size: 14px
+        padding: 8px 12px
+        box-shadow: inset 2px 2px 5px #b2b3b8
+        background-color: #ffffff
+        color: #001024
+        width: calc(100% - 65px)
+        box-sizing: border-box
+        border: 0
+        border-radius: 5px
+    .form_email
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 10px
+      label
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+        color: #ffffff
+        font-size: 14px
+      input
+        font-size: 14px
+        padding: 8px 12px
+        box-shadow: inset 2px 2px 5px #b2b3b8
+        background-color: #ffffff
+        color: #001024
+        width: calc(100% - 65px)
+        box-sizing: border-box
+        border: 0
+        border-radius: 5px
+    .form_message
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: top
+      margin-bottom: 10px
+      label
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+        color: #ffffff
+        font-size: 14px
+        padding-top: 5px
+      textarea
+        font-size: 14px
+        padding: 8px 12px
+        box-shadow: inset 2px 2px 5px #b2b3b8
+        background-color: #ffffff
+        color: #001024
+        width: calc(100% - 65px)
+        box-sizing: border-box
+        border: 0
+        border-radius: 5px
+        height: 120px
+        resize: none
+    button
+      margin-left: 65px
+      padding: 10px 15px 8px
+      box-shadow: inset 0 1px 9px 1px #b2b3b8
+      background-color: #ffffff
+      border: 0
+      border-radius: 5px
+      color: #0784b6
+      font-family: 'MyriadPro-Regular'
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+      cursor: pointer
+      &:hover
+        box-shadow: 0 1px 9px 1px #b2b3b8
+
+.footer
+  @include row-flex()
+  @include col-16()
+  @include justify-content(space-between)
+  @include align-items(center)
+  padding: 10px 0 85px
+
+.footer_description
+  .footer_title
+    color: #ffffff
+    font-family: 'ArialRoundedMTBold'
+    font-size: 19px
+    text-transform: uppercase
+    display: inline-block
+    margin-right: 30px
+  .footer_copyright
+    color: #ffffff
+    font-size: 13px
+    line-height: 22px
+    display: inline-block
+    span a
+      color: #4991b2
+      text-decoration: none
+.footer_social
+  .social_title
+    color: #ffffff
+    font-size: 13px
+    margin-bottom: 5px
+  .social_list
+    display: flex
+    flex-direction: row
+    .list_item
+      margin: 2.5px
+      .item_link
+        text-decoration: none
+        color: #fff
+        background-image: url(../img/icon.png)
+        background-repeat: no-repeat
+        display: block
+        width: 30px
+        height: 29px
+      &:nth-child(1) .item_link
+        background-position: -176px -5px
+      &:nth-child(2) .item_link
+        background-position: -211px -5px
+      &:nth-child(3) .item_link
+        background-position: -246px -5px
+      &:nth-child(4) .item_link
+        background-position: -281px -5px
+      &:nth-child(5) .item_link
+        background-position: -314px -5px
+      &:nth-child(6) .item_link
+        background-position: -347px -5px
+      &:nth-child(7) .item_link
+        background-position: -381px -5px

@@ -1,0 +1,29 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+._-gp {
+    width: 17px;
+    height: 18px;
+    background-position: -25px -5px;
+}
+
+._-in {
+    width: 16px;
+    height: 16px;
+    background-position: -52px -5px;
+}
+
+._-tw {
+    width: 16px;
+    height: 15px;
+    background-position: -78px -5px;
+}

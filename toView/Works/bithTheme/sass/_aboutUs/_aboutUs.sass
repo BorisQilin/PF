@@ -1,0 +1,40 @@
+.aboutUs_box
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  position: relative
+  .box_content
+    box-sizing: border-box
+    @include col-6()
+    padding: 170px 0 170px 65px
+    .aboutUs_head
+      font-family: 'GothamBlack'
+      font-size: 30px
+      text-transform: uppercase
+    .aboutUs_description
+      font-family: 'OpenSans-Regular'
+      font-size: 14px
+      line-height: 24px
+    .aboutUs_more
+      display: inline-block
+      padding: 15px 30px
+      margin-top: 30px
+      color: #ffffff
+      background-color: #ffc155
+      border: 1px solid #e7ad48
+      font-family: 'Lato-Regular'
+      font-size: 14px
+      text-transform: uppercase
+      text-decoration: none
+      transition: border-color .5s linear
+      &:hover
+        border-color: #ffffff
+  .box_image
+    position: absolute
+    top: 0
+    left: -15px
+    height: 100%
+    width: 50%
+    background-image: url(../img/about.jpg)
+    background-repeat: no-repeat
+    background-size: cover

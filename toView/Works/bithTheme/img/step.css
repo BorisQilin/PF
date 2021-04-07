@@ -1,0 +1,35 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-step1 {
+    width: 71px;
+    height: 61px;
+    background-position: -5px -5px;
+}
+
+._-step2 {
+    width: 51px;
+    height: 66px;
+    background-position: -86px -5px;
+}
+
+._-step3 {
+    width: 82px;
+    height: 61px;
+    background-position: -147px -5px;
+}
+
+._-step4 {
+    width: 69px;
+    height: 67px;
+    background-position: -239px -5px;
+}
+
+._-stepbystep {
+    width: 128px;
+    height: 33px;
+    background-position: -318px -5px;
+}

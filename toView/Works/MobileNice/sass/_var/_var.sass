@@ -1,0 +1,93 @@
+@include reset()
+
+@font-face
+  font-family: 'ArialRoundedMTBold'
+  src: url('../fonts/ArialRoundedMTBold/ArialRoundedMTBold.eot') format('embedded-opentype'),url('../fonts/ArialRoundedMTBold/ArialRoundedMTBold.woff') format('woff'),url('../fonts/ArialRoundedMTBold/ArialRoundedMTBold.ttf') format('truetype'),url('../fonts/ArialRoundedMTBold/ArialRoundedMTBold.svg#ArialRoundedMTBold') format('svg')
+  font-display: auto
+
+@font-face
+  font-family: 'Buenard-Bold'
+  src: url('../fonts/Buenard-Bold/Buenard-Bold.eot') format('embedded-opentype'),url('../fonts/Buenard-Bold/Buenard-Bold.woff') format('woff'),url('../fonts/Buenard-Bold/Buenard-Bold.ttf') format('truetype'),url('../fonts/Buenard-Bold/Buenard-Bold.svg#Buenard-Bold') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Buenard-Regular'
+  src: url('../fonts/Buenard-Regular/Buenard-Regular.eot') format('embedded-opentype'),url('../fonts/Buenard-Regular/Buenard-Regular.woff') format('woff'),url('../fonts/Buenard-Regular/Buenard-Regular.ttf') format('truetype'),url('../fonts/Buenard-Regular/Buenard-Regular.svg#Buenard-Regular') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-MediumCond'
+  src: url('../fonts/HelveticaNeue-MediumCond/HelveticaNeue-MediumCond.eot') format('embedded-opentype'),url('../fonts/HelveticaNeue-MediumCond/HelveticaNeue-MediumCond.woff') format('woff'),url('../fonts/HelveticaNeue-MediumCond/HelveticaNeue-MediumCond.ttf') format('truetype'),url('../fonts/HelveticaNeue-MediumCond/HelveticaNeue-MediumCond.svg#HelveticaNeue-MediumCond') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'MyriadPro-Regular'
+  src: url('../fonts/MyriadPro-Regular/MyriadPro-Regular.eot') format('embedded-opentype'),url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),url('../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype'),url('../fonts/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'TenorSans'
+  src: url('../fonts/TenorSans/TenorSans.eot') format('embedded-opentype'),url('../fonts/TenorSans/TenorSans.woff') format('woff'),url('../fonts/TenorSans/TenorSans.ttf') format('truetype'),url('../fonts/TenorSans/TenorSans.svg#TenorSans') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'TrebuchetMS'
+  src: url('../fonts/TrebuchetMS/TrebuchetMS.eot') format('embedded-opentype'),url('../fonts/TrebuchetMS/TrebuchetMS.woff') format('woff'),url('../fonts/TrebuchetMS/TrebuchetMS.ttf') format('truetype'),url('../fonts/TrebuchetMS/TrebuchetMS.svg#TrebuchetMS') format('svg')
+  font-display: auto
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: 'Arial', 'Helvevetica', sans-serif
+  font-size: 14px
+  background: #e9eaed
+  background: linear-gradient(90deg, #cbcbcc 25%, #fdfdfd 50%, #cbcbcc 75%)
+
+.wrapper
+  @include wrapper()
+  &-footerInform
+    background-image: url(../img/footer_bg.png)
+    width: 100%
+    padding: 0
+    margin: 0 auto
+    border-top: 1px solid #fff
+  &-footer
+    box-shadow: 1px -1px 5px rgba(58, 58, 58, 0.39)
+    border-top: 1px solid #e2e3e7
+    background-color: #000810
+    width: 100%
+    padding: 0
+    margin: 0 auto
+    // margin: 10px 80px
+
+// .container
+//   &--header
+//     background-color: #0a0a0a
+//   &--about
+//     background-color: #fff
+//   &--team
+//     background-color: #111
+//   &--services
+//     background-color: #fff
+//   &--clients
+//     background-color: #050505
+//   &--work
+//     background-color: #fff
+//   &--testimonials
+//     background-color: #050505
+//   &--contact
+//     background-color: #fff
+//   &--footer
+//     background-color: #222
+//   .wrap
+//     @include wrapper()

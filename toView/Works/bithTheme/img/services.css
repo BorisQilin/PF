@@ -1,0 +1,17 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-services {
+    width: 342px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+._-services_hover {
+    width: 342px;
+    height: 65px;
+    background-position: -5px -80px;
+}

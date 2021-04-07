@@ -1,0 +1,82 @@
+.footer
+  padding-bottom: 50px
+
+.footer_box
+  width: 100%
+
+.footer_menu
+  @include row-flex()
+  @include col-12()
+  @include justify-content(center)
+  .menu_item
+    .item_link
+      display: block
+      padding: 0 15px
+      text-decoration: none
+      font-family: 'Lato-Regular'
+      font-size: 14px
+      text-transform: uppercase
+      color: #394b50
+
+.footer_phone
+  display: block
+  text-align: center
+  color: #394b50
+  font-family: 'Lato-Regular'
+  font-size: 23px
+  margin: 30px 0
+  span
+    padding-left: 20px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 9px
+      left: 0
+      background-image: url(../img/icon.png)
+      width: 16px
+      height: 17px
+      background-position: -129px -5px
+
+.footer_social
+  @include row-flex()
+  @include justify-content(center)
+  margin: 0 auto
+  .social_item
+    line-height: 20px
+    vertical-align: bottom
+    margin: 0 10px
+    .item_link
+      display: inline-block
+      text-decoration: none
+      text-transform: uppercase
+      background-image: url(../img/social.png)
+      transition: background-position-y .25s linear
+      width: 20px
+      height: 20px
+      &:hover
+        background-position-y: 28px
+    .fb
+      // width: 10px
+      // height: 18px
+      background-position: -10px -10px
+    .gp
+      // width: 17px
+      // height: 18px
+      background-position: -30px -10px
+    .in
+        // width: 16px
+        // height: 16px
+        background-position: -57px -10px
+    .tw
+        // width: 16px
+        // height: 15px
+        background-position: -83px -10px
+.footer_copy
+  text-align: center
+  padding: 20px
+  color: #ffffff
+  font-family: 'OpenSans-Regular'
+  font-size: 14px
+  line-height: 24px
+  background-color: #709dca

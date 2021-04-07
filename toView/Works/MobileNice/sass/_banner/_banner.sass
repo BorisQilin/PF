@@ -1,0 +1,94 @@
+.banner
+  @include col-16()
+  margin: 0 auto
+  margin-bottom: 40px
+
+.banner_list
+  border-bottom: 1px solid #888
+  .list_item
+    .item_content
+      @include row-flex()
+      @include col-16()
+      @include justify-content(space-between)
+      // justify-content: space-between
+      @include align-items(center)
+      align-items: center
+      .present
+        width: 55%
+        background-image: url(../img/galaxy.png)
+        background-position: right 50%
+        background-repeat: no-repeat
+        background-size: 90%
+        align-self: stretch
+      .description
+        width: 45%
+        margin: 60px 0 60px
+        h3
+          color: #888888
+          font-family: "TenorSans"
+          font-size: 26px
+        h2
+          color: #888888
+          font-size: 56px
+          span
+            display: inline-block
+            text-shadow: 0 0 11px #ffffff
+            color: #1977bd
+            font-family: "TenorSans"
+            font-size: 80px
+            text-transform: uppercase
+        p
+          color: #a7a7a7
+          font-family: "TenorSans"
+          font-size: 20px
+          line-height: 25px
+          margin: 35px 0 70px
+        .sponsor_list
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          .list_item
+            .item_link
+              display: block
+              text-decoration: none
+              height: 35px
+              background-color: #1977bd
+              background-image: url(../img/icon.png)
+              background-repeat: no-repeat
+              border-radius: 5px
+            &:nth-child(1) .item_link
+              width: 85px
+              background-position: -5px -63px
+            &:nth-child(2) .item_link
+              width: 115px
+              background-position: -95px -63px
+            &:nth-child(3) .item_link
+              width: 119px
+              background-position: -215px -63px
+            &:nth-child(4) .item_link
+              width: 110px
+              background-position: -338px -63px
+
+.slick-dots
+  display: flex
+  flex-direction: row
+  justify-content: center
+  position: absolute
+  bottom: -20px
+  left: 50%
+  transform: translate(-50%, 50%)
+  li
+    font-size: 0
+    padding: 0
+    border-radius: 50%
+    width: 12px
+    height: 12px
+    box-shadow: inset 1px 2px 1px rgba(166, 166, 167, 0.75)
+    background-color: #b4b4b4
+    margin: 0 2px
+    cursor: pointer
+    button
+      display: none
+  .slick-active
+    box-shadow: inset 1px 2px 1px rgba(130, 191, 231, 0.37)
+    background-color: #1566a3

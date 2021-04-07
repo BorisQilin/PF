@@ -1,0 +1,115 @@
+.newsletter_box
+  border-bottom: 1px solid #e3e7ec
+  width: 100%
+  padding-bottom: 60px
+.newsletter_head
+  text-align: center
+  font-family: 'GothamBlack'
+  font-size: 30px
+  text-transform: uppercase
+  color: #394b50
+.newsletter_description
+  text-align: center
+  color: #394b50
+  font-family: 'OpenSans-Light'
+  font-size: 16px
+  line-height: 22px
+.newsletter_form
+  @include row-flex()
+  @include col-10()
+  @include justify-content(space-between)
+  @include align-items(center)
+  margin: 40px auto 50px
+  .input-name input, .input-email input
+    box-sizing: border-box
+    width: 100%
+    height: 45px
+    border: 1px solid #cbcbcb
+    border-radius: 0
+    background-color: #fff
+    font-size: 14px
+    padding: 0 15px 0 40px
+    color: #000000
+    font-family: 'OpenSans-Regular'
+  .input-name
+    width: 33%
+    position: relative
+  .input-email
+    width: 40%
+    position: relative
+    margin: 0 1%
+  .input-name::after, .input-email::after
+    content: ''
+    position: absolute
+    width: 16px
+    height: 16px
+    background-image: url(../img/icon.png)
+    top: 50%
+    left: 15px
+    transform: translateY(-50%)
+  .input-name::after
+    background-position: -81px -5px
+  .input-email::after
+    background-position: 93px -3px
+  button
+    background-color: #ffbb42
+    font-size: 14px
+    color: #fff
+    height: 47px
+    width: 25%
+    border: 0
+    border-radius: 0
+    text-transform: uppercase
+    cursor: pointer
+.newsletter_addrBox
+  padding: 40px 0 160px
+  background-image: url(../img/mapBg.png)
+  background-repeat: no-repeat
+  background-size: auto 100%
+  background-position: top center
+  text-align: center
+  .address_box
+    display: inline-block
+    border: 3px solid #ffffff
+    background-color: #394b50
+    border-radius: 50%
+    padding: 60px 65px
+    position: relative
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-width: 10px
+      border-style: solid
+      border-color: transparent
+      border-top-color: #394b50
+      position: absolute
+      bottom: -18px
+      left: 50%
+      transform: translateX(-50%)
+    &:after
+      content: ''
+      background-image: url(../img/logo.png)
+      background-size: contain
+      width: 50px
+      height: 50px
+      position: absolute
+      bottom: -60px
+      left: 50%
+      transform: translateX(-50%)
+    address
+      line-height: 24px
+      color: #aeb7ba
+      text-align: center
+      font-family: 'OpenSans-Regular'
+      font-size: 13px
+    h2
+      font-size: 15px
+      font-weight: 400
+      color: #ffffff
+      font-family: 'Lato-Bold'
+      font-size: 15px
+      text-transform: uppercase
+    a
+      color: #ffbb42
+      font-family: 'OpenSans-Regular'

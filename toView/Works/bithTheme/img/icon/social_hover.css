@@ -1,0 +1,29 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-fb_hover {
+    width: 10px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+._-gp_hover {
+    width: 17px;
+    height: 18px;
+    background-position: -25px -5px;
+}
+
+._-in_hover {
+    width: 16px;
+    height: 16px;
+    background-position: -52px -5px;
+}
+
+._-tw_hover {
+    width: 16px;
+    height: 15px;
+    background-position: -78px -5px;
+}

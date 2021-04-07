@@ -1,0 +1,50 @@
+.stitches-_(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+._ {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &._-android {
+        .stitches-_(-5px, -5px, 38px, 48px);
+    }
+
+    &._-apple {
+        .stitches-_(-53px, -5px, 36px, 45px);
+    }
+
+    &._-arrow {
+        .stitches-_(-99px, -5px, 13px, 10px);
+    }
+
+    &._-blackberry {
+        .stitches-_(-122px, -5px, 44px, 31px);
+    }
+
+    &._-features-mobility-phones {
+        .stitches-_(-5px, -63px, 442px, 35px);
+    }
+
+    &._-icon {
+        .stitches-_(-5px, -108px, 65px, 67px);
+    }
+
+    &._-map {
+        .stitches-_(-80px, -108px, 207px, 135px);
+    }
+
+    &._-next {
+        .stitches-_(-297px, -108px, 38px, 79px);
+    }
+
+    &._-soc {
+        .stitches-_(-176px, -5px, 233px, 29px);
+    }
+
+    &._-winphone {
+        .stitches-_(-345px, -108px, 41px, 36px);
+    }
+}

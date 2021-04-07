@@ -1,0 +1,131 @@
+.futures
+  @include col-16()
+  margin: 80px auto 0
+
+.futures_title
+  text-align: center
+  text-shadow: 0 0 10px #ffffff
+  font-family: "TenorSans"
+  font-size: 80px
+  color: #888888
+  span
+    color: #1977bd
+
+.futures_box
+  position: relative
+  @include col-16()
+  margin: 0 auto
+  margin-bottom: 25px
+  background: linear-gradient(90deg, #cbcbcc 25%, #fdfdfd 50%, #cbcbcc 75%)
+  &:after, &:before
+    content: ''
+    position: absolute
+    bottom: 4px
+    z-index: -1
+    width: 40%
+    height: 3px
+  &:after
+    transform: rotate(-1deg) skew(95deg)
+    box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.7)
+    left: 25%
+  &:before
+    transform: rotate(1deg) skewX(-95deg)
+    box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.7)
+    right: 25%
+
+.futures_list
+  @include col-14()
+  margin: 50px auto
+  position: relative
+  .slick-arrow
+    background-image: url(../img/icon.png)
+    border-radius: 5px
+    background-repeat: no-repeat
+    display: block
+    width: 38px
+    height: 79px
+    background-position: -297px -108px
+    position: absolute
+    top: 25%
+    font-size: 0
+    background-color: transparent
+    border: 0
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    cursor: pointer
+  .slick-next
+    right: 0
+    transform: translate(100%, 0)
+  .slick-prev
+    left: 0
+    transform: rotate(180deg) translate(100%, 0)
+  .list_item
+    margin: 0 40px
+    .item_content
+      img
+        @include col-12()
+        margin: 0 auto
+      h3
+        text-shadow: 1px -1px 0 #ffffff
+        color: #1977bd
+        font-family: "TenorSans"
+        font-size: 20px
+        margin: 40px 0 20px
+      p
+        color: #444444
+        font-family: 'Buenard-Regular'
+        font-size: 15px
+        line-height: 20px
+      .link_more
+        margin: 20px 0
+        line-height: 1
+        display: inline-block
+        background-image: linear-gradient(0deg, #363636 0%, #64686b 100%)
+        border-radius: 5px
+        overflow: hidden
+        position: relative
+        border: 1px solid #4b4e50
+        box-sizing: border-box
+        &:before
+          content: ''
+          position: absolute
+          background-image: url(../img/icon.png)
+          background-repeat: no-repeat
+          width: 13px
+          height: 10px
+          background-position: -99px -5px
+          top: 50%
+          left: 15px
+          transform: translate(-50%, -50%)
+        a
+          display: block
+          margin-left: 30px
+          text-decoration: none
+          text-shadow: 1px -1px 0 #232323
+          color: #ffffff
+          font-size: 11px
+          text-transform: uppercase
+          padding: 10px 20px
+          overflow: hidden
+          border-left: 1px solid #4b4e50
+          position: relative
+          z-index: 2
+          &:before, &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            z-index: -1
+            transition: left .2s linear
+          &:before
+            left: 0
+            background-image: linear-gradient(0deg, #1c91c7 0%, #54c8ee 100%)
+          &:after
+            left: -100%
+            background-image: linear-gradient(0deg, #363636 0%, #64686b 100%)
+          &:hover:bafore,
+            left: -100%
+          &:hover:after
+            left: 0

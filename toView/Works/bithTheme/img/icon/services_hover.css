@@ -1,0 +1,41 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-bax_hover {
+    width: 31px;
+    height: 55px;
+    background-position: -5px -5px;
+}
+
+._-clock_hover {
+    width: 45px;
+    height: 46px;
+    background-position: -46px -5px;
+}
+
+._-hat_hover {
+    width: 62px;
+    height: 44px;
+    background-position: -101px -5px;
+}
+
+._-hip_hover {
+    width: 47px;
+    height: 47px;
+    background-position: -173px -5px;
+}
+
+._-roc_hover {
+    width: 50px;
+    height: 51px;
+    background-position: -230px -5px;
+}
+
+._-setting_hover {
+    width: 47px;
+    height: 48px;
+    background-position: -290px -5px;
+}

@@ -1,0 +1,70 @@
+.clients_box
+  padding: 140px 0
+
+.clients_head
+  font-family: 'GothamBlack'
+  font-size: 30px
+  letter-spacing: -0.75px
+  text-transform: uppercase
+  text-align: center
+.clients_description
+  font-family: 'OpenSans-Regular'
+  font-size: 16px
+  line-height: 22px
+  text-align: center
+.clients_list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: 100%
+  @include justify-content(space-around)
+  @include align-items(center)
+  padding-top: 60px
+  .list_item
+    @include row-flex()
+    @include col-6()
+    @include justify-content(space-between)
+    @include align-items(center)
+    background-color: #fff
+    margin: 10px 0
+    padding: 40px 40px 50px
+    box-sizing: border-box
+    .item_image
+      width: 25%
+    .item_text
+      width: 70%
+      .quote
+        position: relative
+        color: #394b50
+        font-family: 'OpenSans-Regular'
+        font-size: 14px
+        line-height: 22px
+        &::before
+          content: ' “ '
+          position: absolute
+          color: #7b7b7b
+          font-family: 'BrandonGrotesque-Bold'
+          font-size: 30px
+          top: 0
+          left: -20px
+        &::after
+          content: ' “ '
+          position: absolute
+          color: #7b7b7b
+          font-family: 'BrandonGrotesque-Bold'
+          font-size: 30px
+          bottom: -20px
+          right: 0
+          transform: rotateY(180deg)
+      .who
+        margin-top: 30px
+        text-transform: uppercase
+        display: block
+        a
+          text-decoration: none
+          color: #f6772c
+        span
+          color: #99a9ae
+          font-family: 'Lato-Regular'
+          font-size: 14px
+          line-height: 22px

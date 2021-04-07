@@ -1,0 +1,65 @@
+._ {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+._-android {
+    width: 38px;
+    height: 48px;
+    background-position: -5px -5px;
+}
+
+._-apple {
+    width: 36px;
+    height: 45px;
+    background-position: -53px -5px;
+}
+
+._-arrow {
+    width: 13px;
+    height: 10px;
+    background-position: -99px -5px;
+}
+
+._-blackberry {
+    width: 44px;
+    height: 31px;
+    background-position: -122px -5px;
+}
+
+._-features-mobility-phones {
+    width: 442px;
+    height: 35px;
+    background-position: -5px -63px;
+}
+
+._-icon {
+    width: 65px;
+    height: 67px;
+    background-position: -5px -108px;
+}
+
+._-map {
+    width: 207px;
+    height: 135px;
+    background-position: -80px -108px;
+}
+
+._-next {
+    width: 38px;
+    height: 79px;
+    background-position: -297px -108px;
+}
+
+._-soc {
+    width: 233px;
+    height: 29px;
+    background-position: -176px -5px;
+}
+
+._-winphone {
+    width: 41px;
+    height: 36px;
+    background-position: -345px -108px;
+}

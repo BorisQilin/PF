@@ -105,8 +105,30 @@
 		"img": "img/Screen6.png",
 		"description": "HTML, CSS(SASS), JS, Gulp",
 		"vueLink": [{
-				"title": "Pasta",
+				"title": "Simpleat",
 				"src": "https://borisqilin.github.io/PF/toView/Works/Simpleat/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "bithTheme",
+		"img": "img/Screen7.png",
+		"description": "HTML, CSS(SASS), JS, Gulp",
+		"vueLink": [{
+				"title": "bithTheme",
+				"src": "https://borisqilin.github.io/PF/toView/Works/bithTheme/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "MobileNice",
+		"img": "img/Screen8.png",
+		"description": "HTML, CSS(SASS), JS, Gulp",
+		"vueLink": [{
+				"title": "MobileNice",
+				"src": "https://borisqilin.github.io/PF/toView/Works/MobileNice/index.html"
 			}
 		]
 	},
