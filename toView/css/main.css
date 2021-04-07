@@ -210,6 +210,16 @@ table {
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center; }
+  .hexagon--ten {
+    background-image: url("../img/Screen9.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; }
+  .hexagon--eleven {
+    background-image: url("../img/Screen10.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; }
   .hexagon--sixteen {
     background-image: url("../img/Screen0.png");
     -webkit-background-size: cover;

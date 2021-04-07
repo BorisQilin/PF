@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'JazzBall';
+    src: url('fonts/JazzBall.eot');
+    src: url('fonts/JazzBall.eot') format('embedded-opentype'),
+         url('fonts/JazzBall.woff2') format('woff2'),
+         url('fonts/JazzBall.woff') format('woff'),
+         url('fonts/JazzBall.ttf') format('truetype'),
+         url('fonts/JazzBall.svg#JazzBall') format('svg');
+}

@@ -134,6 +134,28 @@
 	},
 
 	{
+		"title": "catalogModule",
+		"img": "img/Screen9.png",
+		"description": "HTML, CSS(SASS), JS, Gulp",
+		"vueLink": [{
+				"title": "catalogModule (модуль)",
+				"src": "https://borisqilin.github.io/PF/toView/Works/catalogModule/index.html"
+			}
+		]
+	},
+
+	{
+		"title": "sliderModule",
+		"img": "img/Screen10.png",
+		"description": "HTML(pug), CSS(SASS), JS, Gulp",
+		"vueLink": [{
+				"title": "sliderModule (модуль)",
+				"src": "https://borisqilin.github.io/PF/toView/Works/sliderModule/index.html"
+			}
+		]
+	},
+
+	{
 		"title": "Older works",
 		"img": "img/Screen0.png",
 		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",
