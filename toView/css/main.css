@@ -225,6 +225,11 @@ table {
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center; }
+  .hexagon--thirteen {
+    background-image: url("../img/Screen12.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; }
   .hexagon--sixteen {
     background-image: url("../img/Screen0.png");
     -webkit-background-size: cover;
