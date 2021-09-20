@@ -167,6 +167,17 @@
 	},
 
 	{
+		"title": "strategies",
+		"img": "img/Screen12.png",
+		"description": "HTML(pug), CSS(SASS), JS, jQuery, Bootstrap, Gulp",
+		"vueLink": [{
+				"title": "strategies",
+				"src": "https://borisqilin.github.io/PF/toView/Works/strategies/index.html"
+			}
+		]
+	},
+
+	{
 		"title": "Older works",
 		"img": "img/Screen0.png",
 		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",

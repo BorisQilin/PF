@@ -1,0 +1,41 @@
+.s {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.s-1 {
+    width: 37px;
+    height: 37px;
+    background-position: -5px -5px;
+}
+
+.s-2 {
+    width: 37px;
+    height: 37px;
+    background-position: -52px -5px;
+}
+
+.s-3 {
+    width: 37px;
+    height: 37px;
+    background-position: -99px -5px;
+}
+
+.s-4 {
+    width: 37px;
+    height: 37px;
+    background-position: -146px -5px;
+}
+
+.s-5 {
+    width: 37px;
+    height: 37px;
+    background-position: -193px -5px;
+}
+
+.s-6 {
+    width: 37px;
+    height: 37px;
+    background-position: -240px -5px;
+}
