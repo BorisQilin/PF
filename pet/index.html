@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pet</title>
+  <style>
+    .page{
+      margin: 0;padding: 0;
+    }
+    .present{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      font-family: monospace;
+      font-size: 16px;
+    }
+    .present__descrition{
+      padding: 25px 8px;
+    }
+    h3,h4{text-align: center;margin: 0;}
+    p::first-letter{padding-left: 25px;}
+  </style>
+</head>
+<body class="page">
+  <div class="present">
+    <video class="present__video" width="720" height="480" controls>
+      <source src="./pet.mp4" type="video/mp4">
+      <!-- <source src="movie.ogg" type="video/ogg"> -->
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="present__descrition">
+      <h3>Реализовано на JS без сторонних библиотек/фреймворков</h3>
+      <h4>(На чистом JS больше контроля)</h4>
+      <p>
+        В начале маленькое испытание по написанию клеточных автоматов, тема с ними была интересна, но потом я остановился для попытки реализовать что-то что можно подвигать. Этим "чем-то" стали шахматы.<br>
+      </p>
+      <p>
+        Шахматы реализованы с 0 и имеют ряд особенностей: я запарился над архитектурой: всё реализовано на класах, все колекции на элементах со слабой привязкой (экономия памяти).<br>
+        "Под ногами идущего создаётся путь" - во время выбора фигуры просчитывается путь и так получается что фигура сохдаёт объекты активных ячеек, если выбирается другая фигура - этот масив зачищается (экономия памяти).<br>
+        У каждой фигуры свой алгоритм движения (самый идиотский алгоритм у пешки - движение на 1 или 2 клетки если ход первый и возможность забрать фигуру по диагонали на расстоянии в 1 клетку - маленькая мозговыносяшка).<br>
+        Реализована ракировка.<br>
+        <p>Есть и проблемы которые я пока не решил - их три и они взаимозависимы о все три ориентированы на реализацию позиции шах/мат (пару раз это заметно в видео).</p>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
