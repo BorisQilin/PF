@@ -178,6 +178,17 @@
 	},
 
 	{
+		"title": "dr.harness",
+		"img": "img/Screen13.png",
+		"description": "HTML, CSS, JS, Gulp",
+		"vueLink": [{
+				"title": "strategies",
+				"src": "https://borisqilin.github.io/PF/toView/Works/drHarness/index.html"
+			}
+		]
+	},
+
+	{
 		"title": "Older works",
 		"img": "img/Screen0.png",
 		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",
