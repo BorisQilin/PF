@@ -12,6 +12,7 @@
   </head>
   <body class="page"> 
     <div class="wrap">
+      <!-- HEADER SECTION-->
       <header class="header">
         <div class="container header_container"><a href="#" class="logo"><img src="./img/logo.png" alt="логотип компании Dr.Harness" width="250" height="51"></a>
           <nav class="menu">
@@ -24,7 +25,10 @@
           </nav>
         </div>
       </header>
+      <!-- HEADER SECTION END-->
+      <!-- MAIN SECTION-->
       <main class="main-content">
+        <!-- PRESENTATION SECTION-->
         <section class="presentation">
           <div class="container container_presentation">
             <p class="presentation__description_sub">Женские кожаные портупеи</p>
@@ -33,6 +37,8 @@
             <div class="presentation__action"><a href="#catalog" class="presentation__btn tab__link_pp">повседневные портупеи</a><a href="#catalog" class="presentation__btn tab__link_ep">Эротические портупеи</a></div>
           </div>
         </section>
+        <!-- PRESENTATION SECTION END-->
+        <!-- GALERY SECTION-->
         <section class="galery">
           <div class="container">
             <h2 class="galery__title">Хит №1 в мире – модные жеские портупеи</h2>
@@ -49,6 +55,8 @@
             <div class="galery__item"><img src="img/7.jpg" alt="galery element"></div>
           </div>
         </section>
+        <!-- GALERY SECTION END-->
+        <!-- PROPORTION SECTION-->
         <section class="proportions">
           <div class="container">
             <h2 class="proportions__title">Таблица размеров</h2>
@@ -107,14 +115,22 @@
             </div>
           </div>
         </section>
+        <!-- PROPORTION SECTION END-->
+        <!-- CATALOG SECTION-->
         <section class="catalog">
           <div id="catalog" class="container">
             <h2 class="catalog__title">Каталог</h2>
+            <!-- TAB SECTION-->
             <div class="tab">
+              <!-- TAB-TITLE-->
               <div class="tab__title"><a href="#" class="tab__link tab__link_pp tab__link_active">повседневные портупеи</a><a href="#" class="tab__link tab__link_ep">Эротические портупеи</a></div>
+              <!-- TAB-TITLE END-->
+              <!-- TAB-CONTENT-->
               <div class="tab__content section">
+                <!-- FIRST-TAB-->
                 <div class="section__item section__item_pp section__item_active">
                   <div class="item-box">
+                    <!-- CARDS BEGIN-->
                     <div class="card">
                       <div class="card__pic">
                         <p class="card__mod">-53%</p><img src="./img/b1.jpg" alt="product photo">
@@ -363,10 +379,14 @@
                         <p class="card__prise_actual">2996p.</p>
                       </div><a href="#" class="card__action">заказать</a>
                     </div>
+                    <!-- CARDS END-->
                   </div>
                 </div>
+                <!-- FIRST-TAB END-->
+                <!-- SECOND-TAB-->
                 <div class="section__item section__item_ep">
                   <div class="item-box">
+                    <!-- CARDS BEGIN-->
                     <div class="card">
                       <div class="card__pic"><img src="./img/b2.jpg" alt="product photo"></div>
                       <h3 class="card__title">Портупея “Влади”</h3>
@@ -603,12 +623,18 @@
                         <p class="card__prise_actual">3002p.</p>
                       </div><a href="#" class="card__action">заказать</a>
                     </div>
+                    <!-- CARDS END-->
                   </div>
                 </div>
+                <!-- SECOND-TAB  END-->
               </div>
+              <!-- TAB-CONTENT END-->
             </div>
+            <!-- TAB SECTION END-->
           </div>
         </section>
+        <!-- CATALOG SECTION END-->
+        <!-- HOW-TO SECTION-->
         <section class="how-to">
           <div class="container">
             <h2 class="how-to__title">Как заказать?</h2>
@@ -636,7 +662,10 @@
             </ul>
           </div>
         </section>
+        <!-- HOW-TO SECTION END-->
       </main>
+      <!-- MAIN SECTION END-->
+      <!-- POPUP-->
       <div class="popup-wrap"> 
         <div class="popup"><a href="#" class="popup__close"></a>
           <div class="popup__box"> 
@@ -663,13 +692,14 @@
                 </p>
                 <p>
                   <input type="tel" name="phone" placeholder="Введите ваш телефон">
-                </p><a href="#" class="popup-form__action">оформить заказ</a>
+                </p>
+                <button type="submit" class="popup-form__action">оформить заказ</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

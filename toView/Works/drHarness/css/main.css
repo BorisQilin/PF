@@ -1,4 +1,4 @@
-/*RESET*/
+/* RESET */
 html,
 body,
 div,
@@ -126,7 +126,7 @@ table {
 * {
   box-sizing: border-box; }
 
-/*RESET END*/
+/* RESET END */
 .page {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -160,6 +160,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+/* HEADER SECTION */
 .header {
   position: fixed;
   top: 0;
@@ -195,6 +196,9 @@ img {
     text-transform: uppercase;
     color: inherit; }
 
+/* HEADER SECTION END */
+/* MAIN SECTION */
+/* PRESENTATION SECTION */
 .container_presentation {
   text-align: center; }
 
@@ -250,6 +254,8 @@ img {
     background-color: #fff;
     color: #1e1e1e; }
 
+/* PRESENTATION SECTION END */
+/* GALERY SECTION */
 .galery {
   padding-top: 45px;
   text-align: center; }
@@ -283,6 +289,8 @@ img {
   .galery__pic img {
     align-content: flex-start; }
 
+/* GALERY SECTION END */
+/* PROPORTION SECTION */
 .proportions {
   background-image: url(../img/bg_2.png);
   background-repeat: no-repeat;
@@ -330,6 +338,8 @@ img {
   .proportions__table td {
     font-weight: 300; }
 
+/* PROPORTION SECTION END */
+/* CATALOG SECTION */
 .catalog {
   padding: 50px 0 0; }
   .catalog__title {
@@ -389,6 +399,8 @@ img {
   background-color: #fff;
   margin-bottom: 70px; }
 
+/* CATALOG SECTION END */
+/* CATALOG CARD SECTION */
 .card {
   padding: 20px;
   border: 1px solid #dbdce1;
@@ -499,6 +511,8 @@ img {
 .input-color:not(input:disabled) + .label-color {
   cursor: pointer; }
 
+/* CATALOG CARD SECTION END */
+/* HOW-TO SECTION */
 .how-to {
   background-color: #f7f3f4;
   padding: 70px 0 115px; }
@@ -587,6 +601,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+/* HOW-TO SECTION END */
+/* MAIN SECTION END */
+/* POPUP */
 .popup-wrap {
   position: fixed;
   top: 0;
@@ -667,6 +684,7 @@ img {
   .popup-form input {
     text-transform: none; }
   .popup-form__action {
+    border: 0;
     margin: 5px 0 0;
     display: block;
     text-decoration: none;
@@ -684,6 +702,7 @@ img {
     background-position: 100% 200%;
     transition: background-position .25s ease-out; }
 
+/* MEDIA */
 @media only screen and (max-width: 980px) {
   .header {
     padding: 0 15px; }
