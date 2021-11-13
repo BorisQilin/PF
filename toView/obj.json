@@ -189,6 +189,17 @@
 	},
 
 	{
+		"title": "заготовка на бродилку",
+		"img": "img/Screen14.png",
+		"description": "HTML, CSS, JS",
+		"vueLink": [{
+				"title": "бродилка",
+				"src": "https://borisqilin.github.io/PF/toView/Works/game/index.html"
+			}
+		]
+	},
+
+	{
 		"title": "Older works",
 		"img": "img/Screen0.png",
 		"description": "HTML, CSS(SASS/SCSS), JS, jQuery",
