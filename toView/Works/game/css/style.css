@@ -10,6 +10,7 @@
   height: 630px;
   background-image: url(../img/map.jpg);
   position: relative;
+  overflow: hidden;
 }
 
 .way-box{
@@ -114,4 +115,20 @@
   width: 66px;
   height: 61px;
   background-position: -209px -119px;
+}
+
+.points{
+  box-sizing: border-box;
+  width: 100px;
+  line-height: 40px;
+  background-color: #00b2c1;
+  border: 5px solid #007990;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-family: sans-serif;
 }
