@@ -1,9 +1,13 @@
 // move
 let step,
-    stop = () => {
+    globalStop = () => {
       p.apdate();
-      if (p.x > 703) p.stop();
-    };
+      if (p.x == Player.obs[Player.obs.length-1].x && p.y == Player.obs[Player.obs.length-1].y) {
+        p.stop();
+      }
+      // console.log('go');
+    },
+    coords = (element, vector) => element.getBoundingClientRect()[vector] - element.parentNode.getBoundingClientRect()[vector];
 
 // отдельный класс для точек останова, для задания функционала можно отнаследовать и сделать списки заданий для каждого экземпляра
 class Dot{
@@ -20,28 +24,26 @@ class Player{
   constructor() {
     this.obj = document.querySelector('.player');
     this.traectory = document.querySelector('.wayGo path').attributes.d.nodeValue;
-
     this.obj.style["offset-path"] = `path("${this.traectory}")`;
-
-    this.x = (this.obj.getBoundingClientRect().x).toFixed()*1
-    this.y = (this.obj.getBoundingClientRect().y).toFixed()*1;
+    this.x = coords(this.obj, 'x');
+    this.y = coords(this.obj, 'y');
     this.stopCount = 1;
   }
 
   apdate(){
-    this.x = (this.obj.getBoundingClientRect().x).toFixed()*1
-    this.y = (this.obj.getBoundingClientRect().y).toFixed()*1;
+    this.x = coords(this.obj, 'x');
+    this.y = coords(this.obj, 'y');
+
+    // console.log(this.x,this.y);
 
     let stop = Player.obs[this.stopCount];
 
-    
-    // console.log(stop);
-    // console.log('stop   ',stop.x, stop.y);
-    // console.log('player   ',this.x, this.y);
-    
-    if ((this.x >= stop.x-3 && this.x <= stop.x+3) && (this.y >= stop.y-3 && this.y <= stop.y+3)) {
-      this.obj.style.animationPlayState = "paused";
+    let x = this.x-stop.x, y = this.y-stop.y;
+
+    if (x <= 3 && x > -3 && y <= 3 && y > -3) {
+      console.log(stop);
       this.stopCount++;
+      this.stop();
     }
   }
 
@@ -51,13 +53,12 @@ class Player{
     let dots = document.querySelectorAll('.dot');
 
     dots.forEach(el => {
-      let x = (el.getBoundingClientRect().x).toFixed()*1 - 5,
-          y = (el.getBoundingClientRect().y).toFixed()*1 - 63;
+      let x = coords(el, 'x'),
+          y = coords(el, 'y')-60,
+          newDot = new Dot(x,y,el);
 
-      let newDot = new Dot(x,y,el);
-  
       Player.obs.push(newDot);
-      if (!step) step = setInterval(stop,5);
+      if (!step) step = setInterval(globalStop,5);
     });
   }
 
@@ -68,16 +69,15 @@ class Player{
   }
 
   go(){
-      return () => this.obj.style.animationPlayState = "running";
+    if (!step) step = setInterval(globalStop,5);
+    return () => this.obj.style.animationPlayState = "running";
   }
 };
-
 
 let p = new Player();
 document.querySelector('.navigation__activate').addEventListener('click', e => {
   e.preventDefault();
-  p.begin();
+  if (!Player.obs.length) p.begin();
   p.go()();
 });
 // move end
-
