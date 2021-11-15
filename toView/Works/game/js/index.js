@@ -39,7 +39,7 @@ class Player{
     // console.log('stop   ',stop.x, stop.y);
     // console.log('player   ',this.x, this.y);
     
-    if ((this.x >= stop.x-5 && this.x <= stop.x+5) && (this.y >= stop.y-5 && this.y <= stop.y+5)) {
+    if ((this.x >= stop.x-3 && this.x <= stop.x+3) && (this.y >= stop.y-3 && this.y <= stop.y+3)) {
       this.obj.style.animationPlayState = "paused";
       this.stopCount++;
     }
