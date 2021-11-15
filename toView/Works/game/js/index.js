@@ -20,6 +20,7 @@ class Dot{
 
   question(player){
     document.querySelector('.modal').classList.add('modal_open');
+    document.querySelector('.navigation').style.zIndex = 0;
     document.querySelector('.form__x').innerHTML = this.ex.a;
     document.querySelector('.form__y').innerHTML = this.ex.b;
     let res = null,
@@ -50,7 +51,8 @@ class Dot{
         this.onclick = null;
         player.points = document.querySelector('.points').innerText*1;
         console.log(player.points);
-      }, 2500);
+        document.querySelector('.navigation').style.zIndex = 3;
+      }, 1000);
     };
 
 
@@ -80,7 +82,7 @@ class Player{
 
     let x = this.x-stop.x, y = this.y-stop.y;
 
-    if (x <= 3 && x > -3 && y <= 3 && y > -3) {
+    if (x <= 5 && x > -5 && y <= 5 && y > -5) {
       console.log(stop);
       stop.question(this);
       this.stopCount++;

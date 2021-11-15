@@ -183,6 +183,7 @@
   left: 0;
   background-color: rgba(82,77,80,.5);
   display: none;
+  z-index: 9;
 }
 
 .modal_open{
