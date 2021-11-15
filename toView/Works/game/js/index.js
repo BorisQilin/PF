@@ -82,7 +82,7 @@ class Player{
 
     if (x <= 3 && x > -3 && y <= 3 && y > -3) {
       console.log(stop);
-      // stop.question(this);
+      stop.question(this);
       this.stopCount++;
       this.stop();
     }
