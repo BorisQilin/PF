@@ -2,10 +2,6 @@
 let step,
     globalStop = () => {
       p.apdate();
-      if (p.x == Player.obs[Player.obs.length-1].x && p.y == Player.obs[Player.obs.length-1].y) {
-        p.stop();
-      }
-      // console.log('go');
     },
     coords = (element, vector) => element.getBoundingClientRect()[vector] - element.parentNode.getBoundingClientRect()[vector];
 
@@ -19,6 +15,20 @@ class Dot{
   }
 
   question(player){
+
+    let a = 9;
+    document.querySelector('.time span').innerText = '0'+a;
+
+    let timer = setInterval(function () {
+      if (a <= 0) {
+        clearInterval(timer);
+        document.querySelector('.lateness-box').style.display = 'block';
+      } else {
+          document.querySelector('.time span').innerText = '0'+a--;
+      }
+    }, 1000);
+    
+
     document.querySelector('.modal').classList.add('modal_open');
     document.querySelector('.navigation').style.zIndex = 0;
     document.querySelector('.form__x').innerHTML = this.ex.a;
@@ -29,30 +39,40 @@ class Dot{
         d = 0,
         p = 0;
 
+    document.querySelector('.form__resp').focus();
+
     document.querySelector('.form__send').onclick = function (event) {
       res = document.querySelector('.form__resp').value
       if (res == trueRes) {
         p = document.querySelector('.points').innerText*1 + point;
         document.querySelector('.points').innerText = p;
+        document.querySelector('.form__info').style.color = "rgb(4, 11, 113)";
         document.querySelector('.form__info').innerText = 'Правильно!';
-      } else {
-        d = res - trueRes < 0 ? res - trueRes : (res - trueRes)*-1;
-        console.log(d);
-        p = document.querySelector('.points').innerText*1 + point+d;
-        document.querySelector('.points').innerText = p;
 
-        document.querySelector('.form__info').innerText = d > 0 ? `Вы ошиблись на ${d}. Получаете 200 - ${d} очок` : `Вы ошиблись на ${d}. Получаете 200 - ${d*-1} очок`;
+        document.querySelector('.time span').innerText = '00';
+        clearInterval(timer);
+      } else {
+        d = -1;
+        console.log(d);
+        p = document.querySelector('.points').innerText*1 + d;
+        document.querySelector('.points').innerText = p;
+        document.querySelector('.form__info').style.color = "rgb(175, 0, 0)";
+        document.querySelector('.form__info').innerText = "Вы ошиблись -1 бал. Ответ:  " + trueRes;
+
+        document.querySelector('.time span').innerText = '00';
+        clearInterval(timer);
       }
 
       setTimeout(()=>{
         document.querySelector('.form__resp').value = '';
         document.querySelector('.form__info').innerText = ''
+        document.querySelector('.form__info').style.color = '';
         this.parentNode.parentNode.classList.remove('modal_open');
         this.onclick = null;
         player.points = document.querySelector('.points').innerText*1;
         console.log(player.points);
         document.querySelector('.navigation').style.zIndex = 3;
-      }, 1000);
+      }, 1500);
     };
 
 
@@ -72,6 +92,13 @@ class Player{
     this.points = 0;
   }
 
+  gameEnd(){
+    document.querySelector('.resultPoints__point > span').innerText = this.points;
+    document.querySelector('.resultPoints-box').style.display = 'block';
+  }
+
+
+
   apdate(){
     this.x = coords(this.obj, 'x');
     this.y = coords(this.obj, 'y');
@@ -83,8 +110,12 @@ class Player{
     let x = this.x-stop.x, y = this.y-stop.y;
 
     if (x <= 5 && x > -5 && y <= 5 && y > -5) {
-      console.log(stop);
+      
       stop.question(this);
+      if (Player.obs[Player.obs.length-1] == stop) {
+        p.gameEnd();
+        p.stop();
+      }
       this.stopCount++;
       this.stop();
     }
