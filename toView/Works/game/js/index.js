@@ -93,7 +93,8 @@ class Player{
   }
 
   gameEnd(){
-    document.querySelector('.resultPoints__point > span').innerText = this.points;
+    // !!!
+    document.querySelector('.resultPoints__point > span').innerText = document.querySelector('.points').innerText;
     document.querySelector('.resultPoints-box').style.display = 'block';
   }
 
